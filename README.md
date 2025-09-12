@@ -1,2 +1,2 @@
 # blog
-Parce que github est suffisant
+Resumes d'echanges avec ias
