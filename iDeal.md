@@ -40,12 +40,12 @@ Individus et firmes peuvent fonder et integrer des firmes
 3.2 Chaque entité est identifiée par un hash de sa clé publique.  
 3.3 Pour chaque scrutin, une clé de vote dérive de la clé privée de l’entité.  
 3.4 Les votes sont publiés dans la chaine sous forme **clef_publique_de_vote_hachée : votes**.  
-3.5 Annulation ou confirmation de vote doivent rester techniquement discrètes, ceci est fait en guise de 'second tour' (ex: décompte sans hash).
-3.6 Une décision est validée si le choix principal conserve la majorité malgré les votes annulés, comptés alors comme opposition.  
+3.5 Annulation ou confirmation de vote doivent rester techniquement discrètes, ceci est fait en guise de 'second tour'.
+3.6 Une décision est validée si le choix principal conserve la majorité malgré les votes annulés, comptés alors comme oppositions.  
 
 ## Article 4 – Identification, communication et participation
-4.1 L’identification des entités est vérifiable et précisée dans les CGU.  
-4.2 Chaque entité doit être joignable par un canal défini, avec délai maximum de réponse et accusé de réception obligatoire (automatisé possible).  
+4.1 L’identification des individus (adresse email, remise presentielle de la clef, biometrie...) doit etre précisée dans les CGU.  
+4.2 Chaque individu doit être joignable par un canal défini, avec délai maximum d'accusé de réception obligatoire (automatisé possible).  
 4.3 Inclusion et bannissement d’entités passent par la gouvernance. Le choix des sujets soumis au vote reste à la discrétion de la firme.  
 4.4 Les firmes peuvent exister à toute échelle : autoentreprise, binôme, mariage, famille, ville, nation, etc.
 
