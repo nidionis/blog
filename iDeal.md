@@ -4,15 +4,20 @@ Je réflechissais a un systeme de gouvernance, mais ca se marie bien avec une cr
 
 Le numérique moderne exige des systèmes fiables, et l’ordinateur reste une boîte noire.
 La seule garantie réelle est une verification "manuelle".
+
 Considéré comme une faille (moins discret -> pressions possible) je me refuse une autre alternative.
-Proposition:
-    Les données publiques sont hashées : les utilisateur peuvent verifier les leurs, sans savoir a qui appartiennes les autres
-Si le taux de corruption ne change pas la décision, alors la décision est validée
+
+Proposition: 
+    Les données publiques sont hashées : les utilisateur peuvent verifier les leurs, sans savoir a qui appartiennes les autres.
+
+Si le taux de corruption ne change pas la décision, alors la décision est validée. 
+
 Avez vous un meilleur compromis ?
 
 Considérant que tout groupe génere une valeur, autant la mesurer au prorata du temps
 
 Est appele firme tout groupe ou projet.
+
 Individus et firmes peuvent fonder et integrer des firmes
 
 ---
@@ -49,5 +54,4 @@ Individus et firmes peuvent fonder et integrer des firmes
 4.3 Inclusion et bannissement d’entités passent par la gouvernance. Le choix des sujets soumis au vote reste à la discrétion de la firme.  
 4.4 Les firmes peuvent exister à toute échelle : autoentreprise, binôme, mariage, famille, ville, nation, etc.
 
-Au passage : des décisions difficilement validables (cf: second tour) imposent plus de consensu en amont.
-
+Paradigme cool : des décisions difficilement validables (cf: second tour) imposent plus de consensu en amont.
