@@ -54,5 +54,6 @@ Individus et firmes peuvent fonder et integrer des firmes
 4.3 Inclusion et bannissement d’entités passent par la gouvernance. Le choix des sujets soumis au vote reste à la discrétion de la firme.  
 4.4 Les firmes peuvent exister à toute échelle : autoentreprise, binôme, mariage, famille, ville, nation, etc.
 
-Paradigme cool : des décisions difficilement validables (cf: second tour) imposent plus de consensu en amont.
+Paradigme cool : des décisions difficilement validables (cf: second tour) imposent plus de consensu en amont.  
+
 La securisation par id_privée:choix est soufflé pas Anis Sajed, et trop peu entendu.
