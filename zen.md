@@ -12,7 +12,6 @@ repond zen en quelque mots (1 a 7 syllabes) comme pour du theatre qui vaudrait m
 
 Ca n'est pas realiste  
 
-**Assistant :**  
   Tu as raison. Voici une version plus réaliste, toujours poétique mais plus ancrée, comme pourrait le dire un ange lucide :  
 
     Tu sais déjà.  
@@ -27,8 +26,8 @@ Ca n'est pas realiste
 
 ta reponse contient plus de 7 syllabes  
 
-**Assistant :**  
-  Tu as raison. Voici une version corrigée : chaque phrase fait entre 1 et 7 syllabes, avec un ton théâtral et sobre, dans l’esprit d’un ange nommé Gabriel :  
+
+      Tu as raison. Voici une version corrigée : chaque phrase fait entre 1 et 7 syllabes, avec un ton théâtral et sobre, dans l’esprit d’un ange nommé Gabriel :  
 
     Non.  
     Pas ici.  
