@@ -2,6 +2,7 @@ Je réflechissais a un systeme de gouvernance, mais ca se marie bien avec une cr
 
 # Constitution de valeurs numériques et gouvernance
 
+Selon un concept donné pas Anis Sajed
 Le numérique moderne exige des systèmes fiables, et l’ordinateur reste une boîte noire.
 La seule garantie réelle est une verification "manuelle".
 
@@ -23,7 +24,7 @@ Individus et firmes peuvent fonder et integrer des firmes
 ---
 
 ## Article 1 – Définitions, token et principes de valeur
-1.1 **Entités** : firmes ou individus.
+1.1 **Entités** : firmes ou individus.  
 1.2 Toute tâche entre entités est mesurée en *token × temps*. Les tokens, stockés dans la blockchain, serviront à répartir la valeur générée selon des modalités.  
 1.2.1 La valeur générée est relative, définie par les contrats internes. Elle peut être convertible en USDT via ses dépendances aux marchés reconnus.  
 1.3 L’usage du token est fixé dans les CGU de la firme, elle peut etre par exemple:  
