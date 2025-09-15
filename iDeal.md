@@ -2,7 +2,6 @@ Je réflechissais a un systeme de gouvernance, mais ca se marie bien avec une cr
 
 # Constitution de valeurs numériques et gouvernance
 
-Selon un concept donné pas Anis Sajed
 Le numérique moderne exige des systèmes fiables, et l’ordinateur reste une boîte noire.
 La seule garantie réelle est une verification "manuelle".
 
@@ -56,3 +55,4 @@ Individus et firmes peuvent fonder et integrer des firmes
 4.4 Les firmes peuvent exister à toute échelle : autoentreprise, binôme, mariage, famille, ville, nation, etc.
 
 Paradigme cool : des décisions difficilement validables (cf: second tour) imposent plus de consensu en amont.
+La securisation par id_privée:choix est soufflé pas Anis Sajed, et trop peu entendu.
