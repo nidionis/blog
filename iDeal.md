@@ -31,7 +31,7 @@ Individus et firmes peuvent fonder et integrer des firmes
 - hiérarchique (fonction du rang),  
 - par graphes (ratios complexes),  
 - corrélé à des indicateurs externes (salaire médian, coût brut moyen, etc.).  
-- d'autres idées peuvent émmerger
+- d'autres idées peuvent émmerger  
 1.4 Chaque firme définit dans ses CGU son système de répartition et l’usage des tokens. La conversion en monnaie externe (ex. USDT) est optionnelle et gérée par la firme.  
 
 ## Article 2 – Contrats et gestion de la valeur
