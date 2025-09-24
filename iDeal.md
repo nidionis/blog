@@ -45,7 +45,7 @@ Individus et firmes peuvent fonder et integrer des firmes
 3.2 Chaque entité est identifiée par un hash de sa clé publique.  
 3.3 Pour chaque scrutin, une clé de vote dérive de la clé privée de l’entité.  
 3.4 Les votes sont publiés dans la chaine sous forme **clef_publique_de_vote_hachée : votes**.  
-3.5 Annulation ou confirmation de vote doivent rester techniquement discrètes, ceci est fait en guise de 'second tour'.
+3.5 Annulation ou confirmation de vote doivent rester techniquement discrètes, ceci est fait en guise de 'second tour'.  
 3.6 Une décision est validée si le choix principal conserve la majorité malgré les votes annulés, comptés alors comme oppositions.  
 
 ## Article 4 – Identification, communication et participation
@@ -56,4 +56,4 @@ Individus et firmes peuvent fonder et integrer des firmes
 
 Paradigme cool : des décisions difficilement validables (cf: second tour) imposent plus de consensu en amont.  
 
-La securisation par id_privée:choix est soufflé pas Anis Sajed, et trop peu entendu.
+La securisation par id_privée:choix est soufflé pas Anis Sajed, et trop peu entendue.
