@@ -2,13 +2,14 @@ Je réflechissais a un systeme de gouvernance, mais ca se marie bien avec une cr
 
 # Constitution de valeurs numériques et gouvernance
 
-Le numérique moderne exige des systèmes fiables, et l’ordinateur reste une boîte noire.
+Le scrutin numérique exige des systèmes fiables, et l’ordinateur reste une boîte noire.
 La seule garantie réelle est une verification "manuelle".
 
-Considéré comme une faille (moins discret -> pressions possible) je me refuse une autre alternative.
-
 Proposition: 
-    Les données publiques sont hashées : les utilisateur peuvent verifier les leurs, sans savoir a qui appartiennes les autres.
+    Que des paire "identifiant secret:choix" soient rendus publique  
+    Ainsi chaque utilisateur peut verifier ses choix, sans savoir a qui appartiennes les autres.
+
+Considéré comme une faille (moins discret -> pressions possible) je me refuse une autre alternative.
 
 Si le taux de corruption ne change pas la décision, alors la décision est validée. 
 
