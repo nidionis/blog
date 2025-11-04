@@ -47,7 +47,7 @@ Individus et firmes peuvent fonder et integrer des firmes
 3.3 Pour chaque scrutin, une clé de vote dérive de la clé privée de l’entité.  
 3.4 Les votes sont publiés dans la chaine sous forme **clef_publique_de_vote_hachée : votes**.  
 3.5 Annulation ou confirmation de vote doivent rester techniquement discrètes, ceci est fait en guise de 'second tour'.  
-    3.5.1 reveler sa clef privee de vote en guise de validation serait deja une premiere option simple.
+    3.5.1 reveler sa clef privee de vote en guise de validation serait deja une premiere option simple.  
 3.6 Une décision est validée si le choix principal conserve la majorité malgré les votes annulés, comptés alors comme oppositions.  
 
 ## Article 4 – Identification, communication et participation
