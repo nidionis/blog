@@ -5,6 +5,8 @@
 Le [moteur de Manson](https://en.wikipedia.org/wiki/Manson_engine) est un moteur à air chaud extrêmement simple.  
 Il fonctionne grâce à une chaudière chauffant l'air atmosphérique, qui se détend ensuite dans un cylindre avant d'être rejeté à l'extérieur.
 
+Voir aussi la [synthèse détaillée du projet](manson/power) et le [calcul de rendement](manson/yield.gpt.md).
+
 Contrairement aux moteurs thermiques modernes, il privilégie :
 
 - la simplicité ;
@@ -16,7 +18,7 @@ Contrairement aux moteurs thermiques modernes, il privilégie :
 
 # Rouler à la paille
 
-Le moteur est conçu pour fonctionner avec une chaudière de type **Rocket Stove**, capable de brûler de nombreux combustibles solides :
+Le moteur est conçu pour fonctionner avec une chaudière de type **[Rocket Stove](../rocket_stove.euria.gpt.md)**, capable de brûler de nombreux combustibles solides :
 
 - résidus agricoles.
 - bois
@@ -44,8 +46,10 @@ Exemples :
 | 4 chevaux | 20 L/h |
 | **6 chevaux** | **30 L/h** |
 
-Cette consommation dépend naturellement du rendement obtenu, de la qualité du combustible et des conditions d'utilisation.
-Nous considerons un moteur sans surpression, a 10 % de rendement
+Cette consommation dépend naturellement du [rendement](manson/yield.gpt.md) obtenu, de la qualité du combustible et des conditions d'utilisation.
+Nous considerons un moteur sans surpression, a 10 % de [rendement](manson/yield.gpt.md).
+
+Pour le dimensionnement de la chaudière selon la température visée, voir les [volumes et consommations du four à bois](../rocket_stove.euria.gpt.md).
 
 ---
 
@@ -59,7 +63,7 @@ Une même architecture peut être déclinée selon plusieurs puissances.
 | Familial | 2 à 6 chevaux |
 | Utilitaire | jusqu'à 6 chevaux continus |
 
-La puissance est principalement déterminée par la taille de la chaudière Rocket Stove.
+La puissance est principalement déterminée par la taille de la chaudière [Rocket Stove](../rocket_stove.euria.gpt.md) (voir aussi la [synthèse du projet](manson/power)).
 
 ---
 

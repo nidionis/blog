@@ -1,5 +1,7 @@
 # Rendement d'un moteur de Manson à cycle ouvert
 
+Voir aussi la [présentation générale du projet](../README.md) et la [synthèse complète](power).
+
 Un **moteur de Manson à cycle ouvert** est un moteur à air chaud dans lequel le fluide de travail (l'air) est aspiré, chauffé, se détend dans le cylindre, puis est rejeté à l'atmosphère. Il est constitué principalement de trois éléments :
 
 - **Chaudière** : fournit la chaleur.
@@ -60,3 +62,5 @@ Pour une puissance mécanique de **20 kW** :
 ## Conclusion
 
 Le moteur de Manson à cycle ouvert est une machine simple et robuste, mais son rendement reste nettement inférieur à celui des moteurs à combustion interne ou des moteurs Stirling modernes. Avec une conception optimisée, un rendement de **15 à 20 %** est considéré comme une excellente performance, tandis que la limite théorique imposée par le cycle de Carnot dépend uniquement des températures de fonctionnement.
+
+Pour le dimensionnement de la chaudière associée, voir la chaudière **[Rocket Stove](../../rocket_stove.euria.gpt.md)**.

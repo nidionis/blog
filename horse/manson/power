@@ -1,6 +1,9 @@
 ```markdown
 # Synthèse – Projet de moteur de Manson à cycle ouvert
 # Problematique : Assurer 2 chevaux
+
+Voir aussi la [présentation générale du projet](../README.md) et le [détail du calcul de rendement](yield.gpt.md).
+
 ## Concept
 
 Le projet concerne un **moteur de Manson à cycle ouvert**, constitué de seulement trois éléments principaux :
@@ -23,7 +26,7 @@ Le moteur fonctionne donc **à cycle ouvert**, contrairement au moteur Stirling 
 
 ## Limite théorique
 
-Le rendement maximal est donné par le cycle de Carnot :
+Le rendement maximal est donné par le cycle de Carnot (voir le [détail du calcul de rendement](yield.gpt.md)) :
 
 \[
 \eta = 1-\frac{T_f}{T_c}
@@ -76,7 +79,7 @@ L'objectif du projet est de viser progressivement **15 à 20 %**.
 
 # Chaudière Rocket Stove
 
-Le moteur sera alimenté par une chaudière de type **Rocket Stove**, adaptée à plusieurs usages.
+Le moteur sera alimenté par une chaudière de type **[Rocket Stove](../../rocket_stove.euria.gpt.md)**, adaptée à plusieurs usages.
 
 Trois tailles sont envisagées :
 

@@ -1,4 +1,4 @@
-Voici une synthèse des volumes minimums et consommations associées pour un four à bois selon la température cible :
+Voici une synthèse des volumes minimums et consommations associées pour un four à bois de type **Rocket Stove**, utilisé comme chaudière du [moteur de Manson](README.md) selon la température cible :
 
 | Température Cible | Usage Principal | Volume Minimum (Expérimental) | Volume Recommandé (Stable) | Consommation Bois (Est.) | Durée de Chauffe |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -12,4 +12,6 @@ Voici une synthèse des volumes minimums et consommations associées pour un fou
 *   **Ratio Foyer/Chambre** : Le foyer doit représenter environ **1/3 du volume total** pour générer assez de flamme. Un four de 50 L aura besoin d'un foyer capable d'accueillir des bûches significatives, ce qui limite la miniaturisation extrême.
 *   **Isolation Critique** : À partir de 900 °C, l'isolation (briques légères, fibre céramique) devient plus importante que le volume brut. Un petit four bien isolé (type Raku en fibre) performera mieux qu'un grand four en briques lourdes mal isolé.
 *   **Type de Bois** : Utilisez impérativement du bois dur sec (<20% d'humidité). La consommation indiquée suppose un bois de qualité (chêne, hêtre, frêne).
+
+Voir aussi le [calcul de rendement du moteur](manson/yield.gpt.md) et la [synthèse complète du projet](manson/power).
 
