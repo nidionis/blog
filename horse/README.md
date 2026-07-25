@@ -18,7 +18,7 @@ Contrairement aux moteurs thermiques modernes, il privilégie :
 
 # Rouler à la paille
 
-Le moteur est conçu pour fonctionner avec une chaudière de type **[Rocket Stove](../rocket_stove.euria.gpt.md)**, capable de brûler de nombreux combustibles solides :
+Le moteur est conçu pour fonctionner avec une chaudière de type **[Rocket Stove](rocket_stove.euria.gpt.md)**, capable de brûler de nombreux combustibles solides :
 
 - résidus agricoles.
 - bois
@@ -49,7 +49,7 @@ Exemples :
 Cette consommation dépend naturellement du [rendement](manson/yield.gpt.md) obtenu, de la qualité du combustible et des conditions d'utilisation.
 Nous considerons un moteur sans surpression, a 10 % de [rendement](manson/yield.gpt.md).
 
-Pour le dimensionnement de la chaudière selon la température visée, voir les [volumes et consommations du four à bois](../rocket_stove.euria.gpt.md).
+Pour le dimensionnement de la chaudière selon la température visée, voir les [volumes et consommations du four à bois](rocket_stove.euria.gpt.md).
 
 ---
 
@@ -63,7 +63,7 @@ Une même architecture peut être déclinée selon plusieurs puissances.
 | Familial | 2 à 6 chevaux |
 | Utilitaire | jusqu'à 6 chevaux continus |
 
-La puissance est principalement déterminée par la taille de la chaudière [Rocket Stove](../rocket_stove.euria.gpt.md) (voir aussi la [synthèse du projet](manson/power.md)).
+La puissance est principalement déterminée par la taille de la chaudière [Rocket Stove].rocket_stove.euria.gpt.md) (voir aussi la [synthèse du projet](manson/power.md)).
 
 ---
 
