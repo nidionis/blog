@@ -32,13 +32,9 @@ L'objectif est de permettre à un véhicule de **rouler avec des ressources loca
 
 # Consommation
 
-L'objectif de conception est de garantir :
-
-> **5 litres de paille compactée par heure et par cheval-vapeur.**  
+A 10% de rendement, on peut esperer 5 litres de paille compactée par heure et par cheval-vapeur.
 ex: Une moto coursier de 3L pour des petit trajet,
- 30 L pour la familiale
-
-Exemples :
+ Un cargot de 30 L comme voiture familliale
 
 | Puissance | Consommation |
 |-----------:|-------------:|
