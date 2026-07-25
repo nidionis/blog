@@ -13,5 +13,9 @@ Voici une synthèse des volumes minimums et consommations associées pour un fou
 *   **Isolation Critique** : À partir de 900 °C, l'isolation (briques légères, fibre céramique) devient plus importante que le volume brut. Un petit four bien isolé (type Raku en fibre) performera mieux qu'un grand four en briques lourdes mal isolé.
 *   **Type de Bois** : Utilisez impérativement du bois dur sec (<20% d'humidité). La consommation indiquée suppose un bois de qualité (chêne, hêtre, frêne).
 
+Le volume minimal represente le volume du foyer, qui sera alimenté en permanence  
+
+Voir aussi le [calcul de rendement du moteur](manson/yield.gpt.md) et la [synthèse complète du projet](manson/power).
+
 Voir aussi le [calcul de rendement du moteur](manson/yield.gpt.md) et la [synthèse complète du projet](manson/power).
 
