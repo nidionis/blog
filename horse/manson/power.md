@@ -83,12 +83,11 @@ Trois tailles sont envisagées :
 | Modèle | Volume approximatif de chaudière | Usage |
 |---------|---------------------------------:|-------|
 | **Coursier** | **3 L** | Petit véhicule léger | 1-2 chevaux
-| **Familial** | **≈30 L** | Automobile ou petit utilitaire | soit probablement 2-6 chevaux
-| **Poids lourd / Péniche terrestre** | **≈60-100 L** | Transport lourd, tracteur ou péniche terrestre | 6 chevaux continus
-
-L'objectif est de disposer d'une même architecture de moteur, déclinée en plusieurs puissances simplement en faisant varier la taille de la chaudière Rocket Stove.
-Note: 1 cheval = ~40km/h
+| **Familial** | **≈25 L** | Automobile ou petit utilitaire | soit probablement 2-6 chevaux
+| **Poids lourd / Péniche terrestre** | **≈50 L** | Transport lourd, tracteur ou péniche terrestre | 6 chevaux continu
 ---
+L'objectif est de disposer d'une même architecture de moteur, déclinée en plusieurs puissances simplement en faisant varier la taille de la chaudière Rocket Stove.  
+Note: 1 cheval = ~40km/h  
 
 # Philosophie du projet
 
