@@ -1,4 +1,3 @@
-```markdown
 # Synthèse – Projet de moteur de Manson à cycle ouvert
 # Problematique : Assurer 2 chevaux
 
@@ -53,8 +52,6 @@ Cette valeur reste inaccessible en pratique.
 | Conception moderne | 10–15 % |
 | Conception très optimisée | 15–20 % |
 
-L'objectif du projet est de viser progressivement **15 à 20 %**.
-
 ---
 
 # Cas d'un moteur de 20 kW (soit 27,2 chevaux-vapeur)
@@ -85,12 +82,12 @@ Trois tailles sont envisagées :
 
 | Modèle | Volume approximatif de chaudière | Usage |
 |---------|---------------------------------:|-------|
-| **Coursier** | **3 L** | Petit véhicule léger | Represente 1 cheval en rechargant toute les 30 minutes a 10% de rendement 
-| **Familial** | **≈30 L** | Automobile ou petit utilitaire | soit probablement 2-10 chevaux
-| **Poids lourd / Péniche terrestre** | **≈60-100 L** | Transport lourd, tracteur ou péniche terrestre |
+| **Coursier** | **3 L** | Petit véhicule léger | 1-2 chevaux
+| **Familial** | **≈30 L** | Automobile ou petit utilitaire | soit probablement 2-6 chevaux
+| **Poids lourd / Péniche terrestre** | **≈60-100 L** | Transport lourd, tracteur ou péniche terrestre | 6 chevaux continus
 
 L'objectif est de disposer d'une même architecture de moteur, déclinée en plusieurs puissances simplement en faisant varier la taille de la chaudière Rocket Stove.
-
+Note: 1 cheval = ~40km/h
 ---
 
 # Philosophie du projet
