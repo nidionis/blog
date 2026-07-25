@@ -5,7 +5,7 @@
 Le [moteur de Manson](https://en.wikipedia.org/wiki/Manson_engine) est un moteur à air chaud extrêmement simple.  
 Il fonctionne grâce à une chaudière chauffant l'air atmosphérique, qui se détend ensuite dans un cylindre avant d'être rejeté à l'extérieur.
 
-Voir aussi la [synthèse détaillée du projet](manson/power) et le [calcul de rendement](manson/yield.gpt.md).
+Voir aussi la [synthèse détaillée du projet](manson/power.md) et le [calcul de rendement](manson/yield.gpt.md).
 
 Contrairement aux moteurs thermiques modernes, il privilégie :
 
@@ -63,7 +63,7 @@ Une même architecture peut être déclinée selon plusieurs puissances.
 | Familial | 2 à 6 chevaux |
 | Utilitaire | jusqu'à 6 chevaux continus |
 
-La puissance est principalement déterminée par la taille de la chaudière [Rocket Stove](../rocket_stove.euria.gpt.md) (voir aussi la [synthèse du projet](manson/power)).
+La puissance est principalement déterminée par la taille de la chaudière [Rocket Stove](../rocket_stove.euria.gpt.md) (voir aussi la [synthèse du projet](manson/power.md)).
 
 ---
 
