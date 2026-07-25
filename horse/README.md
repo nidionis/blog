@@ -34,8 +34,9 @@ L'objectif est de permettre à un véhicule de **rouler avec des ressources loca
 
 L'objectif de conception est de garantir :
 
-> **5 litres de paille compactée par heure et par cheval-vapeur.**
-ex: Une moto coursier de 3L pour des petit trajet, 30 L pour la familiale et
+> **5 litres de paille compactée par heure et par cheval-vapeur.**  
+ex: Une moto coursier de 3L pour des petit trajet,
+ 30 L pour la familiale
 
 Exemples :
 
