@@ -20,8 +20,8 @@ Pour une ambiance à **20 °C (293 K)** :
 Nous considérons trois paliers de performance globale (incluant la chaudière) :
 
 - **5 %** : Objectif initial, construction artisanale.
-- **8 %** : OptimisatConception avancée, matériaux haute performance mais use.
-- **15 %** : Neuf en conditions stables.
+- **8-12 %** : OptimisatConception avancée, matériaux haute performance mais use.
+- **15 %** : Neuf en conditions optimales.
 - **20 %** : En surchauffe laboratoire.
 
 ## Points de comparaison
