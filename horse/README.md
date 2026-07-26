@@ -5,8 +5,8 @@ Ce projet explore la création d'une motorisation alternative basée sur la cons
 ## Composants du Système
 Le système est divisé en deux parties techniques :
 
-**[La Chaudière Rocket Stove](rocket_stove/power.md)** : Production de chaleur 
-**[Le Moteur Manson](manson/README.md)** : Conversion en puissance mécanique, "à partir de" 400°C.
+**[La Chaudière Rocket Stove](rocket_stove/power.md)** :  
+**[Le Moteur Manson](manson/README.md)** : à partir de 400°C esperé
 
 ## Gamme de Puissance
 Nous développons trois modèles adaptés à différents usages :
