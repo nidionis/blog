@@ -5,6 +5,8 @@ Ce projet explore la création d'une motorisation alternative basée sur la cons
 
 **[La Chaudière Rocket Stove](rocket_stove/power.md)**  
 **[Le Moteur Manson](manson/README.md)**
+**[Nucleaire?](nuclear/README.md)**
+
 
 ## Gamme de Puissance
 Nous développons trois modèles adaptés à différents usages :
