@@ -3,11 +3,8 @@
 
 Ce projet explore la création d'une motorisation alternative basée sur la consomation d'un cheval.
 
-## Composants du Système
-Le système est divisé en deux parties techniques :
-
-**[La Chaudière Rocket Stove](rocket_stove/power.md)** :  
-**[Le Moteur Manson](manson/README.md)** : à partir de 400°C esperé
+**[La Chaudière Rocket Stove](rocket_stove/power.md)**
+**[Le Moteur Manson](manson/README.md)**
 
 ## Gamme de Puissance
 Nous développons trois modèles adaptés à différents usages :
