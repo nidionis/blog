@@ -2,17 +2,7 @@
 
 Détail des puissances mécaniques obtenues selon le rendement global.
 
-## Modèles et Capacités
-
-Le moteur est décliné en trois modèles principaux, définis par leur puissance nominale :
-
-1. **Coursier** : 1 cheval-vapeur (740 W)
-2. **Familial** : 3 chevaux-vapeur (2220 W)
-3. **Utilitaire** : 8 chevaux-vapeur (5920 W)
-
 ## Influence du Volume du Foyer
-
-Comme détaillé dans les [calculs thermiques](../rocket_stove/yield.md), la puissance mécanique dépend du volume du foyer et du rendement réel.
 
 | Volume Foyer | Puissance thermique | Puissance mécanique (10 %) | Chevaux |
 | :----------- | :------------------ | :------------------------- | :------ |

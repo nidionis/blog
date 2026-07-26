@@ -18,7 +18,7 @@ La lumière d'évacuation chaude peut être optimisée par :
 
 - une grande section d'ouverture ;
 - une ouverture plus longue pendant la phase d'échappement ;
-- une commande mécanique liée à la position de la bielle ou du piston durant le refroidissement.
+Solution : une commande mécanique liée à la position de la bielle durant le refroidissement est prevu.
 
 Objectif :
 
@@ -32,7 +32,7 @@ La lumière d'admission froide doit privilégier :
 
 - une surface maximale ;
 - une ouverture très rapide et courte ;
-
+Solution : une Echancrure du piston au point limite entrant le plus bas du piston.
 
 Objectif :
 
@@ -41,43 +41,6 @@ Objectif :
 - augmenter la masse d'air active par cycle.
 
 ## Limites thermodynamiques
-
-L'amélioration des lumières augmente principalement le rendement volumétrique.
-
-Le rendement global reste limité par :
-
-\[
-\eta = \eta_{cycle} \times \eta_{échange} \times \eta_{mécanique}
-\]
-
-avec :
-
-- $\eta_{cycle}$ : rendement du cycle thermodynamique ;
-- $\eta_{échange}$ : efficacité du chauffage et du refroidissement ;
-- $\eta_{mécanique}$ : pertes par frottement et transmission.
-
-## Rendement théorique maximal
-
-Le rendement de Carnot donne une limite supérieure :
-
-\[
-\eta_{Carnot}=1-\frac{T_f}{T_c}
-\]
-
-avec :
-
-- $T_c$ : température absolue de la source chaude ;
-- $T_f$ : température absolue de la source froide.
-
-Exemples :
-
-| Source chaude | Source froide | Limite de Carnot |
-|---|---|---|
-| 300 °C | 20 °C | ~36 % |
-| 500 °C | 20 °C | ~62 % |
-| 700 °C | 20 °C | ~72 % |
-
-## Rendement pratique estimé
 
 Pour un moteur de Manson à cycle ouvert correctement optimisé :
 
@@ -95,8 +58,6 @@ Une optimisation poussée des lumières peut fortement améliorer la puissance e
 - les pertes d'admission ;
 - les volumes morts ;
 - le mélange chaud/froid.
-
-Cependant, un moteur de Manson à cycle ouvert reste limité par le rejet permanent d'air chaud.
 
 Un rendement réaliste pour une conception très optimisée serait :
 

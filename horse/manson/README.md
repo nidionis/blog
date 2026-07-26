@@ -1,11 +1,15 @@
 # Moteur Manson : Conversion Thermomécanique
 
-Le moteur Manson est un [moteur à air chaud](https://fr.wikipedia.org/wiki/Moteur_Manson) à cycle ouvert, choisi pour sa simplicité de construction et sa robustesse. Il transforme l'énergie thermique produite par la [chaudière](../rocket_stove/power.md).
+Le moteur Manson est un [moteur à air chaud](https://fr.wikipedia.org/wiki/Moteur_Manson) à cycle ouvert, choisi pour sa simplicité de construction et sa robustesse.  
+Il transforme l'énergie thermique produite par la [chaudière](../rocket_stove/power.md).
 
 ## Principes de Fonctionnement
 
-Le [rendement](yield.md) du moteur est intimement lié à l'écart de température entre la source chaude et l'ambiance. Contrairement à d'autres cycles, le [volume du foyer](../rocket_stove/yield.md) influence la [puissance](power.md) disponible mais pas directement l'efficacité thermodynamique.
-
+Le [rendement](yield.md) du moteur est intimement lié à l'écart de température entre la source chaude et l'ambiance.  
+Contrairement à d'autres cycles, le [volume du foyer](../rocket_stove/yield.md) influence la [puissance](power.md) disponible mais pas directement l'efficacité thermodynamique.
+Nous attendons 5% de rendement pour une source chaude à 400 °C.
+Et esperons atteindre 20% avec quelques [optimisations](optimisation.md).
+Pour un moteur de [diametre](diameter.md) ~50 cm et de [volume](sizing_volume.md) ~100 L.
 ### Rendement Théorique (Carnot)
 
 Le tableau suivant montre le rendement maximal théorique selon la température de la source chaude (pour une ambiance à 20 °C) :
@@ -17,16 +21,7 @@ Le tableau suivant montre le rendement maximal théorique selon la température 
 | 600 °C | 580 K | 66 % |
 | 800 °C | 780 K | 73 % |
 
-## Gamme de Modèles
-
-Nous avons défini trois architectures de référence basées sur les besoins de mobilité et de travail :
-
-| Modèle | Puissance Cible | Usage Principal | Détails |
-| :--- | :--- | :--- | :--- |
-| **Coursier** | 1 CV (740 W) | Véhicules légers | [Voir Puissance](power.md) |
-| **Familial** | 3 CV (2,2 kW) | Transport de personnes | [Voir Sizing](sizing_volume.md) |
-| **Utilitaire** | 8 CV (5,9 kW) | Travaux agricoles | [Voir Optimisation](optimisation.md) |
-
+s
 ## Documentation Technique
 
 - **[Analyse du Rendement](yield.md)** : Détail des pertes et calculs d'efficacité.
@@ -35,4 +30,4 @@ Nous avons défini trois architectures de référence basées sur les besoins de
 - **[Diamètre et Sizing](sizing.diametre.md)** : Spécifications géométriques des pistons.
 
 ---
-*Ce projet s'inscrit dans une démarche de [low-tech](../concept_general.md) pour une autonomie énergétique durable.*
+*Ce projet s'inscrit dans une démarche de low-tech pour une autonomie énergétique durable.*

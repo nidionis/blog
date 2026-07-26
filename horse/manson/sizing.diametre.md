@@ -21,17 +21,6 @@ avec :
 
 ## Cylindre rayon 25 cm
 
-Rayon :
-
-[
-r=0,25,m
-]
-
-Surface :
-
-[
-S=\pi \times 0,25^2=0,196,m^2
-]
 
 | Puissance | Volume/cycle | Course nécessaire |
 | --------- | -----------: | ----------------: |
@@ -43,17 +32,6 @@ S=\pi \times 0,25^2=0,196,m^2
 
 ## Cylindre rayon 45 cm
 
-Rayon :
-
-[
-r=0,45,m
-]
-
-Surface :
-
-[
-S=\pi \times0,45^2=0,636,m^2
-]
 
 | Puissance | Volume/cycle | Course nécessaire |
 | --------- | -----------: | ----------------: |
@@ -64,18 +42,6 @@ S=\pi \times0,45^2=0,636,m^2
 ---
 
 ## Cylindre rayon 70 cm
-
-Rayon :
-
-[
-r=0,70,m
-]
-
-Surface :
-
-[
-S=\pi \times0,70^2=1,54,m^2
-]
 
 | Puissance | Volume/cycle | Course nécessaire |
 | --------- | -----------: | ----------------: |
@@ -93,4 +59,8 @@ S=\pi \times0,70^2=1,54,m^2
 |        45 cm |  13 cm |   26 cm |   39 cm |
 |        70 cm | 5,4 cm | 10,8 cm | 16,2 cm |
 
-On voit que pour un moteur de Manson lent à grande section, un rayon de **45 cm** donne des dimensions mécaniques assez réalistes : un moteur de **9 kW** demanderait environ **40 cm de course** avec un piston de **90 cm de diamètre**.
+On voit que pour un moteur de Manson lent à grande section, un rayon de **45 cm** donne des dimensions mécaniques assez réalistes :  
+un moteur de **9 kW** demanderait environ **40 cm de course**   
+avec un piston de **90 cm de diamètre**.
+
+Ceci pour une modeste frequence de 2 Hz.
