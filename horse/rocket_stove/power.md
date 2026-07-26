@@ -38,7 +38,7 @@ Le volume du foyer détermine la puissance thermique disponible.
 
 ---
 Note : La consommation est estimée sur la base de 0,63 kWh par litre de paille.
-Il est important de distinguer le **volume du foyer** (puissance) du **volume de recharge de paille** (autonomie).
+Un volume de recharge de 3L, 9L ou 27L permet une autonomie variable selon la puissance.
 
 Voir aussi :
 - [Rendement et Énergie](yield.md)

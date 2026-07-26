@@ -17,7 +17,7 @@ Pour une ambiance à **20 °C (293 K)** :
 |            1000 °C | 980 °C |                77 % |
 
 ## Rendements Réalistes
-En pratique, les pertes (échange thermique, détente incomplète, frottements, échappement, etc.) réduisent cette valeur. Nous considérons trois paliers de performance globale :
+Nous considérons trois paliers de performance globale (incluant la chaudière) :
 
 - **5 %** : Objectif initial, construction artisanale.
 - **8 %** : Optimisation des frottements et de l'isolation.
