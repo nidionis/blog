@@ -1,7 +1,7 @@
 # [deCheval](https://www.youtube.com/watch?v=jjD9WzW6dK4) : Rouler à la Paille
 # Let you cho?ose : how nuclear
 
-Ce projet explore la création d'une motorisation alternative basée sur la consomation d'un cheval.
+Ce projet explore la création d'une motorisation alternative basée sur la consomation d'un cheval.  
 
 **[La Chaudière Rocket Stove](rocket_stove/power.md)**  
 **[Le Moteur Manson](manson/README.md)**
