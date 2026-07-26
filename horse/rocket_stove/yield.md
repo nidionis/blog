@@ -33,4 +33,4 @@ Ces volumes correspondent aux recharges pour les différents modèles.
 ---
 Voir aussi :
 - [Puissance et Consommation](power.md)
-- [Concept Général](../concept_general)
+- [Concept Général](../concept_general.md)

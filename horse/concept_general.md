@@ -22,4 +22,4 @@ La puissance du moteur est directement liée au volume de la chaudière et à sa
 
 Voir aussi :
 - [Détail de la chaudière](rocket_stove/power.md)
-- [Détail du moteur Manson](manson/power)
+- [Détail du moteur Manson](manson/power.md)

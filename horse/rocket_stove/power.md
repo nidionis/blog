@@ -31,5 +31,5 @@ Note : La consommation est estimée sur la base de 0,63 kWh par litre de paille.
 Un volume de recharge de 3L, 9L ou 27L permet une autonomie variable selon la puissance.
 
 Voir aussi :
-- [Rendement et Énergie](yield)
-- [Côté Moteur Manson](../manson/power)
+- [Rendement et Énergie](yield.md)
+- [Côté Moteur Manson](../manson/power.md)

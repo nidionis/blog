@@ -18,5 +18,5 @@ Contrairement au moteur Stirling, le cycle ouvert du Manson simplifie radicaleme
 
 ---
 Voir aussi :
-- [Puissances mécaniques](power)
-- [Calculs côté chaudière](../rocket_stove/yield)
+- [Puissances mécaniques](power.md)
+- [Calculs côté chaudière](../rocket_stove/yield.md)
