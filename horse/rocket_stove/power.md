@@ -31,4 +31,3 @@ Note : La consommation est estimée sur la base de 0,63 kWh par litre de paille.
 
 Voir aussi :
 - [Rendement et Énergie](yield.md)
-- [Côté Moteur Manson](../manson/power.md)
