@@ -1,7 +1,3 @@
-# Rendement de la Chaudière Rocket Stove
-
-La chaudière convertit l'énergie chimique du combustible (paille) en énergie thermique transportée par l'air chaud.
-
 ## Température de fonctionnement
 L'objectif est de maintenir une température de **400 °C** (673 K).
 
