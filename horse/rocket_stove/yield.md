@@ -14,7 +14,7 @@ Le rendement de la chaudière dépend de la qualité de l'isolation et du mélan
 
 ## Rendement de Carnot (Théorique)
 Pour une chaudière à 400 °C et une température ambiante de 20 °C :
-\[ \eta_{Carnot} = 1 - \frac{293}{673} \approx 56,4 \% \]
+$$ \eta_{Carnot} = 1 - \frac{293}{673} \approx 56,4 \% $$
 
 ## Capacité Thermique par Volume de Paille
 La paille compactée sert de référence de volume.
@@ -29,6 +29,26 @@ Soit environ **0,63 kWh par litre de paille**.
 | 27 L | 17,01 kWh |
 
 Ces volumes correspondent aux recharges pour les différents modèles.
+
+## Influence du volume du foyer
+
+Le volume agit sur la **puissance**, pas sur le rendement.
+
+On peut approximer :
+$$ P \propto V_{\text{foyer}} \times q $$
+où :
+* $V_{\text{foyer}}$ = volume utile du Rocket Stove,
+* $q$ = puissance thermique volumique (kW/L).
+
+Pour un Rocket Stove bien conçu :
+
+| Volume | Puissance thermique continue |
+| -----: | ---------------------------: |
+|    3 L |                      6–10 kW |
+|   25 L |                     50–80 kW |
+|   50 L |                   100–160 kW |
+
+La puissance mécanique dépend ensuite du rendement réel du moteur (estimé à 10-15% pour un Manson optimisé).
 
 ---
 Voir aussi :

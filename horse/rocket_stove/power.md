@@ -26,9 +26,19 @@ Calcul des besoins thermiques selon la puissance mécanique souhaitée (en cheva
 | 8 % | 74,00 kW | 117,5 L/h |
 | 11 % | 53,82 kW | 85,4 L/h |
 
+## Capacité des foyers Rocket Stove
+
+Le volume du foyer détermine la puissance thermique disponible.
+
+| Volume Foyer | Puissance thermique | Puissance mécanique (10 %) | Chevaux |
+| :----------- | :------------------ | :------------------------- | :------ |
+| **3 L**      | 8 kW                | 0,8 kW                     | ≈ 1 ch  |
+| **25 L**     | 60 kW               | 6 kW                       | ≈ 8 ch  |
+| **50 L**     | 120 kW              | 12 kW                      | ≈ 16 ch |
+
 ---
 Note : La consommation est estimée sur la base de 0,63 kWh par litre de paille.
-Un volume de recharge de 3L, 9L ou 27L permet une autonomie variable selon la puissance.
+Il est important de distinguer le **volume du foyer** (puissance) du **volume de recharge de paille** (autonomie).
 
 Voir aussi :
 - [Rendement et Énergie](yield.md)
