@@ -1,4 +1,4 @@
-# Projet Manson : Rouler à la Paille
+# deCheval : Rouler à la Paille
 # Let you cho?ose : how nuclear
 
 Ce projet explore la création d'une motorisation alternative basée sur la consomation d'un cheval.
