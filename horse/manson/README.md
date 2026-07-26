@@ -1,6 +1,6 @@
 # Moteur Manson : Conversion Thermomécanique
 
-Le moteur Manson est un [moteur à air chaud](https://fr.wikipedia.org/wiki/Moteur_Manson) à cycle ouvert, choisi pour sa simplicité de construction et sa robustesse. Il transforme l'énergie thermique produite par la [chaudière](../rocket_stove/power.md) en puissance mécanique.
+Le moteur Manson est un [moteur à air chaud](https://fr.wikipedia.org/wiki/Moteur_Manson) à cycle ouvert, choisi pour sa simplicité de construction et sa robustesse. Il transforme l'énergie thermique produite par la [chaudière](../rocket_stove/power.md).
 
 ## Principes de Fonctionnement
 
