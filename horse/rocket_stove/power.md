@@ -30,16 +30,12 @@ Calcul des besoins thermiques selon la puissance mécanique souhaitée (en cheva
 
 Le volume du foyer détermine la puissance thermique disponible.
 
-| Volume Foyer | Puissance thermique | Puissance mécanique (10 %) | Chevaux |
-| :----------- | :------------------ | :------------------------- | :------ |
-| **3 L**      | 8 kW                | 0,8 kW                     | ≈ 1 ch  |
-| **25 L**     | 60 kW               | 6 kW                       | ≈ 8 ch  |
-| **50 L**     | 120 kW              | 12 kW                      | ≈ 16 ch |
+| Volume Foyer | Puissance thermique | Puissance mécanique (8 %) | Chevaux esperes |
+| :----------- | :------------------ | :------------------------- | :------------- |
+| **3 L**      | 8 kW                | 0,64 kW                    | presque 1 ch  |
+| **25 L**     | 60 kW               | 4.8 kW                     | 3 ch          |
+| **50 L**     | 120 kW              | 9.6 kW                     | 6 ch          |
 
 ---
 Note : La consommation est estimée sur la base de 0,63 kWh par litre de paille.
 Un volume de recharge de 3L, 9L ou 27L permet une autonomie variable selon la puissance.
-
-Voir aussi :
-- [Rendement et Énergie](yield.md)
-- [Côté Moteur Manson](../manson/power.md)
