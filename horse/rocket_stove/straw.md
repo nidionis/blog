@@ -12,10 +12,6 @@ Le rendement de la chaudière dépend de la qualité de l'isolation et du mélan
 - **8 %** : Système optimisé, bonne isolation.
 - **11 %** : Système haute performance, récupération de chaleur.
 
-## Rendement de Carnot (Théorique)
-Pour une chaudière à 400 °C et une température ambiante de 20 °C :
-\[ \eta_{Carnot} = 1 - \frac{293}{673} \approx 56,4 \% \]
-
 ## Capacité Thermique par Volume de Paille
 La paille compactée sert de référence de volume.
 PCI Paille : env. 15 MJ/kg soit ~4,2 kWh/kg.
