@@ -7,7 +7,7 @@ Le système est divisé en deux parties techniques :
 
 1. **[Concept Général](concept_general.md)** : La philosophie et l'architecture globale.
 2. **[La Chaudière Rocket Stove](rocket_stove/power.md)** : Production de chaleur à 400°C.
-3. **[Le Moteur Manson](manson/power.md)** : Conversion en puissance mécanique.
+3. **[Le Moteur Manson](manson/README.md)** : Conversion en puissance mécanique.
 
 ## Gamme de Puissance
 Nous développons trois modèles adaptés à différents usages :
