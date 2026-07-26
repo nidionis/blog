@@ -21,5 +21,5 @@ La puissance du moteur est directement liée au volume de la chaudière et à sa
 - **Utilitaire** (8 CV) : Travaux lourds ou transport de marchandises.
 
 Voir aussi :
-- [Détail de la chaudière](rocket_stove/power)
+- [Détail de la chaudière](rocket_stove/power.md)
 - [Détail du moteur Manson](manson/power)

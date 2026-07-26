@@ -6,7 +6,7 @@ Ce projet explore la création d'une motorisation alternative basée sur la comb
 Le système est divisé en deux parties techniques :
 
 1. **[Concept Général](concept_general)** : La philosophie et l'architecture globale.
-2. **[La Chaudière Rocket Stove](rocket_stove/power)** : Production de chaleur à 400°C.
+2. **[La Chaudière Rocket Stove](rocket_stove/power.md)** : Production de chaleur à 400°C.
 3. **[Le Moteur Manson](manson/power)** : Conversion en puissance mécanique.
 
 ## Gamme de Puissance
@@ -18,8 +18,8 @@ Nous développons trois modèles adaptés à différents usages :
 
 ## Informations Techniques
 Pour plus de détails sur les calculs et les rendements :
-- [Rendement Chaudière](rocket_stove/yield)
-- [Rendement Moteur](manson/yield)
+- [Rendement Chaudière](rocket_stove/yield.md)
+- [Rendement Moteur](manson/yield.md)
 
 ---
 *Un projet axé sur la simplicité, la réparabilité et l'autonomie énergétique.*
