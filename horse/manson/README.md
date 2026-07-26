@@ -1,15 +1,17 @@
 # Moteur Manson : Conversion Thermomécanique
 
-Le moteur Manson est un [moteur à air chaud](https://fr.wikipedia.org/wiki/Moteur_Manson) à cycle ouvert, choisi pour sa simplicité de construction et sa robustesse.  
+Le moteur Manson est un [moteur à air chaud](https://fr.wikipedia.org/wiki/Moteur_Manson) à cycle ouvert,   
+choisi pour sa simplicité de construction et sa robustesse.  
 Il transforme l'énergie thermique produite par la [chaudière](../rocket_stove/power.md).
 
 ## Principes de Fonctionnement
 
 Le [rendement](yield.md) du moteur est intimement lié à l'écart de température entre la source chaude et l'ambiance.  
 Contrairement à d'autres cycles, le [volume du foyer](../rocket_stove/yield.md) influence la [puissance](power.md) disponible mais pas directement l'efficacité thermodynamique.
-Nous attendons 5% de rendement pour une source chaude à 400 °C.
-Et esperons atteindre 20% avec quelques [optimisations](optimisation.md).
-Pour un moteur de [diametre](diameter.md) ~50 cm et de [volume](sizing_volume.md) ~100 L.
+Nous pensons atteindre au moins 15% avec quelques [optimisations](optimisation.md) dans les meilleures conditions.
+Et attendons 5% de rendement pour des conditions moins bonnes (ex: une source chaude à 400 °C.
+Pour un moteur de [diametre](diameter.md) ~50 cm et de [volume](sizing_volume.md) ~250 L.
+
 ### Rendement Théorique (Carnot)
 
 Le tableau suivant montre le rendement maximal théorique selon la température de la source chaude (pour une ambiance à 20 °C) :

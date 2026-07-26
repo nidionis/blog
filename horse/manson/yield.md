@@ -20,8 +20,9 @@ Pour une ambiance à **20 °C (293 K)** :
 Nous considérons trois paliers de performance globale (incluant la chaudière) :
 
 - **5 %** : Objectif initial, construction artisanale.
-- **8 %** : Optimisation des frottements et de l'isolation.
-- **11 %** : Conception avancée, matériaux haute performance.
+- **8 %** : OptimisatConception avancée, matériaux haute performance mais use.
+- **15 %** : Neuf en conditions stables.
+- **20 %** : En surchauffe laboratoire.
 
 ## Points de comparaison
 Contrairement au moteur Stirling, le cycle ouvert du Manson simplifie radicalement la construction au prix d'un rendement légèrement inférieur, mais compensé par la gratuité du combustible (paille).

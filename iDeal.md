@@ -59,3 +59,6 @@ Individus et firmes peuvent fonder et integrer des firmes
 Paradigme cool : des décisions difficilement validables (cf: second tour) imposent plus de consensu en amont.  
 
 La securisation par id_privée:choix est soufflé pas Anis Sajed, et trop peu entendue.
+
+## Protection de l'idée
+Ce projet est protégé par une [preuve de détention cryptographique](PROTECTION.md) basée sur la possession de la clef privée.
