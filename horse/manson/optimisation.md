@@ -8,7 +8,7 @@ Dans un moteur de Manson à cycle ouvert, la distribution de l'air chaud et froi
 L'optimisation consiste à concevoir les lumières afin de :
 
 - évacuer rapidement l'air chaud après la détente ;
-- limiter le mélange entre air chaud et air froid ;
+- limiter le mélange entre air chaud et air froid ; (deplaceur poreux)
 - remplir le cylindre avec une masse maximale d'air froid ;
 - réduire les pertes de charge pendant les échanges.
 
