@@ -1,6 +1,6 @@
 # Moteur Manson : Conversion Thermomécanique
 
-Le moteur Manson est un [moteur à air chaud](https://fr.wikipedia.org/wiki/Moteur_Manson),   
+Le moteur Manson est un [moteur à air chaud](https://moteurstirling.com/mace/manson/principes.php),   
 choisi pour sa simplicité de construction et sa robustesse.  
 
 ## Principes de Fonctionnement  
