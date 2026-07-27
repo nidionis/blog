@@ -10,13 +10,5 @@ Contrairement à d'autres cycles, le [volume du foyer](../rocket_stove/yield.md)
 Une esperence de 15%=20% de rendement avec quelques [optimisations](optimisation.md)
 Et de 5-10% de rendement pour des conditions moins bonnes (ex: une source chaude à 400 °C).
 Pour un moteur de [diametre](diameter.md) ~50 cm et de [volume](sizing_volume.md) ~250 L.
-
-## Documentation Technique
-
-- **[Analyse du Rendement](yield.md)** : Détail des pertes et calculs d'efficacité.
-- **[Synthèse des Puissances](power.md)** : Relation entre consommation de paille et chevaux-vapeur.
-- **[Dimensionnement du Volume](sizing_volume.md)** : Calcul de la cylindrée nécessaire par cycle.
-- **[Diamètre et Sizing](sizing.diametre.md)** : Spécifications géométriques des pistons.
-
 ---
 *Ce projet s'inscrit dans une démarche de low-tech pour une autonomie énergétique durable.*
