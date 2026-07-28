@@ -2,28 +2,18 @@
 # Rendement d'un moteur de Manson à cycle ouvert optimisé par les lumières de distribution
 
 ## Principe d'optimisation
+Comparaison de modeles :
+- dont les lumiere sont a differents ratios du diametre (entre 1/5 et 1/9)
+- dont le cylindre est au moins 2 fois plus large que haut 
 
-Dans un moteur de Manson à cycle ouvert, la distribution de l'air chaud et froid joue un rôle majeur dans les pertes thermiques.
-
-L'optimisation consiste à concevoir les lumières afin de :
-
-- évacuer rapidement l'air chaud après la détente ;
-- limiter le mélange entre air chaud et air froid ; (deplaceur poreux)
-- remplir le cylindre avec une masse maximale d'air froid ;
-- réduire les pertes de charge pendant les échanges.
 
 ## Lumière d'évacuation de l'air chaud
 
-La lumière d'évacuation chaude peut être optimisée par :
-
+La lumière d'évacuation peut être optimisée par :
 - une grande section d'ouverture ;
 - une ouverture plus longue pendant la phase d'échappement ;
 Solution : une commande mécanique liée à la position de la bielle durant le refroidissement est prevu.
 
-Objectif :
-
-- diminuer la pression résiduelle d'air chaud ;
-- récupérer davantage du travail de détente ;
 - améliorer le renouvellement du gaz.
 
 ## Lumière d'admission d'air froid
@@ -33,12 +23,6 @@ La lumière d'admission froide doit privilégier :
 - une surface maximale ;
 - une ouverture très rapide et courte ;
 Solution : une Echancrure du piston au point limite entrant le plus bas du piston.
-
-Objectif :
-
-- introduire rapidement un grand volume d'air froid ;
-- éviter que l'air froid absorbe de la chaleur avant la détente utile ;
-- augmenter la masse d'air active par cycle.
 
 ## Limites thermodynamiques
 
