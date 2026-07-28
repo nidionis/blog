@@ -5,7 +5,7 @@ Sera notre reference
 Pour le vehicule de fonction:
 Une bonne deudeuche de moyenne
 
-Nous aurons donc les modeles (arondis aux multiples de 6):
-- Coursier (40 L) -> 47 cm (arondir a 48)
-- Etalon (80 L) -> 67 cm (arondir a 64)
-- Remorqueur (140 L) -> 89 cm (arondir a 88)
+Nous aurons les modeles V1:
+- Coursier (40 L) -> 45 cm
+- Etalon (80 L) -> 63 cm
+- Remorqueur (140 L) -> 72 cm
