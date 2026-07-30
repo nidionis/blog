@@ -2,7 +2,8 @@
 ## An horse eating straw
 ## Let you cho?ose : how nuclear
 
-Ce projet explore la création d'une motorisation alternative basée sur la consomation d'un cheval.  
+Ce projet explore la création d'une motorisation alternative
+basée sur l'echelle d'un [cheval](brand/customers.md).  
 
 **[Rocket Stove](rocket_stove/power.md)**  
 **[Manson Engine](manson/README.md)**  
