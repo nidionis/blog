@@ -1,5 +1,5 @@
 # [2Cheval](https://www.youtube.com/watch?v=jjD9WzW6dK4) : Rouler à la Paille
-## An horse eating straw
+## [An horse eating straw](brand/BuisnessModel.md)
 ## Let you cho?ose : how nuclear
 
 Ce projet explore la création d'une motorisation alternative
