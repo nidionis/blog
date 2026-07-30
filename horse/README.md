@@ -1,13 +1,11 @@
-# [2Cheval](https://www.youtube.com/watch?v=jjD9WzW6dK4) : Rouler à la Paille
-## [An horse eating straw](brand/BuisnessModel.md)
-## Let you cho?ose : how nuclear
+# [2Cheval](https://www.youtube.com/watch?v=jjD9WzW6dK4) : 
+## An horse eating [straw](brand/BuisnessModel.md)
 
-Ce projet explore la création d'une motorisation alternative
-basée sur l'echelle d'un [cheval](brand/customers.md).  
+It eat like an [horse](brand/customers.md).    
+Helping you like 2  
 
 **[Rocket Stove](rocket_stove/power.md)**  
 **[Manson Engine](manson/README.md)**  
-**[Nucleaire?](nuclear/nuclear.md)**  
 **[Buisness Model](brand/BuisnessModel.md)**  
 
 ## Gamme de Puissance
