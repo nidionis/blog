@@ -4,4 +4,4 @@ using our work
 
 (like our ratios ?)  
 
-*with an half life of 3 years  
+*with an half life of 2 years  
