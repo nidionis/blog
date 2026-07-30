@@ -11,7 +11,7 @@ Maybe vibrating a solar Stirling soon
 ## Power Range  
 - **Courrier** : 1 - 2 CV (45 cm)  
 - **Etalon** : 2 - 6 CV (63 cm)  
-- **Tug** : 3 - 9 CV (69 cm)  
+- **Swagger** : bite? more (69 cm)  
 ---
 
 *Highly Hackable*
