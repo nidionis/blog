@@ -6,8 +6,8 @@ Ce projet explore la création d'une motorisation alternative basée sur la cons
 
 **[Rocket Stove](rocket_stove/power.md)**  
 **[Manson Engine](manson/README.md)**  
-**[Nucleaire?](nuclear/nuclear.md)**
-**[Buisness Model](brand/BuisnessModel.md)**
+**[Nucleaire?](nuclear/nuclear.md)**  
+**[Buisness Model](brand/BuisnessModel.md)**  
 
 ## Gamme de Puissance
 Nous développons trois modèles adaptés à différents usages :
