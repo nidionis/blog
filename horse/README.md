@@ -4,7 +4,7 @@
 It eat like an [horse](brand/customers.md).    
 Helping you like 2  
 
-[Injecting]rocket_stove/injection.md) [straw](rocket_stove/straw.md)) in a [rocket stove](rocket_stove/power.md)  
+[Injecting](rocket_stove/injection.md) [straw](rocket_stove/straw.md)) in a [rocket stove](rocket_stove/power.md)  
 to a [Manson Engine](manson/README.md)   
 Maybe vibrating a solar Stirling soon
 
