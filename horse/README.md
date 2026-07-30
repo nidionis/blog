@@ -4,9 +4,10 @@
 
 Ce projet explore la création d'une motorisation alternative basée sur la consomation d'un cheval.  
 
-**[La Chaudière Rocket Stove](rocket_stove/power.md)**  
-**[Le Moteur Manson](manson/README.md)**  
+**[Rocket Stove](rocket_stove/power.md)**  
+**[Manson Engine](manson/README.md)**  
 **[Nucleaire?](nuclear/nuclear.md)**
+**[Buisness Model](brand/BuisnessModel.md)**
 
 ## Gamme de Puissance
 Nous développons trois modèles adaptés à différents usages :
