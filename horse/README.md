@@ -4,9 +4,9 @@
 It eat like an [horse](brand/customers.md).    
 Helping you like 2  
 
-**[Rocket Stove](rocket_stove/power.md)**  
-**[Manson Engine](manson/README.md)**  
-**[Buisness Model](brand/BuisnessModel.md)**  
+[Injecting](rocket_stove/injection.md) [straw](rocket_stove/straw.md)) in a [rocket stove](rocket_stove/power.md)  
+to a [Manson Engine](manson/README.md)   
+Maybe vibrating a solar Stirling soon
 
 ## Power Range  
 - **Courrier** : 1 - 2 CV (45 cm)  
