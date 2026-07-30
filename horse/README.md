@@ -1,4 +1,4 @@
-# [2Chval](https://www.youtube.com/watch?v=jjD9WzW6dK4) : Rouler à la Paille
+# [2Cheval](https://www.youtube.com/watch?v=jjD9WzW6dK4) : Rouler à la Paille
 ## An horse eating straw
 ## Let you cho?ose : how nuclear
 
