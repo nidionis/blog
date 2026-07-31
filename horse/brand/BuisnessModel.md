@@ -6,6 +6,6 @@ using our work
 
 *with an half life of 1 year  
 
-We use a group decision using  
+[Group decision](iDeal.md) using  
 a strict majority decision winer  
 like [condorcet](https://en.wikipedia.org/wiki/Condorcet_method)
