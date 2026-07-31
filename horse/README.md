@@ -16,4 +16,4 @@ Maybe vibrating a solar Stirling soon
 
 [From 25 000 euros](brand/cost)
 
-*Highly Hackable*
+*Highly [Hackable](gear/design.md)*
