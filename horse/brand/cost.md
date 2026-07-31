@@ -21,3 +21,6 @@ Aluminim grinder : 30 000
 
 (Plasma Cutting Table : 20 000) 
 
+## expectations: piston production cost of 4000 euros max, selling + 20 %  
+Produce a cylindrer and the mover at 2000  
+And not more for the gear  
