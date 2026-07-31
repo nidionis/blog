@@ -1,6 +1,6 @@
 # Costs (by priority):  
 
-Aluminium for one piece 1200 - 1600 / cylinder  
+Aluminium for one piece 1500 / cylinder  
 
 Prototype(s) : 15 000  
 Gear prototype : 10 000  
@@ -21,6 +21,6 @@ Aluminim grinder : 30 000
 
 (Plasma Cutting Table : 20 000) 
 
-## expectations: piston production cost of 4000 euros max, selling + 20 %  
-Produce a cylindrer and the mover at 2000  
+## expectations: piston production cost of 6000 euros max, selling + 25 %  
+Produce a cylindrer and the mover at 3000  
 And not more for the gear  
