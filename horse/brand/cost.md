@@ -5,7 +5,7 @@ Aluminium for one piece 1200 - 1600 / cylinder
 Prototype(s) : 15 000  
 Gear prototype : 10 000 
 
-1m3 PLA printer DIY : 4000
+Xtralarge PLA printer DIY : 15 000
 
 2m large Plasic lathe : 15 000
 
