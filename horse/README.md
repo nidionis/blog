@@ -14,4 +14,6 @@ Maybe vibrating a solar Stirling soon
 - **Swagger** : bite? more (69 cm)  
 ---
 
+[From 25 000 euros](brand/cost)
+
 *Highly Hackable*
