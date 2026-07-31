@@ -11,13 +11,10 @@ Xtralarge PLA printer DIY : 15 000
 
 Welding Station :	2 000 €  
 Metal lathe : 30 000  
-
 Plate bending roll : 50 000 
-
-Plasma Cutting Table : 20 000 
-
 A DIY aluminium printer : 80 000  
 
 Aluminim grinder : 30 000  
 
+Plasma Cutting Table : 20 000 
 
