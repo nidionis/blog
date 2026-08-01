@@ -32,3 +32,14 @@ Where:
 * **Incentivizes Higher Base Wages:** Firms are encouraged to raise their lowest salaries to lower the relative tax multipliers for executives.
 * **Protective Cap:** The 80% asymptote prevents full tax confiscation on high earners.
 * **Natural Progressivity:** Growth is steeper initially and flattens out gradually at higher incomes.
+
+# Top Earners Multipliers & Tax Model
+
+| Earner Bracket | Monthly Gross Salary | Multiple ($x$) | Tax Rate ($y$) |
+| --- | --- | --- | --- |
+| **Top 10%** | ~€5,790 | ~3.1x | 29.75% |
+| **Top 5%** | ~€7,470 | ~4.0x | 36.10% |
+| **Top 2%** | ~€10,460 | ~5.6x | 45.46% |
+| **Top 1%** | ~€13,820 | ~7.4x | 53.64% |
+| **Top 0.5%** | ~€18,670 | ~10.0x | 62.15% |
+| **Top 0.1%** | ~€28,000+ | ~15.0x+ | 71.57% |
