@@ -63,5 +63,7 @@ $$ \Delta T \approx 1,784.8 \text{ K (or } ^\circ\text{C)} $$
 ### Conclusion
 To generate **1 horsepower per cycle** at **2 Hz** with a system radius of **64 cm** (under the specified geometric assumptions), a temperature differential of approximately **1,785°C** is required.
 
+Note : 60 Hz estimated at 30 degres using euria
+
 ---
 *Generated based on user-defined geometric constraints. Real-world applications require specific gas constants, pressure data, and efficiency corrections.*
