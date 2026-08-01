@@ -11,6 +11,7 @@ Maybe vibrating a solar Stirling soon
 ## Power Range  
 - **Courrier** : 1 - 2 CV (90 cm)  
 - **Etalon** : 2 - 6 CV (126 cm)  
+- **Bite more** : 2 - 6 CV (138 cm)  
 - **Swagger** : 3 - 9 CV (176 cm)  
 ---
 
