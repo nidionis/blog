@@ -14,6 +14,6 @@ Maybe vibrating a solar Stirling soon
 - **Swagger** : 3 - 9 CV (176 cm)  
 ---
 
-[From 25 000 euros](brand/cost)
+[From 25 000 euros](brand/cost.md)
 
 *Highly [Hackable](gear/design.md)*
