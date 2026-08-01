@@ -16,6 +16,7 @@ Welding Station :	2 000 €
 Plate bending roll : 50 000 
 
 Aluminim grinder : 30 000  
+[recycling](recycling.md)
 
 (Plasma Cutting Table : 20 000) 
 
