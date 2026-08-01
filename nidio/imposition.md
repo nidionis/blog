@@ -1,35 +1,3 @@
-```python
-import math
-
-def calculate_y(x, k=0.2):
-    return (4/5) * (1 - math.exp(-k * x))
-
-x_vals = [1, 2, 3, 4, 5, 6, 8, 10, 15, 20]
-results_base = [(x, calculate_y(x)) for x in x_vals]
-
-# Top earners data with k=0.2
-top_earners = [
-    ("Top 10%", "~€5,790", 3.1),
-    ("Top 5%", "~€7,470", 4.0),
-    ("Top 2%", "~€10,460", 5.6),
-    ("Top 1%", "~€13,820", 7.4),
-    ("Top 0.5%", "~€18,670", 10.0),
-    ("Top 0.1%", "~€28,000+", 15.0),
-]
-
-results_top = [(b, sal, x, calculate_y(x)) for b, sal, x in top_earners]
-
-print("Base Table (k=0.2):")
-for x, y in results_base:
-    print(f"x = {x:2d} -> y = {y:.4f} ({y*100:.2f}%)")
-
-print("\nTop Earners Table (k=0.2):")
-for b, sal, x, y in results_top:
-    print(f"{b} | {sal} | {x}x | {y*100:.2f}%")
-
-
-```
-
 ```text
 Base Table (k=0.2):
 x =  1 -> y = 0.1450 (14.50%)
