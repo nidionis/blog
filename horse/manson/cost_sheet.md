@@ -1,41 +1,54 @@
-# Coût théorique de 1000 plaques d'aluminium
+# Coût théorique d'une plaque de 408,2 × 130 cm
 
-Dimensions des plaques :
+## PLA
 
-- Largeur : **63 cm**
-- Longueur : **220 cm**
-- Épaisseurs : **1 à 4 cm**
-- Densité de l'aluminium : **2700 kg/m³**
+| Épaisseur | Volume (m³) | Masse | Coût |
+|-----------:|------------:|------:|-----:|
+| 1 cm | 0,0531 | 65,8 kg | 1 645 € |
+| 2 cm | 0,1061 | 131,6 kg | 3 290 € |
+| 3 cm | 0,1592 | 197,4 kg | 4 935 € |
+| 4 cm | 0,2123 | 263,2 kg | 6 580 € |
 
-## Masse
+---
 
-| Épaisseur | Volume par plaque (m³) | Masse par plaque (kg) | Masse totale (1000 plaques) |
-|-----------:|-----------------------:|----------------------:|----------------------------:|
-| 1 cm | 0,01386 | 37,4 | 37,4 t |
-| 2 cm | 0,02772 | 74,8 | 74,8 t |
-| 3 cm | 0,04158 | 112,3 | 112,3 t |
-| 4 cm | 0,05544 | 149,7 | 149,7 t |
+## Aluminium
 
-## Coût estimé de la matière
+| Épaisseur | Volume (m³) | Masse | Coût |
+|-----------:|------------:|------:|-----:|
+| 1 cm | 0,0531 | 143,3 kg | 860 € |
+| 2 cm | 0,1061 | 286,6 kg | 1 720 € |
+| 3 cm | 0,1592 | 429,8 kg | 2 579 € |
+| 4 cm | 0,2123 | 573,1 kg | 3 439 € |
 
-Hypothèses :
-- Aluminium brut : **5 €/kg**
-- Aluminium transformé : **7 €/kg**
+---
 
-| Épaisseur | À 5 €/kg | À 7 €/kg |
-|-----------:|---------:|---------:|
-| 1 cm | 187 000 € | 262 000 € |
-| 2 cm | 374 000 € | 524 000 € |
-| 3 cm | 562 000 € | 786 000 € |
-| 4 cm | 749 000 € | 1 048 000 € |
+## Acier
 
-## Remarques
+| Épaisseur | Volume (m³) | Masse | Coût |
+|-----------:|------------:|------:|-----:|
+| 1 cm | 0,0531 | 416,6 kg | 833 € |
+| 2 cm | 0,1061 | 833,1 kg | 1 666 € |
+| 3 cm | 0,1592 | 1 249,7 kg | 2 499 € |
+| 4 cm | 0,2123 | 1 666,3 kg | 3 333 € |
 
-- Ces valeurs correspondent uniquement au coût de la matière.
-- Elles n'incluent pas :
-  - le transport ;
-  - la découpe ;
-  - l'usinage ;
-  - les traitements de surface ;
-  - les pertes de fabrication.
-```
+---
+
+## Inox
+
+| Épaisseur | Volume (m³) | Masse | Coût |
+|-----------:|------------:|------:|-----:|
+| 1 cm | 0,0531 | 424,5 kg | 2 122 € |
+| 2 cm | 0,1061 | 848,9 kg | 4 244 € |
+| 3 cm | 0,1592 | 1 273,4 kg | 6 367 € |
+| 4 cm | 0,2123 | 1 697,9 kg | 8 489 € |
+
+---
+
+## Résumé
+
+| Matériau | 1 cm | 2 cm | 3 cm | 4 cm |
+|-----------|------:|------:|------:|------:|
+| PLA | 1 645 € | 3 290 € | 4 935 € | 6 580 € |
+| Aluminium | 860 € | 1 720 € | 2 579 € | 3 439 € |
+| Acier | 833 € | 1 666 € | 2 499 € | 3 333 € |
+| Inox | 2 122 € | 4 244 € | 6 367 € | 8 489 € |
