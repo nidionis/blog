@@ -8,6 +8,3 @@
 ## Cost Breakdown
 - **Unit Cost**: €0.01 per can
 - **Total Raw Material Cost**: **€4,000.00** per motor
-
-### Calculation Verification
-$$ 400,000 \text{ cans} \times €0.01 = €4,000 $$
