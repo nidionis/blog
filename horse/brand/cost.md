@@ -1,5 +1,7 @@
 # Tableau des coûts, productions et ventes (par priorite)
+
 ---
+
 | Équipement / Production | Coût de production estimé (€) | Prix de vente (€) | Marge brute (€) |
 |---|---:|---:|---:|---|
 | Xtralarge PLA printer DIY | 15 000 | 20 000 | +5 000 |
