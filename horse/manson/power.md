@@ -37,6 +37,4 @@
 *Note : Les volumes de 3L, 9L et 27L de paille sont optimisés pour une fréquence de recharge régulière.*
 
 ---
-Voir aussi :
-- [Détail du rendement](yield.md)
-- [Côté combustible](../rocket_stove/power.md)
+
