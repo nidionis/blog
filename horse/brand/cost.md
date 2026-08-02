@@ -3,7 +3,7 @@
 ---
 
 | Équipement / Production | Coût de production estimé (€) | Prix de vente (€) | Marge brute (€) |
-|---|---:|---:|---:|---|
+|---|---:|---:|---:|---:|
 | Xtralarge PLA printer DIY | 15 000 | 20 000 | +5 000 |
 | Tour plastique grande longueur 2 m | 25 000 | 30 000 | +5 000 |
 | Tour métallique | 35 000 | 40 000 | +5 000 |
