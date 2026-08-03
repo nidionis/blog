@@ -6,7 +6,7 @@ Comparaison de modeles :
     dont le cylindre est plus large que haut  
 - conception de porosités du deplaceur d'air 
 
-# Lumière evacuation air chaud  
+## Lumière d'evacuation air chaud  
 - une commande mécanique liée à la position de la bielle durant le refroidissement est prevu.
 
 ## Lumière d'admission d'air froid  
