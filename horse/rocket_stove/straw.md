@@ -18,8 +18,3 @@
 | **8 hp** | $5.88\text{ kW}$ | $117.68\text{ kW}$ | $28.24\text{ kg/h}$ | $113.0\text{ litres/h}$ |
 
 ---
-
-### Engineering Impact of Manual Densification
-
-1. **Mass Flow Parity:** The mass consumption remains identical to loose straw ($3.53\text{ kg}$ per horsepower-hour) because the chemical energy per kilogram is unchanged.
-2. **Volumetric Advantage:** Compressing the straw manually reduces the required spatial volume by a factor of $12.5$ (from $176.5\text{ litres/h}$ down to **$14.1\text{ litres/h}$** for $1\text{ hp}$). This makes continuous hopper feeding, mechanical baffling, or batch-loading much more practical for small-scale engines.
