@@ -25,7 +25,5 @@
 | 8 ch | 28.3 | 283 | 14.1 | 17.6 | 9.9 | 11.6 |
 | 13 ch | 45.9 | 459 | 22.9 | 28.6 | 16.1 | 18.9 |
 
-*Note : Les volumes de 3L, 9L et 27L de paille sont optimisés pour une fréquence de recharge régulière.*
-
 ---
 
