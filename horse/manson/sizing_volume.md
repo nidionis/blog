@@ -29,5 +29,6 @@ L'objectif est d'obtenir un ordre de grandeur du volume d'air déplacé par cycl
 | Fréquence | 2 cycles/s |
 
 | Puissance mécanique | Puissance thermique | Débit d'air | Volume par cycle |
+| :--- | :---: | :---: | ---: |
 | **3 kW** | 60 kW | 0,166 m³/s | 83 L |
 
