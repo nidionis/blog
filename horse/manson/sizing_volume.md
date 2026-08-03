@@ -1,42 +1,52 @@
-# Estimation du volume d'air pour un moteur de Manson à cycle ouvert (2 à 9 kW)
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<style>
+    body { font-family: serif; font-size: 11pt; line-height: 1.4; margin: 20mm; color: #111; }
+    h1 { font-size: 16pt; text-align: center; }
+    .author { text-align: center; font-style: italic; margin-bottom: 20px; }
+    h2 { font-size: 13pt; border-bottom: 1px solid #ccc; margin-top: 15px; }
+    .abstract { background: #f9f9f9; padding: 10px; border-left: 3px solid #666; font-size: 10pt; }
+    table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+    th, td { border: 1px solid #bbb; padding: 6px 10px; text-align: center; }
+    th { background-color: #f0f0f0; }
+</style>
+</head>
+<body>
 
-*Note technique synthétique*
+<h1>Estimation du volume d'air pour un moteur de Manson à cycle ouvert (2 à 9 kW)</h1>
+<div class="author">Note technique synthétique</div>
 
-## Résumé
-Cet article présente l'estimation du débit d'air et du volume balayé nécessaires pour un moteur de Manson à cycle ouvert délivrant 2, 3, 6 et 9 kW. 
+<div class="abstract">
+<strong>Résumé :</strong> Estimation du débit d'air et du volume balayé pour un moteur de Manson à cycle ouvert (2, 3, 6 et 9 kW). Hypothèses : rendement &eta; = 0{,}05, &Delta;T = 300 K, fréquence f = 2 Hz.
+</div>
 
-Hypothèses retenues :
-* Rendement global ($\eta$) : $0{,}05$ ($5\ \%$)
-* Écart de température ($\Delta T$) : $300\ \text{K}$
-* Fréquence de fonctionnement ($f$) : $2\ \text{Hz}$
-* Capacité thermique de l'air ($C_p$) : $1005\ \text{J/(kg}\cdot\text{K)}$
-* Masse volumique de l'air ($\rho$) : $1{,}2\ \text{kg/m}^3$
+<h2>1. Formules et Hypothèses</h2>
+<p>
+P<sub>th</sub> = P<sub>m</sub> / &eta;<br>
+q<sub>m</sub> = P<sub>th</sub> / (C<sub>p</sub> &middot; &Delta;T) (avec C<sub>p</sub> = 1005 J/(kg&middot;K))<br>
+V<sub>cycle</sub> = (q<sub>m</sub> / &rho;) / f (avec &rho; = 1{,}2 kg/m<sup>3</sup>)
+</p>
 
----
+<h2>2. Résultats Numériques</h2>
+<table>
+    <tr>
+        <th>Puissance (P<sub>m</sub>)</th>
+        <th>Puissance Thermique (P<sub>th</sub>)</th>
+        <th>Débit Massique (q<sub>m</sub>)</th>
+        <th>Volume par Cycle (V<sub>cycle</sub>)</th>
+    </tr>
+    <tr><td>2 kW</td><td>40 kW</td><td>0,43 kg/s</td><td><strong>180 litres</strong></td></tr>
+    <tr><td>3 kW</td><td>60 kW</td><td>0,65 kg/s</td><td><strong>270 litres</strong></td></tr>
+    <tr><td>6 kW</td><td>120 kW</td><td>1,30 kg/s</td><td><strong>540 litres</strong></td></tr>
+    <tr><td>9 kW</td><td>180 kW</td><td>1,95 kg/s</td><td><strong>810 litres</strong></td></tr>
+</table>
 
-## 1. Formules utilisées
+<h2>3. Conclusion</h2>
+<p>
+Les volumes obtenus (180 à 810 litres par cycle) confirment les fortes contraintes dimensionnelles des moteurs à air à cycle ouvert pour des puissances de l'ordre du kilowatt.
+</p>
 
-* **Puissance thermique** : 
-  $$P_{th} = \frac{P_m}{\eta}$$
-
-* **Débit massique** : 
-  $$q_m = \frac{P_{th}}{C_p \cdot \Delta T}$$
-
-* **Volume par cycle** : 
-  $$V_{cycle} = \frac{q_m / \rho}{f}$$
-
----
-
-## 2. Résultats Numériques
-
-| Puissance Mécanique ($P_m$) | Puissance Thermique ($P_{th}$) | Débit Massique ($q_m$) | Volume par Cycle ($V_{cycle}$) |
-| :---: | :---: | :---: | :---: |
-| **2 kW** | $40\ \text{kW}$ | $0{,}43\ \text{kg/s}$ | **180 litres** |
-| **3 kW** | $60\ \text{kW}$ | $0{,}65\ \text{kg/s}$ | **270 litres** |
-| **6 kW** | $120\ \text{kW}$ | $1{,}30\ \text{kg/s}$ | **540 litres** |
-| **9 kW** | $180\ \text{kW}$ | $1{,}95\ \text{kg/s}$ | **810 litres** |
-
----
-
-## 3. Conclusion
-Les résultats mettent en évidence des volumes par cycle très importants (allant de 180 à 810 litres), confirmant les contraintes dimensionnelles majeures des moteurs à air à cycle ouvert pour atteindre des puissances de l'ordre du kilowatt.
+</body>
+</html>
