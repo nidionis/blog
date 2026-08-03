@@ -1,7 +1,4 @@
-Slow Tractors chainrings  
-One per axis minimum  
-Hackable design  
+# Slow Tractor & Kinetic Horse
 
-One "kinetic horse"  
-
-1 / 2 * 500 kg * 10² m/s = 25 kJ  
+- **Chainrings / Tractors **: 1+ per axis, hackable design.
+- **Kinetic Horse**: 500 kg at 10 m/s = **25 kJ**.

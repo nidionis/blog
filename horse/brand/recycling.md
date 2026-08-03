@@ -1,7 +1,10 @@
-Let's consider we need 200 000 cans / m3
+# Cost Analysis: Recycled Material for Massive Motors
 
-2 m3 per massive motor = 400 000 cans
+## Production Parameters
+- **Density Requirement**: 200,000 cans per m³
+- **Volume per Unit**: 2 m³ per massive motor
+- **Total Cans per Motor**: 400,000 cans
 
-We buy 1 cent a can
-
-4 000 euros of raw recycled material
+## Cost Breakdown
+- **Unit Cost**: €0.01 per can
+- **Total Raw Material Cost**: **€4,000.00** per motor
