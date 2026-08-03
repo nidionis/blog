@@ -2,8 +2,9 @@
 
 ## Principe d'optimisation
 Comparaison de modeles :
-- dont les lumiere sont a differents ratios du diametre (entre 1/5 et 1/9)
-- dont le cylindre est plus large que haut
+- dont les lumiere sont a differents ratios du diametre (entre 1/5 et 1/9)  
+    dont le cylindre est plus large que haut
+- conception de porosités du deplaceur d'air
 
 # Lumière evacuation air chaud
 - une commande mécanique liée à la position de la bielle durant le refroidissement est prevu.
