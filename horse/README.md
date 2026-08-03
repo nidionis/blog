@@ -9,10 +9,8 @@ to a [Manson Engine](manson/README.md)
 Maybe vibrating a solar Stirling soon
 
 ## Power Range  
-- **Courrier** : 1 - 2 CV (90 cm)  
-- **Etalon** : 2 - 6 CV (126 cm)  
-- **Bite more** : 2 - 7 CV (138 cm)  
-- **Swagger** : 3 - 9 CV (176 cm)  
+- **Etalon** : 2 cv (155 cm)  
+- **Swagger** : 4 cv (219 cm)  
 ---
 
 [From 25 000 euros](brand/cost.md)
