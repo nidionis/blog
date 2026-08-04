@@ -11,7 +11,7 @@ The second (and so on) lines must be
 Cleated to avoid an overlaying
 E F G H lines must be offset
 of a distance  
-l = AI,
+l = AF,
 Depending of an angle
 Beta = pi / 4
 
