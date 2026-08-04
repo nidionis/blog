@@ -19,3 +19,5 @@ Beta = pi / 4
 Are not represented (but M)  
 And should have an offset of  
 l = AQ  
+
+[Here is a gemini solution](angular_limit.gemini.md)
