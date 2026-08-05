@@ -19,4 +19,4 @@ to a [Manson Engine](manson/README.md)
 
 *Highly [Hackable](gear/design.md)*
 
-## But first [3D printing](printer/design.md)
+## (But [3D printing](printer/design.md) first)
