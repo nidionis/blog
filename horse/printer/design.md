@@ -3,7 +3,7 @@
 ## From Concept to Production
 
 2cheval is strategically positioning itself at the forefront of **polar rotary printer manufacturing**.  
-The company is laying the foundational groundwork for [cylinder slicing technology](../sofware/slicing/fulling.md) [(here is a prototype)](https://github.com/nidionis/polar-slicer).
+The company is laying the foundational groundwork for [cylinder slicing technology](../software/slicing/fulling.md) [(here is a prototype)](https://github.com/nidionis/polar-slicer).
 
 ## Our Vision
 
