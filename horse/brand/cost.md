@@ -4,6 +4,7 @@
 
 | Équipement / Production | Coût de production estimé (€) | Prix de vente (€) | Marge brute |
 |---|---:|---:|---:|
+| [binder jetting](https://www.iro3d.com/) | 30000 | — | — |
 | Xtralarge PLA printer DIY | 20 000 | 30 000 | +10 000 |
 | Supplement Tour | +5 000 | 35 000 | +10 000 |
 | Prototype(s) | 15 000 | — | — |
