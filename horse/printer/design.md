@@ -2,8 +2,8 @@
 
 ## From Concept to Production
 
-2cheval is strategically positioning itself at the forefront of **polar rotary printer manufacturing**.  
-The company is laying the foundational groundwork for [cylinder slicing technology](../software/slicing/fulling.md) [(here is a prototype)](https://github.com/nidionis/polar-slicer).
+The company is laying the foundational groundwork for [cylinder slicing technology](../software/slicing/fulling.md) [(here is a prototype)](https://github.com/nidionis/polar-slicer). Also this technique is expensive to implement directly in metallurgy.  
+Printing in sand for [binder jetting](https://jlc3dp.com/fr/blog/binder-jetting-basics) sounds like [a fair step](binderjetting/cost.md) for aluminum printing
 
 ## Our Vision
 
