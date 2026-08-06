@@ -1,54 +1,46 @@
-# Manufacturing Guide & Cost Analysis: Sand 3D Printer (Binder Jetting)
+Pour estimer le coût de construction d'une telle machine (*Binder Jetting* $8\text{ m}^3$), il faut séparer l'investissement en **matériel/composants bruts (BOM)** et le coût de la **R&D / usinage**. À cette échelle industrielle, le budget est dominé par la structure mécanique lourde, les actionneurs et le système d'impression haute cadence.
 
-This guide details the design, key technical parameters, and a detailed budget estimate for building a DIY *Binder Jetting* sand 3D printer.
-
----
-
-## 1. Principle and Machine Architecture
-
-The process relies on spreading successive thin layers of sand, locally consolidated by spraying a liquid binder via an inkjet print head.
-
-### Major structural components:
-
-* **Frame:** Rigid structure made of aluminum extrusions (e.g., 4040 or 8020) to eliminate vibrations.
-* **Z-Axis (Elevator Bed):** Dual or quad ball screws driven by stepper motors (NEMA 23 or 34) with robust linear rails (like HGR20/HGR25) to support heavy loads.
-* **Recoater System:** Scraper blade or counter-rotating roller on an independent carriage to level a sand layer between **0.15 mm and 0.3 mm**.
+Voici une estimation budgétaire indicative pour un prototype fonctionnel haut de gamme (hors heures de conception et d'assemblage) :
 
 ---
 
-## 2. Key Technical Parameters
+### 1. Structure mécanique, Châssis et Bac ($8\text{ m}^3$)
 
-* **Sand Grain Size:** Clean silica sand, calibrated between **100 µm and 200 µm**.
-* **Layer Thickness:** 0.2 mm (ideal compromise between resolution and speed).
-* **Bed Temperature:** Generally **ambient** (20°C - 25°C). Light heating (40°C - 60°C) or an infrared lamp can accelerate curing.
-* **Binder System:** Two-component furan or silicate binder (catalyst mixed into the sand beforehand, binder injected by the printhead).
+* **Châssis mécano-soudé XXL** en acier lourd rectifié pour supporter les vibrations et les 15 tonnes de charge.
+* **Système de levage à 4 colonnes** : Vis à billes surdimensionnées, paliers, arbres de transmission et motoréducteurs industriels synchronisés (freins intégrés).
+* **Parois et plateau de bac** : Tôlerie épaisse en inox/aluminium avec joints d'étanchéité pour la poudre fine.
+* *Estimation : **15 000 € à 25 000 €*** (selon l'accès à l'usinage en interne ou sous-traité).
 
----
+### 2. Système d'impression (Têtes, Électronique, Fluide)
 
-## 3. Cost Estimate (DIY Budget)
+* **Têtes d'impression industrielles** (ex: têtes type Ricoh ou Xaar multi-buses) + cartes contrôleurs dédiées (type Meteor Inkjet ou équivalent).
+* **Circuit d'encre/liant** : Pompes péristaltiques, régulateurs de pression négative (ménisque), réservoirs sous pression et système de purge automatique.
+* **Portique et axes X/Y** : Rails de guidage de haute précision, profilés aluminium industriels lourds ou poutre carbone, servomoteurs brushless avec codeurs absolus.
+* *Estimation : **20 000 € à 35 000 €*** (le cœur jet d'encre industriel représente le poste le plus onéreux et sensible).
 
-### Option A: Small Format (~ 200 × 200 × 200 mm)
+### 3. Système de raclage et distribution de sable
 
-* **Mechanics & Frame:** ~ €500
-* **Electronics & Control:** ~ €300
-* **Printhead & Fluid System:** ~ €600
-* **Powder System:** ~ €250
-* **Initial Consumables:** ~ €150
-* **Total Estimated:** ~ €1,800
+* **Trémie mobile** avec trappes de dosage motorisées.
+* **Lame de raclage** montée sur vérins ou excentrique avec système de vibration contrôlée.
+* **Capteurs de niveau** et gestion des flux de poudre.
+* *Estimation : **5 000 € à 8 000 €***.
 
-### Option B: Medium/Industrial Format (~ 500 × 500 × 400 mm)
+### 4. Automatisation, Sécurité et Électronique de puissance
 
-* **Mechanics & Frame:** ~ €1,500
-* **Electronics & Control:** ~ €600
-* **Printhead & Fluid System:** ~ €2,500
-* **Powder System:** ~ €800
-* **Consumables & Safety:** ~ €600
-* **Total Estimated:** ~ €6,000
+* **Automate programmable industriel (API / PLC)** ou architecture PC industriel + cartes de mouvement multiaxes (type LinuxCNC / EtherCAT).
+* **Coffret électrique** : Variateurs de fréquence, blocs d'alimentation sécurisés, sécurités d'arrêt d'urgence et capteurs de fin de course.
+* *Estimation : **6 000 € à 10 000 €***.
 
 ---
 
-## 4. Post-Processing and Safety
+### Bilan estimatif global (Hors R&D)
 
-1. **Depowdering:** Careful extraction from the sand bed. Unbound sand is sifted and reused.
-2. **Curing (Baking):** Cores/parts require baking in an oven between **100°C and 150°C** for 2 to 4 hours for final mechanical strength.
-3. **Safety:** Respirator mask required (silica dust) and adequate ventilation for VOCs (resins).
+| Poste | Fourchette basse | Fourchette haute |
+| --- | --- | --- |
+| **Structure & Levage ($8\text{ m}^3$)** | 15 000 € | 25 000 € |
+| **Têtes & Système Jet d'encre** | 20 000 € | 35 000 € |
+| **Distribution & Raclage** | 5 000 € | 8 000 € |
+| **Électronique & Automatismes** | 6 000 € | 10 000 € |
+| **Total composants (BOM)** | **46 000 €** | **78 000 €** |
+
+*Note : Ce montant couvre uniquement les matières premières, les composants mécaniques, l'électronique de puissance et les têtes d'impression. Il ne prend pas en compte les prototypes intermédiaires, les licences logicielles de pilotage des têtes à haute vitesse, ni le temps d'ingénierie.*
