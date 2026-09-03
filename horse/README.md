@@ -15,7 +15,7 @@ to a [Manson Engine](manson/README.md)
 - **Swagger** : 4 cv (219 cm / diameter)  
 ---
 
-[From 25 000 euros](brand/cost.md)
+[From 25 000 euros](brand/cost.md) (proto + gear)
 
 *Highly [Hackable](gear/design.md)*
 
