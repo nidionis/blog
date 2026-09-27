@@ -10,32 +10,34 @@ inner_r = 12;
 
 // Calculate thickness explicitly as requested
 thickness = outer_r - inner_r; 
+gap = 0.5;
 
 // Piston specs
-piston_r = inner_r - 0.5; // Slight clearance
+piston_r = inner_r - gap; // Slight clearance
 piston_h = 20;
 piston_y = 10;
+
+// -----------------------------------------------------------------------------
+// Module: pipe
+// -----------------------------------------------------------------------------
+module pipe(R, r, L) {
+    difference() {
+        cylinder(h = L, r = R);
+        translate([0, 0, -1])
+        cylinder(h = L + 2, r = r);
+    }
+}
+
 
 // -----------------------------------------------------------------------------
 // Module: Half-Open Cylinder with Offset Wall
 // -----------------------------------------------------------------------------
 module half_open_cylinder(height, outer_r, inner_r) {
-    
-    // Calculate the offset based on thickness
-    // We translate the inner cylinder by 'thickness' along the X axis
-    // before subtracting it. This creates a wall that is thick on one side
-    // and thin (or open) on the other.
     translate_z = thickness; 
-
     difference() {
-        // 1. The Solid Outer Cylinder
-        cylinder(h = height, r = outer_r, center = true);
-        
-        // 2. The Inner Volume to Remove (Translated)
-        // By moving the cutter, we leave material only where the outer cylinder
-        // exists but the inner cylinder does not.
-        translate([0, 0, translate_z])
-        cylinder(h = height + 1, r = inner_r, center = true);
+        cylinder(h = height, r = outer_r);
+        translate([0, 0, translate_z]);
+        cylinder(h = height, r = inner_r);
         
     }
 }
@@ -45,8 +47,11 @@ module half_open_cylinder(height, outer_r, inner_r) {
 // -----------------------------------------------------------------------------
 
 // Color: Semi-transparent Grey for cylinder
-color([0.9, 0.6, 0.1, 0.9])
-half_open_cylinder(cylinder_height, outer_r, inner_r);
+color([0.9, 0.6, 0.1, 0.9]);
+//half_open_cylinder(cylinder_height, outer_r, inner_r);
+chink = inner_r / 12;
+
+pipe(piston_r, 2 * chink, piston_h);
 
 //// Color: Red for Piston
 //color([0.8, 0.2, 0.2, 1.0])
