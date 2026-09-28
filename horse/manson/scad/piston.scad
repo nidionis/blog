@@ -13,14 +13,14 @@ outer_r = 145;
 inner_r = 140;
 
 thickness = outer_r - inner_r; 
-gap = 0.1;
+//gap = 0.1;
 chink = inner_r * 2 /13 ;
 
 // Piston specs
-piston_r = inner_r - gap; // Slight clearance
-piston_h = 2 * chink;
-axe = 2 * chink + 2;
-stroke = piston_h;
+head_r = inner_r; // - gap; // Slight clearance
+head_l = 2 * chink;
+stroke = head_l;
+axe = 4 * chink; // roulement a bille horisontale (2) + 1 unité de chaque coté
 bielle_l = stroke * 2 + axe;
 
 //cylinder_height = 60;
@@ -38,27 +38,32 @@ module half_open_cylinder(height, outer_r, inner_r) {
     }
 }
 
+
+// Base module defining dimensions relative to chink
 module manson_13_base(chink) {
-	head_r = 13 * chink;
-	head_h = 2 * chink;
-	neck_l = 1.5 * chink;
-	neck_r = 1.5 * chink;
-	rod_l = 5.5 * chink;
-	rod_r = 2 * chink;
+    head_r = 13 * chink;	
+    head_l = 2 * chink;
+    rod_l_head = (2 - 0.5) * chink;		
+    neck_l = 2 * chink;
+    neck_r = 1.5 * chink;
+    rod_l_tail = 4 * chink;
+    rod_r = 2 * chink;
 
-	
-    // The head: a short, wide pipe
     translate([0, 0, 0])
-        pipe(head_r, chink / 2, head_h);
+    pipe(head_r, chink, head_l);
+    translate([0, 0, head_l])
+    pipe(rod_r, chink, rod_l_head);
+    translate([0, 0, head_l + rod_l_head])
+    pipe(neck_r, chink, rod_l_tail);
+    rod_z_start = head_l + rod_l_head + neck_l;
+    translate([0, 0, rod_z_start])
+    pipe(rod_r, chink, rod_l_tail);
 
-    // The neck: a narrower, longer pipe stacked on top of the head
-    translate([0, 0, head_h])
-        pipe(neck_r, chink / 2, neck_l);
-
-    // The rod: the narrowest and longest pipe stacked on top of the neck
-    translate([0, 0, head_h + neck_l])
-        pipe(rod_r, chink / 2, rod_l);
+    //rotate([90, 0, 0])
+    //cylinder(h = 10 * chink, r = chink, center = true);
 }
+
+
 
 // -----------------------------------------------------------------------------
 // Scene Assembly
@@ -67,10 +72,8 @@ module manson_13_base(chink) {
 // Color: Semi-transparent Grey for cylinder
 color([0.9, 0.6, 0.1, 0.9]);
 //half_open_cylinder(cylinder_height, outer_r, inner_r);
-chink = inner_r / 12;
 manson_13_base(chink);
 
-//pipe(piston_r, 2 * chink, piston_h);
 
 
 //// Color: Red for Piston
