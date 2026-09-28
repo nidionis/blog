@@ -58,31 +58,52 @@ module manson_13_base(chink) {
     rod_z_start = head_l + rod_l_head + neck_l;
     translate([0, 0, rod_z_start])
     pipe(rod_r, chink, rod_l_tail);
-
-    //rotate([90, 0, 0])
-    //cylinder(h = 10 * chink, r = chink, center = true);
 }
 
+// Base module defining dimensions relative to chink
+module manson_13_base(chink) {
+    head_r = 13 * chink;
+    head_l = 2 * chink;
+    rod_l_head = (2 - 0.5) * chink;
+    neck_l = 2 * chink;
+    neck_r = 1.5 * chink;
+    rod_l_tail = 4 * chink;
+    rod_r = 2 * chink;
 
+    translate([0, 0, 0])
+    pipe(head_r, chink, head_l);
+    translate([0, 0, head_l])
+    pipe(rod_r, chink, rod_l_head);
+    translate([0, 0, head_l + rod_l_head])
+    pipe(neck_r, chink, neck_l);
+    rod_z_start = head_l + rod_l_head + neck_l;
+    translate([0, 0, rod_z_start])
+    pipe(rod_r, chink, rod_l_tail);
+}
+
+// Module pour l'axe perpendiculaire
+module cylinder_axis(chink) {
+    axis_r = chink; // Rayon = chink (Diamètre = 2 * chink)
+    axis_l = 2 * chink; // Longueur de l'axe
+    
+    // Calcul de la position Z demandée
+    // Note: rod_z_start doit être recalculé ici car il est local au module base
+    head_l = 2 * chink;
+    rod_l_head = (2 - 0.5) * chink;
+    neck_l = 2 * chink;
+    rod_z_start = head_l + rod_l_head + neck_l;
+    
+    translate([0, 0, rod_z_start + chink])
+    rotate([90, 0, 0]) // Rotation pour être perpendiculaire (aligné sur Y)
+    cylinder(r=axis_r, h=axis_l, center=true); // center=true pour centrer sur le point de translation
+}
 
 // -----------------------------------------------------------------------------
 // Scene Assembly
 // -----------------------------------------------------------------------------
 
 // Color: Semi-transparent Grey for cylinder
-color([0.9, 0.6, 0.1, 0.9]);
-//half_open_cylinder(cylinder_height, outer_r, inner_r);
-manson_13_base(chink);
-
-
-
-//// Color: Red for Piston
-//color([0.8, 0.2, 0.2, 1.0])
-//translate([0, piston_y, 0])
-//cylinder(h = piston_h, r = piston_r, center = true);
-//
-//// Visual Aid: Show the offset axis
-//// Draws a thin line where the inner cylinder was centered before removal
-//color([0, 0, 0, 0.3])
-//translate([thickness, 0, -cylinder_height/2])
-//cylinder(h = cylinder_height, r = 0.2, center = true);
+color([0.9, 0.6, 0.1, 0.9]) {
+    manson_13_base(1); // Exemple avec chink = 1
+    //cylinder_axis(1);
+}
