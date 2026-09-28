@@ -1,23 +1,4 @@
 // -----------------------------------------------------------------------------
-// Simplified Thermal Engine: Offset Wall Logic
-// Vocabulary: English
-// -----------------------------------------------------------------------------
-
-// --- Parameters (mm) ---
-cylinder_height = 60;
-outer_r = 15;
-inner_r = 12;
-
-// Calculate thickness explicitly as requested
-thickness = outer_r - inner_r; 
-gap = 0.5;
-
-// Piston specs
-piston_r = inner_r - gap; // Slight clearance
-piston_h = 20;
-piston_y = 10;
-
-// -----------------------------------------------------------------------------
 // Module: pipe
 // -----------------------------------------------------------------------------
 module pipe(R, r, L) {
@@ -28,6 +9,21 @@ module pipe(R, r, L) {
     }
 }
 
+outer_r = 145;
+inner_r = 140;
+
+thickness = outer_r - inner_r; 
+gap = 0.1;
+chink = inner_r * 2 /13 ;
+
+// Piston specs
+piston_r = inner_r - gap; // Slight clearance
+piston_h = 2 * chink;
+axe = 2 * chink + 2;
+stroke = piston_h;
+bielle_l = stroke * 2 + axe;
+
+//cylinder_height = 60;
 
 // -----------------------------------------------------------------------------
 // Module: Half-Open Cylinder with Offset Wall
@@ -42,6 +38,28 @@ module half_open_cylinder(height, outer_r, inner_r) {
     }
 }
 
+module manson_13_base(chink) {
+	head_r = 13 * chink;
+	head_h = 2 * chink;
+	neck_l = 1.5 * chink;
+	neck_r = 1.5 * chink;
+	rod_l = 5.5 * chink;
+	rod_r = 2 * chink;
+
+	
+    // The head: a short, wide pipe
+    translate([0, 0, 0])
+        pipe(head_r, chink / 2, head_h);
+
+    // The neck: a narrower, longer pipe stacked on top of the head
+    translate([0, 0, head_h])
+        pipe(neck_r, chink / 2, neck_l);
+
+    // The rod: the narrowest and longest pipe stacked on top of the neck
+    translate([0, 0, head_h + neck_l])
+        pipe(rod_r, chink / 2, rod_l);
+}
+
 // -----------------------------------------------------------------------------
 // Scene Assembly
 // -----------------------------------------------------------------------------
@@ -50,8 +68,10 @@ module half_open_cylinder(height, outer_r, inner_r) {
 color([0.9, 0.6, 0.1, 0.9]);
 //half_open_cylinder(cylinder_height, outer_r, inner_r);
 chink = inner_r / 12;
+manson_13_base(chink);
 
-pipe(piston_r, 2 * chink, piston_h);
+//pipe(piston_r, 2 * chink, piston_h);
+
 
 //// Color: Red for Piston
 //color([0.8, 0.2, 0.2, 1.0])
