@@ -1,5 +1,8 @@
+// open this file using
+// openscad piston.scad 
+
 // Here is a draw of a potential
-// Manson style engine
+// Manson thermic engine
 // Designed by less than an hundrued of command lines
 // x_l = lenght
 // x_r = radius
@@ -34,22 +37,12 @@ module pipe(R, r, L) {
     }
 }
 
-//// The system is composed of 2 half cylindres
-//// composing one close "perfored" cylinders
-//module half_open_cylinder(height, outer_r, inner_r) {
-//    translate_z = outer_r - inner_r; 
-//    difference() {
-//        cylinder(h = height, r = outer_r);
-//        translate([0, 0, translate_z])
-//		cylinder(h = height, r = inner_r);
-//    }
-//}
-
 // Base module defining dimensions relative to chink
+// A rendre "poreux"
 module manson_13_base_piston(chink) {
     head_r = CHINK_QUOT * chink / 2;
     head_l = 2 * chink;
-    rod_l_head = (2 - 0.5) * chink;
+    rod_l_head = (2 - 0.25) * chink;
     neck_l = 2 * chink;
     neck_r = 1.5 * chink;
     rod_l_tail = 4 * chink;
@@ -70,20 +63,19 @@ module manson_13_base_piston(chink) {
 	}
 }
 
-
 gap = 0.1;
 gauge = chink;
-cyltot_l = head_l + stroke + gauge * 2;
+cyltot_l = head_l + stroke + gauge * 2.5;
 
 CYLIND_COLOR = [0.9, 0.6, 0.1, 0.9];
 PISTON_COLOR = [0.1, 0.1, 0.9, 0.9];
 
 color(PISTON_COLOR) {
-    translate([0, 0, gauge])
+    translate([0, 0, gauge * 1.25])
 	    manson_13_base_piston(chink);
 }
 
-color(CYLIND_COLOR) {
+module chambre(inner_h, inner_r) {
     difference() {
 	difference() {
 		cylinder(h = cyltot_l, r = outer_r);
@@ -97,3 +89,17 @@ color(CYLIND_COLOR) {
     }
 }
 
+color(CYLIND_COLOR) {
+    chambre(4*chink, inner_r + gap);
+}
+
+//// The system is composed of 2 half cylindres
+//// composing one close "perfored" cylinders
+//module half_open_cylinder(height, outer_r, inner_r) {
+//    translate_z = outer_r - inner_r; 
+//    difference() {
+//        cylinder(h = height, r = outer_r);
+//        translate([0, 0, translate_z])
+//		cylinder(h = height, r = inner_r);
+//    }
+//}
