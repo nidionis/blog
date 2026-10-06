@@ -2,7 +2,7 @@
 Resumes d'echanges avec ias
 
 ## Projets
-- [Moteur Manson](horse/README.md) - Low-tech et autonomie énergétique.
+- [2cheval](horse/README.md) - Low-tech et autonomie énergétique.
 - [iDeal](iDeal.md) - Gouvernance et valeur numérique.
 - [HollyC](HollyC.md)
 
