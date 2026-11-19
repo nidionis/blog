@@ -24,7 +24,16 @@ This page is the single source for terms, units and baseline assumptions. Other 
 - **Densified straw** — compressed straw, about 250 kg/m³; loose straw is about 100 kg/m³.
 - **Polar slicer** — the cylindrical/polar slicing prototype. Hub: [production/polar-slicer](production/polar-slicer/README.md).
 - **Binder jetting** — sand-printing route towards aluminium parts. Hub: [production/binder-jetting](production/binder-jetting/README.md).
-- **Lathe machining** — 2 m lathe; main capex, amortized over thousands of engines. See [lathe machining — production cost and resale price](engines/manson/costs/lathe-machining.md).
+- **First prototype** — first physical engine; PLA print → sand mold → casting → lathe finishing. See [prototype](engines/manson/costs/prototype.md).
+- **PLA printing** — large-format 3D print of the lost or reusable pattern (1.5 m³). See [prototype](engines/manson/costs/prototype.md).
+- **Sand casting** — fine-sand mold (10 m³) around the pattern. See [prototype](engines/manson/costs/prototype.md).
+- **Crucible** — ~3 m³ refractory vessel for molten aluminum. See [prototype](engines/manson/costs/prototype.md).
+- **Solar furnace** — solar-concentration furnace using mirror-polished stainless-steel plates. See [prototype](engines/manson/costs/prototype.md).
+- **Lathe finishing** — final machining at ~1.40 m diameter. See [prototype](engines/manson/costs/prototype.md).
+- **Heat pump** — possible replacement for heat; €15,000–35,000. See [costs](business/costs.md#4-what-the-engine-replaces).
+- **Tractor** — possible replacement for mechanical work; €25,000–60,000. See [costs](business/costs.md#4-what-the-engine-replaces).
+- **Replacement cost** — cost of the item the engine replaces; price argument. See [costs](business/costs.md#4-what-the-engine-replaces).
+- **Lathe machining** — 2 m lathe; series capex, amortized over thousands of engines. See [lathe machining — production cost and resale price](engines/manson/costs/lathe-machining.md).
 - **Canonical** — normative page; other pages link to it.
 - **Source note** — raw derivation, AI output or transcript kept for evidence; not normative.
 - **Exploratory** — concept under study, not a project decision.

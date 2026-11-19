@@ -6,7 +6,8 @@ Le 2Cheval vend un moteur thermique hackable qui fonctionne à la paille. Ce dos
 
 - [Modèle économique](business-model.md) — partage de la valeur.
 - [Clients](customers.md) — le cas d'usage client de référence.
-- [Coûts](costs.md) — tableau de coûts.
+- [Coûts — page centrale](costs.md) — atelier, premier prototype, série et coût de remplacement.
+- [Premier prototype — PLA, sable, coulée, tour](../production/prototype.md) — route et coût du premier moteur.
 - [Matière recyclée](recycled-material.md) — coût de la matière première.
 - [Contact](contact.md).
 

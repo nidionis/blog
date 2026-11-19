@@ -2,9 +2,11 @@
 
 > **Status:** canonical hub · **Owns:** manufacturing route · **Up:** [2Cheval](../README.md)
 
-The production strategy is: prove the geometry with the **polar slicer**, print in sand with **binder jetting**, then move to aluminium and metallurgy.
+The production strategy is: validate the **first prototype** through **PLA printing → sand mold → casting → lathe finishing**, then move to the **polar slicer**, **binder jetting** and series metallurgy.
 
-- [Manufacturing strategy](strategy.md) — from furniture-scale printing to engine parts.
+- [Manufacturing strategy](strategy.md) — from the first prototype to furniture scale and engine parts.
+- [First prototype — PLA, sand, casting, lathe](../engines/manson/costs/prototype.md) — route and cost of the first engine (€52,000–196,000 outsourced).
+- [Lathe machining — series cost and resale price](../engines/manson/costs/lathe-machining.md) — series cost, margin and €19,999 price.
 - [Binder jetting](binder-jetting/README.md) — sand-printing route and cost.
 - [Polar slicer](polar-slicer/README.md) — the cylindrical slicing prototype.
 

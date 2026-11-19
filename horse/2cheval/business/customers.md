@@ -8,6 +8,7 @@ Cas client de référence : environ 1,2 kg de [paille](../../energy/rocket-stove
 - **Plage de rendement** : 5 – 15 %.
 - **Sortie** : 2 ch ≈ 1,5 kW.
 - **Comparaison** : la puissance d'une moto grand public.
+- **Remplacement** : une PAC air-eau 15–30 kW (€15 000–35 000, chaleur seule) ou un tracteur compact 20–40 ch (€25 000–60 000, travail mécanique). Voir [coût de ce que le moteur remplace](costs.md#4-coût-de-ce-que-le-moteur-remplace).
 
 Voir aussi : [Modèle économique](business-model.md), [Coûts](costs.md), [Résilience — argument de prix € 19 999](resilience.md).
 

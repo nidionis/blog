@@ -8,6 +8,7 @@ Reference customer case: about 1.2 kg of [straw](../energy/rocket-stove/straw.md
 - **Energy [yield](../engines/manson/thermodynamics.md) range**: 5 – 15 %.
 - **Output**: 2 ch ≈ 1.5 kW; dimensions in [sizing](../engines/manson/sizing.md).
 - **Comparison**: the power of your grand parents' car.
+- **Replacement**: an air-water heat pump, 15–30 kW (€15,000–35,000, heat only) or a compact tractor, 20–40 hp (€25,000–60,000, mechanical work). See [what the engine replaces](costs.md#4-what-the-engine-replaces).
 
 ## See also
 

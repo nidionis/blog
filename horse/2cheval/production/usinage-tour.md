@@ -2,7 +2,7 @@
 
 > **Status:** marketing · **Owns:** per-engine production cost and sale price · **Up:** [Production](README.md)
 
-Le tour à métaux de 2 m est l'investissement principal. Chargé sur un seul moteur, il donne un coût de prototype ≈ **€215 250**. En série, amorti sur des milliers de moteurs, il ne pèse que quelques centaines d'euros par unité. Le coût pessimiste d'un moteur est ≈ **€16 650** ; le prix de vente retenu est **€19 999**, avec ≈ **€3 350** de marge brute, dont **€2 000** pour le salaire (une vente par mois) et ≈ **€1 350** de réserve commerciale.
+Le tour à métaux de 2 m sert à la **finition** et à la série, pas à la première fabrication. Le premier prototype est imprimé en PLA, moulé en sable et coulé, puis fini au tour : voir [Premier prototype — PLA, sable, coulée, tour](prototype.md). En série, le tour est amorti sur des milliers de moteurs : le coût pessimiste d'un moteur est ≈ **€16 650** ; le prix de vente retenu est **€19 999**, avec ≈ **€3 350** de marge brute, dont **€2 000** pour le salaire (une vente par mois) et ≈ **€1 350** de réserve commerciale.
 
 ## 1. Hypothèses (pessimistes, majorant)
 
@@ -49,9 +49,9 @@ Pas d'engrenages : une bielle à **3 roulements à billes haut de gamme** et un 
 
 Le prix plancher « coût + €2 000 » serait ≈ **€18 650** (à 1 000 moteurs/an). Le prix retenu de **€19 999** laisse ≈ **€1 350** de plus pour le transport, la garantie et l'administration.
 
-## 5. Premier moteur (prototype)
+## 5. Ancien scénario (comparaison)
 
-Si on charge tout le tour sur un seul moteur, hors piston : `€200 000 + €3 000 + €12 000 + €252 ≈ €215 250`. Avec le piston : ≈ **€216 450**. C'est le coût du prototype, pas le coût de série. Détail : [machining-cost.md](machining-cost.md).
+Le chiffre **€215 250** correspond à l'ancien scénario « tout le tour sur un seul moteur » (hors piston : `€200 000 + €3 000 + €12 000 + €252`). Il n'est plus le scénario de première fabrication : le premier prototype passe par PLA + sable + coulée, pour ≈ **€52 000–196 000** en sous-traitance (voir [prototype.md](prototype.md)).
 
 ## 6. Limite honnête
 
@@ -59,10 +59,11 @@ Le prix de **€19 999** tient si le tour produit des **milliers** de moteurs su
 
 ## Voir aussi
 
-- [Coût de production : usine tour et cylindres](machining-cost.md) — détail du prototype et de la matière.
+- [Premier prototype — PLA, sable, coulée, tour](prototype.md) — route et coût du premier moteur.
+- [Coût de production : usine tour et cylindres](machining-cost.md) — détail de l'ancien scénario et de la matière.
 - [Résilience — moteur résilient à € 19 999](../business/resilience.md) — justification commerciale.
+- [Coûts business](../business/costs.md) — page centrale des coûts.
 - [Stratégie de production](strategy.md)
-- [Coûts business](../business/costs.md)
 - [Dictionnaire technique](../GLOSSARY.md#dictionnaire-conceptuel)
 
 Mots-clés : [tour a metaux](../GLOSSARY.md#dictionnaire-conceptuel), [estimations cout / recettes](../business/costs.md).

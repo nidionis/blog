@@ -31,8 +31,8 @@ $$V = \frac{\pi D^2}{4} \cdot D \quad\Rightarrow\quad D = \left(\frac{4V}{\pi}\r
 
 2 ch = marché, 6 ch = besoin en laboratoire, 20 ch = extrême en laboratoire.
 
-| Puissance mécanique | Puissance thermique | Débit massique | Volume d'air V_cycle | Volume de la chambre V_c = 2·V_cycle | Diamètre (D = L) |
-|---:|---:|---:|---:|---:|---:|
+| Puissance mécanique (kW) | Puissance mécanique (ch) | Puissance thermique | Débit massique | Volume d'air V_cycle | Volume de la chambre V_c = 2·V_cycle | Diamètre (D = L) |
+|---:|---:|---:|---:|---:|---:|---:|
 | **1.47 kW** | 2 ch | 29.4 kW | 0.1626 kg/s | 67.76 L | 135.53 L | **55.67 cm** |
 | **2.94 kW** | 4 ch | 58.8 kW | 0.3253 kg/s | 135.53 L | 271.05 L | **70.14 cm** |
 | **4.42 kW** | 6 ch | 88.5 kW | 0.4890 kg/s | 203.75 L | 407.50 L | **80.35 cm** |

@@ -2,7 +2,7 @@
 
 > **Status:** cost model · **Owns:** per-engine production cost and sale price · **Up:** [M Reloaded](README.md)
 
-The 2 m lathe is the main capex. Charged to a single engine, it gives a prototype cost ≈ **€215,250**. In series, amortized over thousands of engines, it costs only a few hundred euros per unit. The pessimistic engine cost is ≈ **€16,650**; the retained sale price is **€19,999**, with ≈ **€3,350** gross margin, of which **€2,000** targets a salary (one sale per month) and ≈ **€1,350** is a commercial buffer.
+The 2 m lathe is for **finishing** and series production, not first shaping. The first prototype is PLA printed, sand molded and cast, then lathe finished: see [first prototype](prototype.md). In series, the lathe is amortized over thousands of engines: the pessimistic engine cost is ≈ **€16,650**; the retained sale price is **€19,999**, with ≈ **€3,350** gross margin, of which **€2,000** targets a salary (one sale per month) and ≈ **€1,350** is a commercial buffer.
 
 ## 1. Assumptions (pessimistic, upper bound)
 
@@ -49,9 +49,9 @@ No gears: a connecting rod with **3 high-end ball bearings** and one more cylind
 
 The floor price “cost + €2,000” would be ≈ **€18,650** (at 1,000 engines/year). The retained **€19,999** price leaves ≈ **€1,350** more for transport, warranty and administration.
 
-## 5. First engine (prototype)
+## 5. Old scenario (comparison)
 
-If the whole lathe is charged to a single engine, excluding the piston: `€200,000 + €3,000 + €12,000 + €252 ≈ €215,250`. With the piston: ≈ **€216,450**. That is the prototype cost, not the series cost. See [the French cost detail](../../../2cheval/production/machining-cost.md).
+The **€215,250** figure is the old “whole lathe on one engine” scenario (excluding piston: `€200,000 + €3,000 + €12,000 + €252`). It is no longer the first-build scenario: the first prototype goes through PLA + sand + casting, for ≈ **€52,000–196,000** outsourced (see [prototype.md](prototype.md)).
 
 ## 6. Honest limit
 
@@ -59,6 +59,7 @@ The **€19,999** price holds if the lathe produces **thousands** of engines ove
 
 ## See also
 
+- [First prototype — PLA, sand, casting, lathe](prototype.md)
 - [M Reloaded](README.md)
 - [Material costs](README.md)
 - [Business costs](../../../business/costs.md)

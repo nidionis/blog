@@ -24,6 +24,16 @@ Cette page est la source unique des termes, unités et hypothèses de référenc
 - **Paille densifiée** — paille compressée, environ 250 kg/m³ ; la paille en vrac environ 100 kg/m³.
 - **Polar slicer** — prototype de slicage polaire. Hub : [production/polar-slicer](production/polar-slicer/README.md).
 - **Binder jetting** — route d'impression en sable vers l'aluminium. Hub : [production/binder-jetting](production/binder-jetting/README.md).
+- **Premier prototype** — premier moteur physique ; route PLA → sable → coulée → finition tour. Voir [prototype](production/prototype.md).
+- **Impression PLA** — impression 3D grand format du motif perdu ou réutilisable (1,5 m³). Voir [prototype](production/prototype.md).
+- **Moulage sable** — moule en sable fin (10 m³) autour du motif. Voir [prototype](production/prototype.md).
+- **Coulée** — remplissage du moule avec l'aluminium fondu. Voir [prototype](production/prototype.md).
+- **Creuset** — récipient réfractaire de ~3 m³ pour fondre l'aluminium. Voir [prototype](production/prototype.md).
+- **Four solaire** — four à concentration solaire (plaques d'acier inoxydable polies miroir). Voir [prototype](production/prototype.md).
+- **Finition au tour** — usinage final à ~1,40 m de diamètre. Voir [prototype](production/prototype.md).
+- **PAC / pompe à chaleur** — remplacement possible pour la chaleur ; coût €15 000–35 000. Voir [coûts](business/costs.md#4-coût-de-ce-que-le-moteur-remplace).
+- **Tracteur** — remplacement possible pour le travail mécanique ; coût €25 000–60 000. Voir [coûts](business/costs.md#4-coût-de-ce-que-le-moteur-remplace).
+- **Coût de remplacement** — coût de l'objet que le moteur remplace ; argument de prix. Voir [coûts](business/costs.md#4-coût-de-ce-que-le-moteur-remplace).
 - **Tour à métaux** — tour de 2 m de diamètre ; investissement principal, amorti sur des milliers de moteurs. Voir [usinage tour — coût de production et prix de revente](production/usinage-tour.md).
 - **Coût de production par moteur** — coût de série, tour réparti sur `N` moteurs ; voir [usinage tour](production/usinage-tour.md).
 - **Canonique** — page normative ; les autres pages y renvoient.
@@ -49,10 +59,10 @@ Cette page est la source unique des termes, unités et hypothèses de référenc
 ## Structure linguistique / Language structure
 
 - Le projet principal (`engines/`, `energy/`, `business/`, ...) est en anglais.
-- La sous-arborescence `2cheval/` est l'arborescence française parallèle : marketing, stratégie et investisors, avec redirections vers les articles techniques anglais.
+- La sous-arborescence `2cheval/` est l'arborescence française parallèle : marketing, stratégie et investisseurs, avec redirections vers les articles techniques anglais.
 - Voir [état stationnaire](thermodynamic-steady.md) pour la duplication courte.
 
-## Dictionnaire conceptuel / Conceptual dictionary
+## Dictionnaire conceptuel
 
 Le dictionnaire technique/conceptuel (dictionnaire de vocabulaire) : chaque concept a son article français (sous-projet 2Cheval) et son article technique anglais (projet principal).
 
@@ -76,6 +86,8 @@ Le dictionnaire technique/conceptuel (dictionnaire de vocabulaire) : chaque conc
 | Production et impression 3D | [production/README.md](production/README.md) | [production/README.md](../production/README.md) |
 | Coûts business | [business/costs.md](business/costs.md) | [business/costs.md](../business/costs.md) |
 | Coût de production et prix de revente | [production/usinage-tour.md](production/usinage-tour.md) | [lathe machining](../engines/manson/costs/lathe-machining.md) |
+| Premier prototype (PLA, sable, coulée, tour) | [production/prototype.md](production/prototype.md) | [first prototype](../engines/manson/costs/prototype.md) |
+| Coût de ce que le moteur remplace | [business/costs.md](business/costs.md#4-coût-de-ce-que-le-moteur-remplace) | [business/costs.md](../business/costs.md#4-what-the-engine-replaces) |
 | Matière recyclée | [business/recycled-material.md](business/recycled-material.md) | [business/recycled-material.md](../business/recycled-material.md) |
 
 ## Conventions

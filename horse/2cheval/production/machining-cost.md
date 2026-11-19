@@ -2,7 +2,7 @@
 
 > **Status:** marketing · **Owns:** prototype and material production cost · **Up:** [Production](README.md)
 
-Cette page calcule le **coût du premier moteur** (tour chargé à 100 %) et la base matière. Pour le **coût de série** et le prix de revente, voir [usinage-tour.md](usinage-tour.md).
+Cette page conserve le calcul de **comparaison** du tour chargé à 100 % et la base matière. Le scénario de référence du premier prototype est [PLA + sable + coulée + tour](prototype.md). Pour le **coût de série** et le prix de revente, voir [usinage-tour.md](usinage-tour.md).
 
 **Hypothèses (pessimistes, honnête approximation) :**
 - Tour métaux 2 m : achat ≈ **€600 000**, durée de vie 3 ans → amortissement ≈ **€200 000/an**.
@@ -32,7 +32,7 @@ Cette page calcule le **coût du premier moteur** (tour chargé à 100 %) et la 
 
 - Estimation pessimiste : **€12 000** (moules, stockage, foin, ambiance, manutention).
 
-## 5. Coût du premier moteur (tour chargé à 100 %)
+## 5. Ancien scénario : tour chargé à 100 % (comparaison)
 
 | Poste | Estimation pessimiste |
 |---|---:|
@@ -43,7 +43,7 @@ Cette page calcule le **coût du premier moteur** (tour chargé à 100 %) et la 
 | Piston + bielle + cylindre | €1 200 |
 | **Total avec piston** | **≈ €216 450** |
 
-C'est le coût du **prototype**, pas le coût de série.
+Ce n'est **plus** le scénario de première fabrication : le premier prototype passe par PLA + sable + coulée, ≈ **€52 000–196 000** en sous-traitance (voir [prototype.md](prototype.md)).
 
 ## 6. Coût de série par moteur
 
@@ -62,6 +62,7 @@ Le prix de vente retenu est **€19 999** (marge ≈ €3 350). Scénarios 1 000
 
 ## Voir aussi
 
+- [Premier prototype — PLA, sable, coulée, tour](prototype.md)
 - [Usinage tour — coût de production et prix de revente](usinage-tour.md)
 - [Stratégie de production](strategy.md)
 - [Résilience — moteur résilient à € 19 999](../business/resilience.md)

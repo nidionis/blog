@@ -2,7 +2,11 @@
 
 > **Status:** canonical · **Owns:** production route · **Up:** [Production](README.md)
 
-The company is laying the groundwork for cylinder slicing, then goes through sand printing before metallurgy. The goal is to validate shapes and process at controlled cost.
+The company validates the first prototype through **PLA printing → sand mold → casting → lathe finishing**, then prepares cylinder slicing and sand printing before series metallurgy. The goal is to validate shapes and process at controlled cost.
+
+## First prototype
+
+The first engine is not machined from solid: PLA print (1.5 m³) → sand mold (10 m³) → casting (~3 m³ crucible, solar furnace or foundry) → lathe finishing (~1.40 m). Pessimistic cost: ≈ **€52,000–196,000** outsourced, or ≈ **€122,000–426,000** with a solar furnace and crucible. Detail: [first prototype](../engines/manson/costs/prototype.md).
 
 ## From concept to production
 
@@ -18,6 +22,7 @@ Printing in sand for [binder jetting](https://jlc3dp.com/fr/blog/binder-jetting-
 
 ## See also
 
+- [First prototype — PLA, sand, casting, lathe](../engines/manson/costs/prototype.md)
+- [Business costs](../business/costs.md)
 - [Polar slicer](polar-slicer/README.md)
 - [Binder jetting](binder-jetting/README.md)
-- [Business costs](../business/costs.md)

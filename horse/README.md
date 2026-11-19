@@ -20,6 +20,8 @@ Dimensions and volumes depend on the cycle assumptions; see [sizing](engines/man
 
 [Prototype entry point: from 25 000 euros](business/costs.md) (prototype + gear, not the full workshop capex)
 
+[Full engine prototype: PLA print + sand casting + lathe finishing](engines/manson/costs/prototype.md), ≈ €52,000–196,000 outsourced.
+
 *Highly [Hackable](drivetrain/design.md)*
 
 ## (But [3D printing](production/README.md) first)
@@ -30,7 +32,7 @@ Dimensions and volumes depend on the cycle assumptions; see [sizing](engines/man
 - **Energy** : [energy hub](energy/README.md) · [straw](energy/rocket-stove/straw.md) → [rocket stove](energy/rocket-stove/README.md) · variant: [nuclear](energy/nuclear/README.md)
 - **Conversion** : [engines hub](engines/README.md) · [M Reloaded](engines/manson/README.md) (chosen) · [Stirling Beta](engines/stirling/README.md) (studied)
 - **Transmission** : [drivetrain](drivetrain/README.md) · [gear](drivetrain/design.md)
-- **Production** : [production hub](production/README.md) · [polar slicer](production/polar-slicer/README.md) → [binder jetting](production/binder-jetting/README.md)
+- **Production** : [production hub](production/README.md) · [first prototype](engines/manson/costs/prototype.md) · [polar slicer](production/polar-slicer/README.md) → [binder jetting](production/binder-jetting/README.md)
 - **Economics** : [costs](business/costs.md) · [recycled material](business/recycled-material.md)
 
 Definitions, units and baseline assumptions: [glossary](GLOSSARY.md).

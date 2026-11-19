@@ -2,7 +2,11 @@
 
 > **Status:** canonical · **Owns:** production route · **Up:** [Production](README.md)
 
-L'entreprise prépare la technologie de découpe cylindrique, puis passe par l'impression de sable avant la métallurgie. L'objectif est de valider les formes et le procédé à coût maîtrisé.
+L'entreprise valide d'abord le premier prototype par **impression PLA → moule sable → coulée → finition tour**, puis prépare la découpe cylindrique et l'impression de sable avant la métallurgie de série. L'objectif est de valider les formes et le procédé à coût maîtrisé.
+
+## Premier prototype
+
+Le premier moteur n'est pas usiné dans la masse : impression PLA (1,5 m³) → moule sable (10 m³) → coulée (creuset ~3 m³, four solaire ou fonderie) → finition tour (~1,40 m). Coût pessimiste : ≈ **€52 000–196 000** en sous-traitance, ou ≈ **€122 000–426 000** avec four solaire et creuset. Détail : [Premier prototype — PLA, sable, coulée, tour](prototype.md).
 
 ## Du concept à la production
 
@@ -18,10 +22,11 @@ L'impression de sable par [binder jetting](https://jlc3dp.com/fr/blog/binder-jet
 
 ## Coûts de production (pessimistes)
 
-Le **premier moteur** (tour chargé à 100 %) coûte ≈ **€215 250** hors piston : voir [Coût de production : usine tour et cylindres](machining-cost.md). En série, le tour est réparti sur des milliers de moteurs : le coût tombe à ≈ **€16 650/moteur** et le prix de vente retenu est **€19 999**. Détail et marge : [Usinage tour — coût de production et prix de revente](usinage-tour.md).
+Le **premier prototype** coûte ≈ **€52 000–196 000** en sous-traitance, ou ≈ **€122 000–426 000** avec four solaire et creuset de 3 m³ : voir [prototype](prototype.md). En série, le tour est réparti sur des milliers de moteurs : le coût tombe à ≈ **€16 650/moteur** et le prix de vente retenu est **€19 999**. Détail et marge : [Usinage tour — coût de production et prix de revente](usinage-tour.md) et [coûts business](../business/costs.md).
 
 ## Voir aussi
 - [Dictionnaire / Glossary](../GLOSSARY.md)
+- [Premier prototype — PLA, sable, coulée, tour](prototype.md)
 - [Coût de production : usine tour et cylindres](machining-cost.md)
 - [Usinage tour — coût de production et prix de revente](usinage-tour.md)
 

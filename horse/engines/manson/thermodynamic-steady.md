@@ -4,11 +4,15 @@
 
 ## Abstract
 
-**Context** — The chosen engine is the open-cycle [Manson](README.md): its piston displacer (see [SCAD model](scad/README.md)) divides the chamber, so the working air volume is half the chamber volume: `V_a = V_c / 2`.  
-**Objective** — Establish the thermodynamic steady state of the engine and the power targets for marketing and lab.  
-**Method** — piston power relation of [sizing](sizing.md) with `V_a = V_c / 2`; pessimistic baseline of [thermodynamics](thermodynamics.md) (η = 5 %, ΔT = 300 K, f = 2 Hz) and [glossary](../../GLOSSARY.md) constants (ρ = 1.2 kg/m³, C_p = 1005 J/(kg·K)).  
-**Results** — Chamber from the SCAD model: `V_c` ≈ 2.10 L, `D` ≈ 13.9 cm, so `V_a` ≈ 1.05 L; at the pessimistic baseline the draw is ≈ 19 W. Target table: 2 hp ↔ `V_a` = 40.7 L, `V_c` = 81.3 L, `D` = 47.0 cm; 3 hp ↔ 61.0 L / 122.0 L / 53.8 cm; 4 hp ↔ 81.3 L / 162.6 L / 59.2 cm; 5 hp ↔ 101.7 L / 203.4 L / 63.7 cm; 6 hp ↔ 122.2 L / 244.5 L / 67.8 cm; 20 hp ↔ 406.6 L / 813.2 L / 101.2 cm. The design point at `D` = 135 cm gives `V_c` ≈ 100 L, `V_a` ≈ 50 L and `P` ≈ 1.81 kW ≈ 2.5 hp, matching the expected 2–3 hp.  
-**Conclusion** — Marketing floor: 2 hp at `D` ≈ 47 cm. Lab need: 6 hp at `D` ≈ 68 cm. Lab extreme: `D` ≈ 101 cm for 20 hp.
+**Context** — The chosen engine is the open-cycle [Manson](README.md): its piston displacer (see [SCAD model](scad/README.md)) divides the chamber, so the working air volume is half the chamber volume: `V_a = V_c / 2`.
+
+**Objective** — Establish the thermodynamic steady state of the engine and the power targets for marketing and lab.
+
+**Method** — piston power relation of [sizing](sizing.md) with `V_a = V_c / 2`; pessimistic baseline of [thermodynamics](thermodynamics.md) (η = 5 %, ΔT = 180 K, f = 2 Hz) and [glossary](../../GLOSSARY.md) constants (ρ = 1.2 kg/m³, C_p = 1005 J/(kg·K)).
+
+**Results** — Chamber from the SCAD sketch: `V_c` ≈ 1.06 L, `D` ≈ 13.9 cm, `L` ≈ 70 mm, so `V_a` ≈ 0.53 L; at the pessimistic baseline the draw is ≈ 12 W. Target table: 2 hp ↔ `V_a` = 67.8 L, `V_c` = 135.5 L, `D` = 55.7 cm; 3 hp ↔ 101.7 L / 203.4 L / 63.7 cm; 4 hp ↔ 135.5 L / 271.1 L / 70.1 cm; 5 hp ↔ 169.4 L / 338.8 L / 75.6 cm; 6 hp ↔ 203.8 L / 407.5 L / 80.4 cm; 20 hp ↔ 677.6 L / 1355.3 L / 119.9 cm. At `D` = 135 cm the power is set by the chamber height: 70 mm → ≈ 1.5 hp, 118 mm → ≈ 2.5 hp, 142 mm → ≈ 3 hp, 947 mm → 20 hp.
+
+**Conclusion** — Marketing floor: 2 hp at `D` ≈ 55.7 cm. Lab need: 6 hp at `D` ≈ 80.4 cm. Lab extreme: `D` ≈ 119.9 cm for 20 hp. The 1.5 m³ prototype envelope is sized for the 2–3 hp first build; at `D` = 135 cm the same diameter can host up to 20 hp with a taller chamber.
 
 ---
 
@@ -46,24 +50,27 @@ Pessimistic baseline — the "initial / artisanal" tier of [thermodynamics](ther
 | Parameter | Value | Source |
 |---|---:|---|
 | Overall efficiency `η` | 5 % | thermodynamics.md (tier "5 %") |
-| Temperature difference `ΔT` | 300 K | sizing.md baseline |
+| Temperature difference `ΔT` | 180 K | sizing.md baseline (200 °C hot, 20 °C ambient) |
 | Cycle frequency `f` | 2 Hz | sizing.md baseline |
 | Air density `ρ` | 1.2 kg/m³ | glossary |
 | Air heat capacity `C_p` | 1005 J/(kg·K) | glossary |
 | 1 hp | 735.5 W | glossary |
 
-Chamber geometry from the piston SCAD (`scad/piston.scad`): `V_a = V_c / 2` and `D = L` (sizing.md convention).
+Chamber geometry from the piston SCAD (`scad/piston.scad`): `V_a = V_c / 2`; the `D = L` convention is used only for the target table.
 
 ## 4. Results
 
 ### 4.1 Chamber of the scad model
 
+The sketch uses `inner_r = 70` mm and a chamber height of ≈ 70 mm. It is illustrative, not scaled to the full-size engine.
+
 | Quantity | Value |
-|---|---|
-| Chamber volume `V_c` | ≈ 2.10 L |
-| Chamber diameter `D` (D = L) | ≈ 13.9 cm |
-| Air volume `V_a = V_c / 2` | ≈ 1.05 L |
-| Pessimistic draw `P` | ≈ 19 W |
+|---|---:|
+| Chamber volume `V_c` | ≈ 1.06 L |
+| Chamber diameter `D` | ≈ 13.9 cm |
+| Chamber height `L` | ≈ 70 mm |
+| Air volume `V_a = V_c / 2` | ≈ 0.53 L |
+| Pessimistic draw `P` | ≈ 12 W |
 
 The scad draw is small: the marketing and lab targets need bigger chambers.
 
@@ -71,55 +78,59 @@ The scad draw is small: the marketing and lab targets need bigger chambers.
 
 | Target power | Air volume `V_a` | Chamber `V_c = 2 · V_a` | Chamber diameter `D` |
 |---|---:|---:|---:|
-| **2 hp** (marketing) | 40.7 L | 81.3 L | 47.0 cm |
-| 3 hp (pessimistic) | 61.0 L | 122.0 L | 53.8 cm |
-| 4 hp (pessimistic range) | 81.3 L | 162.6 L | 59.2 cm |
-| 5 hp (pessimistic range) | 101.7 L | 203.4 L | 63.7 cm |
-| **6 hp** (lab need) | 122.2 L | 244.5 L | 67.8 cm |
-| **20 hp** (lab extreme) | 406.6 L | 813.2 L | **101.2 cm** |
+| **2 hp** (marketing) | 67.8 L | 135.5 L | **55.7 cm** |
+| 3 hp (pessimistic) | 101.7 L | 203.4 L | 63.7 cm |
+| 4 hp (pessimistic range) | 135.5 L | 271.1 L | 70.1 cm |
+| 5 hp (pessimistic range) | 169.4 L | 338.8 L | 75.6 cm |
+| **6 hp** (lab need) | 203.8 L | 407.5 L | **80.4 cm** |
+| **20 hp** (lab extreme) | 677.6 L | 1355.3 L | **119.9 cm** |
 
-### 4.3 Design point: `D` = 135 cm
+### 4.3 Prototype diameter: `D` = 135 cm
 
-With the scad chamber height (`L` ≈ 70 mm) and `D` = 135 cm:
+The 1.40 m lathe and the 1.5 m³ PLA envelope target a chamber around 1.35 m across. At that diameter the cross-section is 1.431 m², so the chamber height sets the power:
 
-```
-V_c = π · (0.675 m)² · 0.070 m ≈ 0.1002 m³
-V_a = V_c / 2               ≈ 0.0501 m³
-P   = η · ρ · f · V_a · C_p · ΔT ≈ 1,813 W ≈ 2.5 hp
-```
+| Chamber height `L` | Chamber `V_c` | Power `P` | Equivalent |
+|---:|---:|---:|---:|
+| 70 mm | 0.100 m³ | 1.09 kW | ≈ 1.5 hp |
+| 118 mm | 0.169 m³ | 1.84 kW | ≈ 2.5 hp |
+| 142 mm | 0.203 m³ | 2.21 kW | ≈ 3 hp |
+| 947 mm | 1.355 m³ | 14.71 kW | 20 hp |
+| 1 048 mm | 1.500 m³ | 16.3 kW | ≈ 22 hp |
 
-This matches the expected 2–3 hp of the design note.
+The expected 2–3 hp at `D` = 135 cm therefore needs `L` ≈ 118–142 mm, not 70 mm. These heights fit the 1.5 m³ prototype envelope; the 20 hp height is a lab extension at the same diameter. See [first prototype](costs/prototype.md).
 
 ### 4.4 Direct answers
 
-- Marketing floor (2 hp): chamber ≈ 81.3 L, diameter ≈ 47.0 cm, air volume ≈ 40.7 L.
-- Lab need (6 hp): chamber ≈ 244.5 L, diameter ≈ 67.8 cm.
-- **Lab extreme: expect a chamber of ≈ 0.81 m³, i.e. a diameter of ≈ 101 cm, for 20 hp.**
+- Marketing floor (2 hp): chamber ≈ 135.5 L, diameter ≈ 55.7 cm, air volume ≈ 67.8 L.
+- Lab need (6 hp): chamber ≈ 407.5 L, diameter ≈ 80.4 cm.
+- **Lab extreme: expect a chamber of ≈ 1.36 m³, i.e. a diameter of ≈ 119.9 cm, for 20 hp.**
+- At `D` = 135 cm: 70 mm of chamber height gives ≈ 1.5 hp; 118–142 mm gives the expected 2–3 hp; 947 mm gives 20 hp.
 
 ## 5. Discussion
 
-- **Convention vs sizing.md.** sizing.md's model volume is the working air volume: its 2 ch row (40.7 L, 37.3 cm) is the doc's `V_a` at 2 hp. With the displacer rule of this note the chamber is twice that, and the doc's 2 hp row is `V_c` = 81.3 L, `D` = 47.0 cm — the same as the 4 ch row of the sizing table (81.3 L, 47.0 cm).
-- **Optimism.** The tiers of [thermodynamics](thermodynamics.md) scale the table linearly in `η` and `ΔT` (P ∝ η·ΔT·f): the 8–12 %, 15 % and 20 % tiers cut the diameters by roughly 20–30 %; the 500 K lab-superheat maximum at the scad geometry draws ≈ 0.34 hp — the "nice surprises in lab" come from larger volumes or higher ΔT, not from the pessimistic baseline.
-- **Not to mix.** Do not read the scad chamber (~2.1 L) as the marketing design; it is the prototype drawing of a smaller engine. The 2 hp marketing design per this steady state is ~81 L of chamber.
+- **Convention vs sizing.md.** sizing.md's `V_cycle` is the working air volume `V_a`; this note doubles it to get the chamber volume `V_c`. The two tables now agree row for row: the 2 hp row is 67.76 L of air, 135.53 L of chamber and 55.67 cm.
+- **Optimism.** The tiers of [thermodynamics](thermodynamics.md) scale the table linearly in `Power ∝ η·ΔT·f`: at 15 % the diameters shrink by roughly 30 %, at 8–12 % by 15–25 %. At the scad geometry even a 500 K superheat only draws a few tens of watts — the "nice surprises in lab" come from larger volumes or higher ΔT, not from the pessimistic baseline.
+- **Not to mix.** Do not read the scad chamber (~1.06 L) as the marketing design; it is an illustrative sketch of a smaller engine. The 2 hp marketing design per this steady state is ~135.5 L of chamber.
 - **Caveats.** The model is static and pessimistic: `ΔT` is the average temperature gap of the working air, and the engine's real cycle is not simulated.
 
 ## 6. Conclusion
 
-- **2 hp** is enough for marketing: chamber ≈ 81.3 L, `D` ≈ 47.0 cm (`V_a` = 40.7 L).
-- **6 hp** is the lab need: chamber ≈ 244.5 L, `D` ≈ 67.8 cm.
-- **20 hp** is the lab extreme: expect `D` ≈ 101.2 cm (chamber ≈ 0.81 m³).
-- At `D` = 135 cm the model gives ≈ 2.5 hp at the pessimistic baseline, consistent with the expected 2–3 hp.
+- **2 hp** is enough for marketing: chamber ≈ 135.5 L, `D` ≈ 55.7 cm (`V_a` = 67.8 L).
+- **6 hp** is the lab need: chamber ≈ 407.5 L, `D` ≈ 80.4 cm.
+- **20 hp** is the lab extreme: expect `D` ≈ 119.9 cm (chamber ≈ 1.36 m³).
+- At `D` = 135 cm the expected 2–3 hp needs a chamber height of 118–142 mm; 70 mm gives ≈ 1.5 hp. The 1.5 m³ envelope is sized for that first build; the same diameter can host 20 hp with a taller chamber.
 
 ## Author note
 
-- Original contribution: the power table with the rule `V_a = V_c / 2`, the confirmed design point `D` = 135 cm (≈ 2.5 hp), and the answer `D` ≈ 101 cm for the 20 hp lab case.
-- Main limitation: static, pessimistic model (η = 5 %, ΔT = 300 K); no cycle simulation.
+- Original contribution: the power table with the rule `V_a = V_c / 2` at ΔT = 180 K, the chamber-height table at `D` = 135 cm, and the answer `D` ≈ 119.9 cm for the 20 hp lab case.
+- Main limitation: static, pessimistic model (η = 5 %, ΔT = 180 K); no cycle simulation.
 - Most likely reviewer 2: the model `P = η·ρ·f·V_a·C_p·ΔT` ignores mechanical losses (pipes, alternator) and the real piston stroke; the numbers aim at engineering common sense and should be re-checked after measuring real throughputs.
 
 ## References
 
 - [Sizing](sizing.md) — volume/diameter model, `D = L` convention.
 - [Thermodynamics](thermodynamics.md) — efficiency tiers, ΔT, ambient 20 °C.
-- [Piston SCAD](scad/piston.scad) — piston displacer geometry (chamber ≈ 2.10 L, `D` ≈ 13.9 cm).
+- [Piston SCAD](scad/piston.scad) — piston displacer geometry (chamber ≈ 1.06 L, `D` ≈ 13.9 cm, `L` ≈ 70 mm).
+- [First prototype](costs/prototype.md) — PLA print, sand casting, 3 m³ crucible, lathe finishing.
 - [Glossary](../../GLOSSARY.md) — units (1 ch = 735.5 W, 1 L = 10⁻³ m³) and baseline assumptions.
 - [Manson README](README.md), [Rocket stove README](../../energy/rocket-stove/README.md).

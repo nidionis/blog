@@ -6,6 +6,7 @@ These pages estimate material and machining for specific shapes. They are not th
 
 - [Solid cylinder](solid-cylinder.md) — 1.5 m long, 130 cm diameter billet.
 - [Plate](plate.md) — 126 × 126 × π cm plate in PLA, aluminium, steel and stainless steel.
+- [First prototype](prototype.md) — PLA print, sand casting, 3 m³ crucible, lathe finishing; €52,000–196,000 outsourced.
 - [Lathe machining](lathe-machining.md) — per-engine production cost, €19,999 resale price and margin.
 
 For the commercial roll-up, see [business costs](../../../business/costs.md).

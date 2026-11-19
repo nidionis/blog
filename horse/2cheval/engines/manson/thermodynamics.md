@@ -41,11 +41,11 @@ $$m_{air} = \rho \cdot V_{cycle}$$
 
 $$\Delta T = \frac{Q_{in}}{m_{air} \cdot C_p}$$
 
-Exemple avec les hypothèses de référence (2 ch, 2 Hz, 40.7 L/cycle, η = 5 %, ρ = 1.2 kg/m³, Cp = 1 005 J/(kg·K)) :
+Exemple avec les hypothèses de référence (2 ch, 2 Hz, 67,76 L/cycle, η = 5 %, ρ = 1.2 kg/m³, Cp = 1 005 J/(kg·K)) :
 
 - `W_cycle` ≈ 735 J
 - `Q_in` ≈ 14.7 kJ
-- `m_air` ≈ 0.0488 kg
-- **ΔT ≈ 300 K**
+- `m_air` ≈ 0.0813 kg
+- **ΔT ≈ 180 K**
 
 Voir aussi : [Sizing](sizing.md), [État stationnaire FR](../../thermodynamic-steady.md), [Fuel](fuel.md), [Rocket stove](../../../energy/rocket-stove/README.md), [Glossaire](../../../GLOSSARY.md).

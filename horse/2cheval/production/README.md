@@ -2,11 +2,12 @@
 
 > **Status:** canonical hub · **Owns:** manufacturing route · **Up:** [2Cheval](../README.md)
 
-La stratégie de production est : valider la géométrie avec le **polar slicer**, imprimer en sable par **binder jetting**, puis passer à l'aluminium et à la métallurgie.
+La stratégie de production est : valider le **premier prototype** par **impression PLA → moule sable → coulée → finition tour**, puis passer au **polar slicer**, au **binder jetting** et à la métallurgie de série.
 
-- [Stratégie de production](strategy.md) — du prototypage à l'échelle meuble jusqu'aux pièces de moteur.
-- [Coût de production : usine tour et cylindres](machining-cost.md) — coût du premier moteur (tour chargé à 100 %) et base matière.
+- [Stratégie de production](strategy.md) — du premier prototype à l'échelle meuble jusqu'aux pièces de moteur.
+- [Premier prototype — PLA, sable, coulée, tour](prototype.md) — route et coût du premier moteur (€52 000–196 000 sous-traité).
 - [Usinage tour — coût de production et prix de revente](usinage-tour.md) — coût de série, marge et prix €19 999.
+- [Coût de production : usine tour et cylindres](machining-cost.md) — ancien scénario de comparaison (tour chargé à 100 %) et base matière.
 - [Binder jetting](binder-jetting/README.md) — route d'impression en sable et coût.
 - [Polar slicer](polar-slicer/README.md) — prototype de slicage polaire.
 
