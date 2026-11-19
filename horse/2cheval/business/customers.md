@@ -9,7 +9,7 @@ Cas client de référence : environ 1,2 kg de [paille](../../energy/rocket-stove
 - **Sortie** : 2 ch ≈ 1,5 kW.
 - **Comparaison** : la puissance d'une moto grand public.
 
-Voir aussi : [Modèle économique](business-model.md), [Coûts](costs.md).
+Voir aussi : [Modèle économique](business-model.md), [Coûts](costs.md), [Résilience — argument de prix € 19 999](resilience.md).
 
 ## Voir aussi
 

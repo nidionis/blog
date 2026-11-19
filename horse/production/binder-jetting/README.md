@@ -14,4 +14,4 @@ The BOM is **46 000 – 78 000 €**; the ~100 000 € figure includes R&D and i
 
 - [Production hub](../README.md)
 - [Polar slicer](../polar-slicer/README.md)
-- [Brand costs](../../business/costs.md)
+- [Business costs](../../business/costs.md)

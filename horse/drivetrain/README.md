@@ -8,6 +8,6 @@ The drivetrain is deliberately hackable: one or more chainrings per axis, with s
 
 ## See also
 
-- [Monson engine](../engines/manson/README.md)
+- [Manson engine](../engines/manson/README.md)
 - [Customer use case](../business/customers.md)
 - [Project map](../README.md)

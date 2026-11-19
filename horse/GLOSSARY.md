@@ -24,6 +24,7 @@ This page is the single source for terms, units and baseline assumptions. Other 
 - **Densified straw** — compressed straw, about 250 kg/m³; loose straw is about 100 kg/m³.
 - **Polar slicer** — the cylindrical/polar slicing prototype. Hub: [production/polar-slicer](production/polar-slicer/README.md).
 - **Binder jetting** — sand-printing route towards aluminium parts. Hub: [production/binder-jetting](production/binder-jetting/README.md).
+- **Lathe machining** — 2 m lathe; main capex, amortized over thousands of engines. See [lathe machining — production cost and resale price](engines/manson/costs/lathe-machining.md).
 - **Canonical** — normative page; other pages link to it.
 - **Source note** — raw derivation, AI output or transcript kept for evidence; not normative.
 - **Exploratory** — concept under study, not a project decision.

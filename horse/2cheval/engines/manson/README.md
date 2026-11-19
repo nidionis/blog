@@ -14,7 +14,7 @@ Une espérance de 15 % de rendement avec quelques [optimisations](optimisation.m
 
 - **Etalon** : 2 ch (~1.5 kW) · **Swagger** : 4 ch (~3 kW)
 - Volumes et dimensions : [sizing](sizing.md)
-- État stationnaire thermodynamique : [thermodynamic-steady](../thermodynamic-steady.md)
+- État stationnaire thermodynamique : [thermodynamic-steady](../../thermodynamic-steady.md)
 - Rendement et ΔT : [thermodynamics](thermodynamics.md)
 - Consommation de carburant : [fuel](fuel.md)
 - Optimisation des lumières : [optimisation](optimisation.md)

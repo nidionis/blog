@@ -19,7 +19,7 @@ Cost study for a solid cylinder 1.5 m long and 130 cm in diameter. This is not t
 | 7 €/kg | 5 373 kg | 37 611 € |
 | 10 €/kg | 5 373 kg | 53 730 € |
 
-## Acier (ρ ≈ 7850 kg/m³)
+## Steel (ρ ≈ 7850 kg/m³)
 
 | Material price | Mass | Estimated cost |
 |--------------:|------:|------------:|
@@ -32,11 +32,11 @@ Cost study for a solid cylinder 1.5 m long and 130 cm in diameter. This is not t
 | Material | Mass | Price range |
 |----------|------:|---------------------------:|
 | Aluminium | 5.37 t | 26 900 € – 53 700 € |
-| Acier | 15.62 t | 23 400 € – 46 900 € |
+| Steel | 15.62 t | 23 400 € – 46 900 € |
 
 ## Machining cost (order of magnitude)
 
-| Material cost share | Aluminium | Acier |
+| Material cost share | Aluminium | Steel |
 |----------------------:|----------:|-------:|
 | 10 % | 2 700 € – 5 400 € | 2 300 € – 4 700 € |
 | 20 % | 5 400 € – 10 700 € | 4 700 € – 9 400 € |
@@ -48,4 +48,4 @@ Cost study for a solid cylinder 1.5 m long and 130 cm in diameter. This is not t
 
 - [Plate cost](plate.md)
 - [Sizing](../sizing.md)
-- [Brand costs](../../../business/costs.md)
+- [Business costs](../../../business/costs.md)

@@ -4,8 +4,8 @@
 
 `piston.scad` est une esquisse paramétrique, pas un plan de production. Le modèle utilise `inner_r = 70` (millimètres) et une unité géométrique appelée `chink` ; il n'est pas à l'échelle du moteur complet.
 
-- [`piston.scad`](piston.scad) — esquisse paramétrique d'un piston et d'une chambre possible pour Manson.
-- [`manson.stl`](manson.stl) — maillage exporté.
+- [`piston.scad`](../../../../engines/manson/scad/piston.scad) — esquisse paramétrique d'un piston et d'une chambre possible pour Manson.
+- [`manson.stl`](../../../../engines/manson/scad/manson.stl) — maillage exporté.
 
 Les volumes et diamètres réels sont dans [dimensionnement](../sizing.md).
 

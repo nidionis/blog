@@ -48,4 +48,4 @@ Exemple avec les hypothèses de référence (2 ch, 2 Hz, 40.7 L/cycle, η = 5 %,
 - `m_air` ≈ 0.0488 kg
 - **ΔT ≈ 300 K**
 
-Voir aussi : [Sizing](sizing.md), [État stationnaire FR](../thermodynamic-steady.md), [Fuel](fuel.md), [Rocket stove](../../../energy/rocket-stove/README.md), [Glossaire](../../../GLOSSARY.md).
+Voir aussi : [Sizing](sizing.md), [État stationnaire FR](../../thermodynamic-steady.md), [Fuel](fuel.md), [Rocket stove](../../../energy/rocket-stove/README.md), [Glossaire](../../../GLOSSARY.md).

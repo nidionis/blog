@@ -4,7 +4,7 @@
 
 Géométrie de base du slicer polaire : les rayons sont espacés angulairement et doivent être décalés près du centre pour éviter le chevauchement.
 
-![lines design](geogebra.png)
+![lines design](../../../production/polar-slicer/geogebra.png)
 
 ## Lignes polaires
 

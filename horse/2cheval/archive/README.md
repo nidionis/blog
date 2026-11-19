@@ -6,7 +6,7 @@ Matériel conservé pour l'historique ou la preuve. Il ne fait pas partie du par
 
 ## Inbox
 
-- [cogno.md](inbox/cogno.md) — courriel commercial non sollicité, hors projet.
+- [cogno.md](../../archive/inbox/cogno.md) — courriel commercial non sollicité, hors projet.
 
 ## Déprécié
 

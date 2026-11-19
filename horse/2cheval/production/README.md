@@ -5,6 +5,8 @@
 La stratégie de production est : valider la géométrie avec le **polar slicer**, imprimer en sable par **binder jetting**, puis passer à l'aluminium et à la métallurgie.
 
 - [Stratégie de production](strategy.md) — du prototypage à l'échelle meuble jusqu'aux pièces de moteur.
+- [Coût de production : usine tour et cylindres](machining-cost.md) — coût du premier moteur (tour chargé à 100 %) et base matière.
+- [Usinage tour — coût de production et prix de revente](usinage-tour.md) — coût de série, marge et prix €19 999.
 - [Binder jetting](binder-jetting/README.md) — route d'impression en sable et coût.
 - [Polar slicer](polar-slicer/README.md) — prototype de slicage polaire.
 

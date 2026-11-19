@@ -14,6 +14,7 @@ La gouvernance derrière le modèle économique est documentée ailleurs.
 
 ## Voir aussi
 
+- [Résilience — moteur résilient à € 19 999](resilience.md)
 - [Carte du projet](../README.md)
 - [Moteur Manson](../engines/manson/README.md)
 - [Glossaire](../GLOSSARY.md)

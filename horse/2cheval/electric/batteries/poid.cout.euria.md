@@ -34,3 +34,4 @@
 ## Voir aussi
 
 - [Dictionnaire / Glossary](../../GLOSSARY.md)
+- [Résilience — électricité / générateur électrique](../../business/resilience.md)

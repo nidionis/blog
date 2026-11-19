@@ -24,7 +24,7 @@ Cost study for a 126 × 126 × π cm plate (~4.99 m² depending on thickness).
 | 3 cm | 0.1496 | 403.7 kg | 2 422 € |
 | 4 cm | 0.1995 | 538.3 kg | 3 230 € |
 
-## Acier
+## Steel
 
 | Thickness | Volume (m³) | Mass | Cost |
 | :--- | :--- | :--- | :--- |
@@ -48,11 +48,11 @@ Cost study for a 126 × 126 × π cm plate (~4.99 m² depending on thickness).
 | :--- | :--- | :--- | :--- | :--- |
 | **PLA** | 1 545 € | 3 090 € | 4 635 € | 6 180 € |
 | **Aluminium** | 807 € | 1 615 € | 2 422 € | 3 230 € |
-| **Acier** | 782 € | 1 565 € | 2 347 € | 3 130 € |
+| **Steel** | 782 € | 1 565 € | 2 347 € | 3 130 € |
 | **Inox** | 1 993 € | 3 986 € | 5 980 € | 7 973 € |
 
 ## See also
 
 - [Solid-cylinder cost](solid-cylinder.md)
 - [Sizing](../sizing.md)
-- [Brand costs](../../../business/costs.md)
+- [Business costs](../../../business/costs.md)

@@ -24,6 +24,8 @@ Cette page est la source unique des termes, unités et hypothèses de référenc
 - **Paille densifiée** — paille compressée, environ 250 kg/m³ ; la paille en vrac environ 100 kg/m³.
 - **Polar slicer** — prototype de slicage polaire. Hub : [production/polar-slicer](production/polar-slicer/README.md).
 - **Binder jetting** — route d'impression en sable vers l'aluminium. Hub : [production/binder-jetting](production/binder-jetting/README.md).
+- **Tour à métaux** — tour de 2 m de diamètre ; investissement principal, amorti sur des milliers de moteurs. Voir [usinage tour — coût de production et prix de revente](production/usinage-tour.md).
+- **Coût de production par moteur** — coût de série, tour réparti sur `N` moteurs ; voir [usinage tour](production/usinage-tour.md).
 - **Canonique** — page normative ; les autres pages y renvoient.
 - **Note de source** — dérivation brute, sortie d'IA ou transcription conservée pour preuve ; non normative.
 - **Exploratoire** — concept en étude, pas de décision de projet.
@@ -48,7 +50,7 @@ Cette page est la source unique des termes, unités et hypothèses de référenc
 
 - Le projet principal (`engines/`, `energy/`, `business/`, ...) est en anglais.
 - La sous-arborescence `2cheval/` est l'arborescence française parallèle : marketing, stratégie et investisors, avec redirections vers les articles techniques anglais.
-- Voir [état stationnaire](engines/manson/thermodynamic-steady.md) pour la duplication courte.
+- Voir [état stationnaire](thermodynamic-steady.md) pour la duplication courte.
 
 ## Dictionnaire conceptuel / Conceptual dictionary
 
@@ -59,7 +61,7 @@ Le dictionnaire technique/conceptuel (dictionnaire de vocabulaire) : chaque conc
 | M Reloaded (moteur choisi) | [engines/manson/README.md](engines/manson/README.md) | [engines/manson/README.md](../engines/manson/README.md) |
 | Dimensionnement du moteur | [engines/manson/sizing.md](engines/manson/sizing.md) | [engines/manson/sizing.md](../engines/manson/sizing.md) |
 | Thermodynamique du moteur | [engines/manson/thermodynamics.md](engines/manson/thermodynamics.md) | [engines/manson/thermodynamics.md](../engines/manson/thermodynamics.md) |
-| État stationnaire thermodynamique | [engines/manson/thermodynamic-steady.md](engines/manson/thermodynamic-steady.md) | [engines/manson/thermodynamic-steady.md](../engines/manson/thermodynamic-steady.md) |
+| État stationnaire thermodynamique | [thermodynamic-steady.md](thermodynamic-steady.md) — duplication courte | [Thermodynamic steady state](../engines/manson/thermodynamic-steady.md) |
 | Consommation de carburant | [engines/manson/fuel.md](engines/manson/fuel.md) | [engines/manson/fuel.md](../engines/manson/fuel.md) |
 | Optimisation du moteur | [engines/manson/optimisation.md](engines/manson/optimisation.md) | [engines/manson/optimisation.md](../engines/manson/optimisation.md) |
 | Modèle CAO du piston | [engines/manson/scad/README.md](engines/manson/scad/README.md) | [engines/manson/scad/README.md](../engines/manson/scad/README.md) |
@@ -73,6 +75,7 @@ Le dictionnaire technique/conceptuel (dictionnaire de vocabulaire) : chaque conc
 | Transmission | [drivetrain/README.md](drivetrain/README.md) | [drivetrain/README.md](../drivetrain/README.md) |
 | Production et impression 3D | [production/README.md](production/README.md) | [production/README.md](../production/README.md) |
 | Coûts business | [business/costs.md](business/costs.md) | [business/costs.md](../business/costs.md) |
+| Coût de production et prix de revente | [production/usinage-tour.md](production/usinage-tour.md) | [lathe machining](../engines/manson/costs/lathe-machining.md) |
 | Matière recyclée | [business/recycled-material.md](business/recycled-material.md) | [business/recycled-material.md](../business/recycled-material.md) |
 
 ## Conventions

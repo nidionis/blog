@@ -12,5 +12,5 @@ The heat source supplies thermal power; the engine converts it. At the 5 % basel
 ## See also
 
 - [Engines](../engines/README.md)
-- [Monson thermodynamics](../engines/manson/thermodynamics.md)
+- [Manson thermodynamics](../engines/manson/thermodynamics.md)
 - [Glossary](../GLOSSARY.md)

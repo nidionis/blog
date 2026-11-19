@@ -2,7 +2,7 @@
 
 > **Status:** exploratory study · **Owns:** Stirling Beta sizing · **Up:** [Stirling](README.md)
 
-This study is independent of the Manson assumptions. For the chosen engine, see [Monson sizing](../manson/sizing.md).
+This study is independent of the Manson assumptions. For the chosen engine, see [Manson sizing](../manson/sizing.md).
 
 ## Objectives
 
@@ -12,7 +12,7 @@ See [Stirling hub](README.md) for the engine choice rationale.
 
 ## Out of scope / See also
 
-- [Monson sizing](../manson/sizing.md)
-- [Monson thermodynamics](../manson/thermodynamics.md)
+- [Manson sizing](../manson/sizing.md)
+- [Manson thermodynamics](../manson/thermodynamics.md)
 - [Linear alternator](linear-alternator.md)
 - [Stirling hub](README.md)

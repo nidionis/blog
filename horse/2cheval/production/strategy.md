@@ -12,12 +12,18 @@ L'impression de sable par [binder jetting](https://jlc3dp.com/fr/blog/binder-jet
 
 ## Notre vision
 
-1. **Passer à l'échelle** — move from small prototypes to full-scale furniture manufacturing.
+1. **Passer à l'échelle** — passer des petits prototypes à la fabrication de meubles à grande échelle.
 2. **Conversion métallurgique** — adapter la technologie aux composants de moteur.
 3. **Un écosystème de fabrication** — combiner impression 3D avancée, systèmes rotatifs polaires et métallurgie.
 
+## Coûts de production (pessimistes)
+
+Le **premier moteur** (tour chargé à 100 %) coûte ≈ **€215 250** hors piston : voir [Coût de production : usine tour et cylindres](machining-cost.md). En série, le tour est réparti sur des milliers de moteurs : le coût tombe à ≈ **€16 650/moteur** et le prix de vente retenu est **€19 999**. Détail et marge : [Usinage tour — coût de production et prix de revente](usinage-tour.md).
+
 ## Voir aussi
 - [Dictionnaire / Glossary](../GLOSSARY.md)
+- [Coût de production : usine tour et cylindres](machining-cost.md)
+- [Usinage tour — coût de production et prix de revente](usinage-tour.md)
 
 - [Polar slicer](polar-slicer/README.md)
 - [Binder jetting](binder-jetting/README.md)

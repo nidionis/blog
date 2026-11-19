@@ -16,6 +16,6 @@ The Stirling study is useful as a comparison: closed cycle, pressurised gas, hig
 
 ## See also
 
-- [Monson engine](../manson/README.md)
-- [Monson thermodynamics](../manson/thermodynamics.md)
+- [Manson engine](../manson/README.md)
+- [Manson thermodynamics](../manson/thermodynamics.md)
 - [Glossary](../../GLOSSARY.md)

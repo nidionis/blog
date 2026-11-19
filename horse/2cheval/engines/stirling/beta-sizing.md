@@ -1,21 +1,21 @@
-# Beta sizing for the Stirling Beta
+# Dimensionnement Beta — Stirling Beta
 
-> **Status:** exploratory study · **Owns:** Stirling Beta sizing · **Up:** [Stirling](README.md)
+> **Status:** étude exploratoire · **Owns:** dimensionnement Stirling Beta · **Up:** [Stirling](README.md)
 
-This study is independent of the Manson assumptions. For the chosen engine, see [Monson sizing](../manson/sizing.md).
+Cette étude est indépendante des hypothèses Manson. Pour le moteur choisi, voir [dimensionnement Manson](../manson/sizing.md).
 
-## Objectives
+## Objectifs
 
-The Beta sizing study sizes a closed-cycle Stirling engine for a target useful power of **2 hp (about 1471 W)**, at low frequency (1–5 Hz), with nitrogen as working gas and a linear alternator.
+L'étude dimensionne un moteur Stirling à cycle fermé pour une puissance utile cible de **2 ch (environ 1 471 W)**, à basse fréquence (1–5 Hz), avec de l'azote comme gaz de travail et un alternateur linéaire.
 
-See [Stirling hub](README.md) for the engine choice rationale.
+Voir [le hub Stirling](README.md) pour la justification du choix.
 
-## Out of scope / See also
+## Hors périmètre / Voir aussi
 
-- [Monson sizing](../manson/sizing.md)
-- [Monson thermodynamics](../manson/thermodynamics.md)
-- [Linear alternator](linear-alternator.md)
-- [Stirling hub](README.md)
+- [Dimensionnement Manson](../manson/sizing.md)
+- [Thermodynamique Manson](../manson/thermodynamics.md)
+- [Alternateur linéaire](linear-alternator.md)
+- [Hub Stirling](README.md)
 
 ## Voir aussi
 

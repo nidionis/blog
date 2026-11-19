@@ -15,5 +15,5 @@ The older source note uses 20 cm of lead; the canonical working figure is **30 c
 ## See also
 
 - [Safety](safety.md)
-- [Monson thermodynamics](../../engines/manson/thermodynamics.md)
-- [Monson sizing](../../engines/manson/sizing.md)
+- [Manson thermodynamics](../../engines/manson/thermodynamics.md)
+- [Manson sizing](../../engines/manson/sizing.md)

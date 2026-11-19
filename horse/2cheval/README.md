@@ -23,7 +23,7 @@ Définitions, unités et hypothèses de référence : [glossaire](GLOSSARY.md).
 
 ## Redirects techniques vers l'anglais (technique)
 
-- [État stationnaire](engines/manson/thermodynamic-steady.md) — duplication courte du steady state.
+- [État stationnaire](thermodynamic-steady.md) — duplication courte du steady state.
 - [Sizing](engines/manson/sizing.md)
 - [Thermodynamique](engines/manson/thermodynamics.md)
 - [M Reloaded](engines/manson/README.md)
@@ -32,4 +32,5 @@ Définitions, unités et hypothèses de référence : [glossaire](GLOSSARY.md).
 ## Voir aussi
 
 - [Coûts](business/costs.md)
+- [Résilience — moteur résilient à € 19 999](business/resilience.md)
 - [Carte du projet (anglais)](../README.md)

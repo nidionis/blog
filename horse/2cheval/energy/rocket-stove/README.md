@@ -12,6 +12,7 @@ Au rendement de base de 5 %, un moteur de 2 ch a besoin d'environ **29,4 kW ther
 
 ## Voir aussi
 - [Dictionnaire / Glossary](../../GLOSSARY.md)
+- [Résilience — biomasse (paille)](../../business/resilience.md)
 
 - [Moteur Manson](../../engines/manson/README.md)
 - [Thermodynamique](../../engines/manson/thermodynamics.md)

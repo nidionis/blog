@@ -40,7 +40,7 @@ $$V = \frac{\pi D^2}{4} \cdot D \quad\Rightarrow\quad D = \left(\frac{4V}{\pi}\r
 | **8.83 kW** | 12 ch | 176.6 kW | 0.9762 kg/s | 406.76 L | 813.52 L | **101.18 cm** |
 | **14.71 kW** | 20 ch | 294.2 kW | 1.6263 kg/s | 677.63 L | 1355.26 L | **119.94 cm** |
 
-The air volume (`V_cycle`) is half the chamber volume: displacer rule (see [Thermodynamic steady state](../thermodynamic-steady.md)).
+The air volume (`V_cycle`) is half the chamber volume: displacer rule (see [Thermodynamic steady state](thermodynamic-steady.md)).
 
 ## Notes
 

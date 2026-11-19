@@ -15,5 +15,5 @@ The governance system behind the business model is documented outside this proje
 ## See also
 
 - [Project map](../README.md)
-- [M cotton engine](../engines/manson/README.md)
+- [M Reloaded engine](../engines/manson/README.md)
 - [Glossary](../GLOSSARY.md)

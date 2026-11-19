@@ -20,5 +20,5 @@ This is raw material only; machining, binder, energy and labour are excluded. Th
 ## See also
 
 - [Costs](costs.md)
-- [Monson material costs](../engines/manson/costs/README.md)
-- [Monson sizing](../engines/manson/sizing.md)
+- [Manson material costs](../engines/manson/costs/README.md)
+- [Manson sizing](../engines/manson/sizing.md)

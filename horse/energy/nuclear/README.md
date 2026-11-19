@@ -22,6 +22,6 @@ Any real design needs a radiation-protection specialist and a licensed safety an
 
 ## See also
 
-- [Monson sizing](../../engines/manson/sizing.md)
-- [Monson thermodynamics](../../engines/manson/thermodynamics.md)
+- [Manson sizing](../../engines/manson/sizing.md)
+- [Manson thermodynamics](../../engines/manson/thermodynamics.md)
 - [Rocket stove](../rocket-stove/README.md)

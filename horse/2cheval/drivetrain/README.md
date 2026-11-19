@@ -8,6 +8,7 @@ La transmission est volontairement hackable : un ou plusieurs plateaux par axe, 
 
 ## Voir aussi
 - [Dictionnaire / Glossary](../GLOSSARY.md)
+- [Résilience — tractor highly expected](../business/resilience.md)
 
 - [Moteur Manson](../engines/manson/README.md)
 - [Cas client](../business/customers.md)
