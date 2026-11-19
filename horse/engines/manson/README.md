@@ -17,6 +17,7 @@ Expected efficiency: 15 % with some [optimisation](optimisation.md), 5 % in less
 
 - **Etalon** : 2 ch (~1.5 kW) · **Swagger** : 4 ch (~3 kW)
 - Volumes et dimensions / volumes and dimensions : [sizing](sizing.md)
+- Thermodynamic steady state : [thermodynamic-steady.md](thermodynamic-steady.md)
 - Rendement et ΔT / efficiency and ΔT : [thermodynamics](thermodynamics.md)
 - Consommation de carburant / fuel consumption : [fuel](fuel.md)
 - Optimisation des lumières / port timing : [optimisation](optimisation.md)
