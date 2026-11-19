@@ -1,26 +1,35 @@
-# 2Cheval — Le concept : un cheval qui mange de la paille
+# 2Cheval — Un moteur thermique avec un concept : un cheval qui mange de la paille
 
 > **Status:** marketing / stratégie / investisors · **Up:** [2Cheval](../README.md)
 
-2Cheval est un moteur thermique avec un concept : un cheval qui mange de la paille.
+Dossier français du projet 2Cheval : concept « un cheval qui mange de la paille », cibles, carte du projet et redirects techniques vers l'anglais.
 
-## Le produit (marketing)
+## Un cheval qui mange la paille
 
-- Puissances : 2 ch suffisent pour le marché, 6 ch sont un besoin en laboratoire, jusqu'à 20 ch à l'extrême en laboratoire (chambre ≈ 0,8 m³, diamètre ≈ 101 cm).
-- Cas client de référence : environ 1,2 kg de paille pour 10 min à 2 ch, rendement 5–15 %.
+- Puissances : **2 ch suffisent pour le marché**, 6 ch en laboratoire, jusqu'à **20 ch à l'extrême** (chambre ≈ 0,8 m³, diamètre ≈ 101 cm).
+- Cas client : environ 1,2 kg de [paille](energy/rocket-stove/straw.md) pour 10 min à 2 ch.
+- Cheval-vapeur : 2 ch ≈ 1,5 kW.
 
-## Opportunité / Marché (stratégie)
+## Carte du projet
 
-- Concept à échelle humaine : un cheval mangeant de la paille, moteur économe en énergie, produit localement et modifiable.
-- Une énergie à bas coût et disponible localement (la paille), pertinente pour les zones rurales et les micro-énergies.
+- **Demand / Demanda** : [business model](business/README.md) · [clients](business/customers.md)
+- **Énergie** : [hub énergie](energy/README.md) · [paille](energy/rocket-stove/straw.md) → [rocket stove](energy/rocket-stove/README.md) · variante : [nucléaire](energy/nuclear/README.md)
+- **Conversion** : [hub moteurs](engines/README.md) · [M Reloaded](engines/manson/README.md) (choisi) · [Stirling Beta](engines/stirling/README.md) (étudié)
+- **Transmission** : [transmission](drivetrain/README.md) · [engrenage](drivetrain/design.md)
+- **Production** : [hub production](production/README.md) · [polar slicer](production/polar-slicer/README.md) → [binder jetting](production/binder-jetting/README.md)
+- **Économie** : [coûts](business/costs.md) · [matière recyclée](business/recycled-material.md)
 
-## Investisors
+Définitions, unités et hypothèses de référence : [glossaire](GLOSSARY.md).
 
-- 20 % de la valeur créée par le travail (modèle en cours de formalisation).
-- Moteur à basse complexité, basé sur une production artisanale.
-- Développement en trois étapes : prototypage marché (2 ch), rapprochement laboratoire (6 ch), configuration extrême (20 ch).
+## Redirects techniques vers l'anglais (technique)
+
+- [État stationnaire](engines/manson/thermodynamic-steady.md) — duplication courte du steady state.
+- [Sizing](engines/manson/sizing.md)
+- [Thermodynamique](engines/manson/thermodynamics.md)
+- [M Reloaded](engines/manson/README.md)
+- [Business](business/README.md)
 
 ## Voir aussi
 
-- [État stationnaire (français)](thermodynamic-steady.md) — duplication marketing/stratégique.
-- Redirects techniques vers l'anglais (technique) : [Thermodynamic steady state](../engines/manson/thermodynamic-steady.md), [Sizing](../engines/manson/sizing.md), [Thermodynamics](../engines/manson/thermodynamics.md), [Rocket stove](../energy/rocket-stove/README.md), [Moteur Manson](../engines/manson/README.md), [Engines hub](../engines/README.md).
+- [Coûts](business/costs.md)
+- [Carte du projet (anglais)](../README.md)

@@ -1,9 +1,8 @@
-# Contact / Contact
+# Contact
 
 > **Status:** canonical · **Up:** [Business](README.md)
 
-**FR** — Nicolas — [nicolas@dionis.info](mailto:nicolas@dionis.info)  
-**EN** — Nicolas — [nicolas@dionis.info](mailto:nicolas@dionis.info)
+Nicolas — [nicolas@dionis.info](mailto:nicolas@dionis.info)
 
 ## See also
 

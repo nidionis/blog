@@ -1,4 +1,6 @@
-> **Status:** source note (FR) · **Not normative** · **Canonical summary:** [linear alternator](../linear-alternator.md)
+# coil-estimation — Stirling Beta (source note, not normative)
+
+> **Status:** source note · **Not normative** · **Canonical summary:** [linear alternator](../linear-alternator.md)
 
 tube to water from the pinhole  
 https://www.youtube.com/watch?v=Zq3nhhsjve4   

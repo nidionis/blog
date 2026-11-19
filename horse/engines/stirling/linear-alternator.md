@@ -2,9 +2,6 @@
 
 > **Status:** exploratory summary · **Owns:** linear-alternator ranges · **Up:** [Stirling](README.md)
 
-**FR** — Résumé des plages d'aimants, bobines et contrôle pour un alternateur linéaire de Stirling à piston libre. Le détail brut est dans [l'estimation de bobine](notes/coil-estimation.md).  
-**EN** — Summary of magnet, coil and control ranges for a free-piston Stirling linear alternator. The raw detail is in [the coil estimation](notes/coil-estimation.md).
-
 This applies to a free-piston Stirling with a linear alternator, not to the Manson.
 
 ## Magnets and mover

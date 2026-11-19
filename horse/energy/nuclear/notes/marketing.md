@@ -1,28 +1,29 @@
-> **Status:** source note (FR) · **Not normative** · **Canonical summary:** [power scale](../power-scale.md)
+# Nuclear marketing note (English-only)
 
-Notre proposition d'utiliser un moteur thermique ouvert pour évacuer la chaleur et de passer à 20 cm de plomb pour le blindage est une excellente base technique pour concevoir un conteneur sur mesure. **Canonical correction:** the working figure is 30 cm of lead for gamma, plus a separate neutron shield.
+> **Status:** source note · **Not normative** · **Canonical summary:** [power scale](../power-scale.md)
 
-Regardons maintenant ce paradoxe fascinant que vous soulevez : si l'on convertit la puissance thermique de notre matière radioactive en puissance mécanique, un "dopage" nucléaire de l'ordre d'un cheval-vapeur (environ 736 Watts) n'est finalement pas si dangereux à maîtriser.
+Our proposal to use an open thermal engine to vent heat and to go to 30 cm of lead shielding is a solid technical base for designing a custom container. **Canonical correction:** the working figure is 30 cm of lead for gamma, plus a separate neutron shield.
 
-Voici pourquoi cette quantité d'énergie reste parfaitement gérable et pourquoi le danger est largement surestimé par l'imaginaire collectif :
-1. Un cheval-vapeur, c'est l'échelle humaine
+Let us look at the paradox: converting the thermal power of our radioactive material into mechanical power, a "doped" nuclear engine at the scale of one horsepower (~736 W) is not so dangerous to control.
 
-Dans notre esprit, le mot "nucléaire" évoque des explosions cataclysmiques ou des mégawatts électriques. Mais un cheval-vapeur thermique, c'est simplement la puissance d'une tondeuse à gazon un peu musclée ou d'une petite moto.
+1. A horsepower is a human scale
 
-    Thermiquement : Dissiper 736 Watts en continu ne demande pas une usine de refroidissement géante. N'importe quel système de radiateur de voiture ou de circulation d'air forcé peut évacuer cette énergie sans broncher. Le moteur thermique ouvert que vous mentionnez y parvient facilement en brassant l'air ou les fluides.
+In our mindset, the word "nuclear" evokes cataclysmic explosions or megawatt electrical power. But a thermal horsepower is simply the power of a slightly muscular lawnmower or a small motorcycle.
 
-    En volume de matière : Pour obtenir cette puissance résiduelle (avec des produits de fission âgés de deux semaines), il suffit d'une quantité de matière radioactive très modeste, de l'ordre de quelques kilogrammes tout au plus.
+    Thermically: dissipating 736 W continuously does not need a giant cooling plant. Any car radiator or forced air circulation system can evict this energy without sweating. The open thermal engine mentioned above easily achieves it by stirring air.
 
-2. Pourquoi ce "dopage" n'est pas si dangereux
+    In material volume: a very modest quantity of radioactive material, at most a few kilograms, suffices for this residual power (with fission products aged two weeks).
 
-Si on compare cette source d'énergie nucléaire de 1 cheval à un moteur thermique classique ou à d'autres sources de danger :
+2. Why this "doping" is not so dangerous
 
-    Le blindage fait le travail : Avec 20 cm de plomb autour de la matière, le rayonnement gamma est réduit à néant. Le colis ne "rayonne" plus vers l'extérieur. Le danger invisible (les Sieverts) est totalement neutralisé, transformant un objet potentiellement mortel en un bloc inerte en surface.
+Compared with a classic thermal engine or other sources of danger:
 
-    L'énergie n'est pas explosive : Contrairement à un réservoir d'essence de 50 litres (qui peut s'enflammer et exploser instantanément en libérant des milliers de Joules d'un coup), la désintégration radioactive est un processus statistique inarrêtable mais régulier. Elle produit un flux constant de 736 Watts, seconde après seconde, sans pic de pression soudain (tant que le refroidissement et l'intégrité mécanique sont assurés).
+    The shield does the work: with lead around the material, gamma radiation is neutralised. The package no longer radiates outward. The invisible danger (Sieverts) is fully neutralised.
 
-    La décroissance naturelle : Contrairement à un moteur à essence qui a besoin d'un apport constant de carburant pour tourner, notre source nucléaire perd de sa puissance chaque jour qui passe grâce à la décroissance radioactive. Le "moteur" faiblit naturellement avec le temps.
+    The energy is not explosive: unlike a 50-liter fuel tank (instantaneous ignition), radioactive decay is a regular process: constant 736 W per second, without pressure spikes.
 
-En conclusion
+    Natural decay: unlike an internal combustion engine needing constant fuel, the nuclear source naturally loses power over time through radioactive decay.
 
-En ramenant le problème à une échelle de 736 Watts (un cheval) et en lui appliquant les bonnes barrières physiques (20 cm de plomb et un système de refroidissement adapté), on réalise que le nucléaire n'est pas un monstre mystique incontrôlable. C'est simplement une source d'énergie thermique extrêmement concentrée, mais qui obéit aux lois de la physique classique. Une fois que l'on sait évacuer ses calories et bloquer ses rayons, elle devient un système technique tout à fait prévisible et maîtrisable.
+Conclusion
+
+By bringing the problem down to the scale of 736 W (one horsepower) and applying the right physical barriers (30 cm of lead and a proper cooling system), nuclear energy turns out not to be a mystifying, uncontrollable monster. It is simply an extremely concentrated thermal source that obeys classical physics. Once you know how to dissipate its heat and block its rays, it becomes a fully predictable, manageable technical system.

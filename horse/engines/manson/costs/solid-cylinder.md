@@ -1,20 +1,19 @@
 # Solid-cylinder material cost
 
-> **Status:** cost study · **Owns:** solid-billet material estimate · **Up:** [Manson cost hub](README.md)
+> **Status:** cost study · **Owns:** solid-billet material estimate · **Up:** [M Reloaded](README.md)
 
-**FR** — Étude de coût pour un cylindre plein de 1,5 m de long et 130 cm de diamètre. Ce n'est pas la géométrie du moteur retenu ; voir [sizing](../sizing.md).  
-**EN** — Cost study for a solid cylinder 1.5 m long and 130 cm in diameter. This is not the selected engine geometry; see [sizing](../sizing.md).
+Cost study for a solid cylinder 1.5 m long and 130 cm in diameter. This is not the selected engine geometry; see [sizing](../sizing.md).
 
-## Hypothèses
+## Assumptions
 
-- Longueur : **1.50 m**
-- Diamètre : **130 cm**
-- Rayon : **65 cm (0.65 m)**
-- Volume : **1.99 m³**
+- Length: **1.50 m**
+- Diameter: **130 cm**
+- Radius: **65 cm (0.65 m)**
+- Volume: **1.99 m³**
 
 ## Aluminium (ρ ≈ 2700 kg/m³)
 
-| Prix matière | Masse | Coût estimé |
+| Material price | Mass | Estimated cost |
 |--------------:|------:|------------:|
 | 5 €/kg | 5 373 kg | 26 865 € |
 | 7 €/kg | 5 373 kg | 37 611 € |
@@ -22,22 +21,22 @@
 
 ## Acier (ρ ≈ 7850 kg/m³)
 
-| Prix matière | Masse | Coût estimé |
+| Material price | Mass | Estimated cost |
 |--------------:|------:|------------:|
 | 1.5 €/kg | 15 620 kg | 23 430 € |
 | 2 €/kg | 15 620 kg | 31 240 € |
 | 3 €/kg | 15 620 kg | 46 860 € |
 
-## Résumé
+## Summary
 
-| Matériau | Masse | Fourchette de prix matière |
-|----------|-------:|---------------------------:|
+| Material | Mass | Price range |
+|----------|------:|---------------------------:|
 | Aluminium | 5.37 t | 26 900 € – 53 700 € |
 | Acier | 15.62 t | 23 400 € – 46 900 € |
 
-## Coût d'usinage (ordre de grandeur)
+## Machining cost (order of magnitude)
 
-| Taux du coût matière | Aluminium | Acier |
+| Material cost share | Aluminium | Acier |
 |----------------------:|----------:|-------:|
 | 10 % | 2 700 € – 5 400 € | 2 300 € – 4 700 € |
 | 20 % | 5 400 € – 10 700 € | 4 700 € – 9 400 € |
@@ -45,7 +44,7 @@
 | 40 % | 10 700 € – 21 500 € | 9 400 € – 18 700 € |
 | 50 % | 13 400 € – 26 900 € | 11 700 € – 23 400 € |
 
-## Voir aussi
+## See also
 
 - [Plate cost](plate.md)
 - [Sizing](../sizing.md)

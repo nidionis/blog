@@ -20,3 +20,7 @@ Duplication française, cadre marketing/stratégique du steady state.
 - [Thermodynamics](../engines/manson/thermodynamics.md) — rendement, ΔT.
 - [Rocket stove](../energy/rocket-stove/README.md) — source de chaleur.
 - [Moteur Manson](../engines/manson/README.md) — moteur.
+
+## Voir aussi
+
+- [Dictionnaire / Glossary](GLOSSARY.md)

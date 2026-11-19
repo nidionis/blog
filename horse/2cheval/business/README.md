@@ -1,0 +1,19 @@
+# 2Cheval — Business
+
+> **Status:** canonical hub · **Owns:** commercial model and customer promise · **Up:** [2Cheval](../README.md)
+
+Le 2Cheval vend un moteur thermique hackable qui fonctionne à la paille. Ce dossier contient la couche commerciale, pas les chiffres d'ingénierie.
+
+- [Modèle économique](business-model.md) — partage de la valeur.
+- [Clients](customers.md) — le cas d'usage client de référence.
+- [Coûts](costs.md) — tableau de coûts.
+- [Matière recyclée](recycled-material.md) — coût de la matière première.
+- [Contact](contact.md).
+
+La gouvernance derrière le modèle économique est documentée ailleurs.
+
+## Voir aussi
+
+- [Carte du projet](../README.md)
+- [Moteur Manson](../engines/manson/README.md)
+- [Glossaire](../GLOSSARY.md)

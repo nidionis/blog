@@ -1,15 +1,17 @@
-> **Status:** source note (FR) · **Not normative** · **Canonical summary:** [safety](../safety.md) and [power scale](../power-scale.md)
+# Nuclear radio-isotope note (English-only)
 
-> **Correction:** this note's “10–15 kW thermal for 4 ch” implies 20–30 % efficiency, which conflicts with the Manson baseline. Canonical values: ~59 kW thermal at 5 %, ~20 kW at 15 %. See [power scale](../power-scale.md).
+> **Status:** source note · **Not normative** · **Canonical summary:** [safety](../safety.md) and [power scale](../power-scale.md)
 
-Pour une puissance mécanique de 4 chevaux-vapeur (ce qui équivaut à environ 3 kW mécaniques, soit une puissance thermique à fournir de l'ordre de 10 à 15 kW selon le rendement d'un moteur thermique de type Manson), l'impact sur le blindage change radicalement par rapport à une source de plusieurs dizaines de kilowatts :
+> **Correction:** this note's "10–15 kW thermal for 4 ch" implies 20–30 % efficiency, conflicting with the Manson baseline. Canonical values: ~59 kW thermal at 5 %, ~20 kW at 15 %. See [power scale](../power-scale.md).
 
-    Réduction de la charge thermique et radiative : Avec un besoin thermique divisé par trois ou quatre par rapport à la tranche supérieure, le flux de rayonnement (gamma et neutrons) diminue proportionnellement.
+For a mechanical power of 4 hp (equivalent to about 3 kW mechanical, i.e. a thermal power to supply of the order of 10–15 kW depending on the thermal engine efficiency):
 
-    Adéquation des 30 cm de plomb :
+The shielding impact changes radically compared to a source of tens of kilowatts:
 
-        Pour une source radio-isotopique de type RTG ou un micro-réacteur de basse puissance de cette échelle, une épaisseur de 30 cm de plomb devient beaucoup plus proche des exigences de radioprotection standard.
+    Reduction of thermal and radiative load: with the thermal need divided by three or four compared to the upper range, the radiation flux (gamma and neutrons) decreases proportionally.
 
-        Le volume total du blindage en plomb reste lourd, mais il est amplement suffisant pour stopper les rayonnements gamma et contenir un flux plus faible.
+    Compatibility with 30 cm of lead: for a RTG-type radioisotope source or a low-power micro-reactor of this scale, a thickness of 30 cm of lead becomes much closer to standard radioprotection requirements.
 
-    Le facteur limitant réside toujours dans les neutrons : Si la source de 4 ch utilise une réaction de fission compacte, les 30 cm de plomb seuls restent insuffisants pour les neutrons rapides. En revanche, si la source est un radio-isotope émetteur alpha pur (comme le Plutonium-238), les 30 cm de plomb (ou un équivalent optimisé plus léger) s'avèrent extrêmement efficaces et sécurisés pour un encombrement de l'ordre du mètre cube (1 m3).
+    The total lead shielding volume remains heavy, but is more than adequate to stop gamma radiation and contain the lower flux.
+
+    The limiting factor always lies in neutrons: if the 4 ch source uses a compact fission reaction, 30 cm of lead alone remain insufficient for fast neutrons. If the source is a pure alpha-emitting radioisotope (like Plutonium-238), the 30 cm of lead (or an optimised lighter equivalent) proves extremely effective for an enclosure of about 1 m³.
