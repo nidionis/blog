@@ -1,71 +1,24 @@
-# Coût de production : usine tour et cylindres — Version française (sous-projet 2Cheval)
+# Coût de production : tour et cylindres — archive de comparaison
 
-> **Status:** marketing · **Owns:** prototype and material production cost · **Up:** [Production](README.md)
+> **Status:** archived comparison · **Owns:** comparaison historique chargée tour · **Up:** [Production](README.md) · **Lang:** FR · **EN** (synthèse : [usinage tour](usinage-tour.md), [coûts](../business/costs.md))
 
-Cette page conserve le calcul de **comparaison** du tour chargé à 100 % et la base matière. Le scénario de référence du premier prototype est [PLA + sable + coulée + tour](prototype.md). Pour le **coût de série** et le prix de revente, voir [usinage-tour.md](usinage-tour.md).
+Cette page est conservée comme **comparaison historique**. La trajectoire « quelques unités par tour » (amortir une machine de production sur peu de pièces) est la **pire option** : voir [scénario d'échec](../archive/scenarios/lathe-low-volume.md).
 
-**Hypothèses (pessimistes, honnête approximation) :**
-- Tour métaux 2 m : achat ≈ **€600 000**, durée de vie 3 ans → amortissement ≈ **€200 000/an**.
-- Usure pièce/outillage pour les 2 chambres : **€3 000**.
-- Refonte (sand casting ou binder jetting) des 2 cylindres `d = 1,5 m`, `L = 2 m` : ≈ **€12 000**.
-- Brut aluminium : 2 cylindres remplis à 66 %, **2 cents/kg**.
+## Ce qui est retenu
 
-## 1. Tour + usure (premier moteur)
+- **Assurance premier prototypage** : **15 000–30 000 €** pour un premier réessai non optimisé, plafond **30 000 €** ancré au test matière 2 cylindres pleins (≈ 28 842 €). Voir [premier prototype](prototype.md), [matière recyclée](../business/recycled-material.md).
+- **Modèle de série viable** (milliers de moteurs) : ≈ **16 953 €/moteur** à 1 000/an, prix **19 999 €**. Voir [usinage tour](usinage-tour.md), [coûts](../business/costs.md).
+- **Matière produit 2 ch** : ≈ **553 €** (241,5 kg, 17 890 canettes à 0,03 € + 16,30 € de refonte). Le test 2 cylindres pleins est un plafond d'assurance, pas un coût produit.
+- **Valorisation** : le coût baisse quand le gaspillage et l'amortissement sont maîtrisés. Voir [valorisation de l'investissement](../business/valorisation-investissement.md), [estimation gros piston](../engines/manson/costs/estimation-gros-piston.md).
 
-| Poste | Estimation pessimiste |
-|---|---:|
-| Tour 2 m (1 an d'amortissement) | €200 000 |
-| Usure pièce/outillage (2 chambres) | €3 000 |
-| **Total tour + usure** | **€203 000** |
+## Ce qui est archivé
 
-## 2. Cylindres d = 1,5 m, L = 2 m (2 cylindres)
-
-`V_cylindre = π · (0,75)² · 2 ≈ 3,53 m³` → 2 cylindres : **7,07 m³** au total.
-
-## 3. Brut matière (un cylindre, rempli à 66 % d'aluminium)
-
-- Masse : 2,33 m³ × 2 700 kg/m³ ≈ **6 300 kg**
-- Coût : 6 300 kg × **2 cents/kg** ≈ **€126**
-- Brut 2 cylindres : ≈ **€252**
-
-## 4. Refonte / impression (2 cylindres)
-
-- Estimation pessimiste : **€12 000** (moules, stockage, foin, ambiance, manutention).
-
-## 5. Ancien scénario : tour chargé à 100 % (comparaison)
-
-| Poste | Estimation pessimiste |
-|---|---:|
-| Tour 2 m (1 an) + usure 2 chambres | €203 000 |
-| Refonte/impression 2 cylindres | €12 000 |
-| Brut aluminium (2 cylindres, 66 %) | €252 |
-| **Total hors piston** | **≈ €215 250** |
-| Piston + bielle + cylindre | €1 200 |
-| **Total avec piston** | **≈ €216 450** |
-
-Ce n'est **plus** le scénario de première fabrication : le premier prototype passe par PLA + sable + coulée, ≈ **€52 000–196 000** en sous-traitance (voir [prototype.md](prototype.md)).
-
-## 6. Coût de série par moteur
-
-En série, le tour est réparti sur `N` moteurs/an. À **1 000 moteurs/an** :
-
-| Poste | Coût par moteur |
-|---|---:|
-| Part du tour (€200 000 / 1 000) | €200 |
-| Usure 2 chambres | €3 000 |
-| Refonte/impression 2 cylindres | €12 000 |
-| Brut aluminium | €252 |
-| Piston + bielle + cylindre | €1 200 |
-| **Total** | **≈ €16 650** |
-
-Le prix de vente retenu est **€19 999** (marge ≈ €3 350). Scénarios 1 000 / 3 000 / 5 000 et limite honnête : [usinage-tour.md](usinage-tour.md).
+- Tour chargé à 100 % sur un seul moteur ≈ **243 842 €** hors piston (≈ 245 042 € avec piston).
+- Faible volume (12 moteurs/an) : part tour ≈ 16 667 €/moteur, coût ≈ 33 420 €, marge négative à 19 999 €.
+- **Action en échec** : vendre ou louer la machine de production, produire pour stock seulement si justifié, ou augmenter le prix.
 
 ## Voir aussi
 
-- [Premier prototype — PLA, sable, coulée, tour](prototype.md)
-- [Usinage tour — coût de production et prix de revente](usinage-tour.md)
-- [Stratégie de production](strategy.md)
-- [Résilience — moteur résilient à € 19 999](../business/resilience.md)
-- [Dictionnaire technique](../GLOSSARY.md#dictionnaire-conceptuel)
-- [Coûts business](../business/costs.md)
-- [Coûts matière cylinders (2ch)](../business/recycled-material.md)
+- [Premier prototype](prototype.md) · [Usinage tour](usinage-tour.md)
+- [Coûts business](../business/costs.md) · [Stratégie de production](strategy.md)
+- [Glossaire](../GLOSSARY.md)

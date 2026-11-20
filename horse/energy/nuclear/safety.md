@@ -1,6 +1,6 @@
 # Nuclear safety distances
 
-> **Status:** preliminary summary · **Owns:** safety summary · **Up:** [Nuclear variant](README.md)
+> **Status:** preliminary summary · **Owns:** safety summary · **Up:** [Nuclear variant](README.md) · **Lang:** EN · [FR](../../2cheval/energy/nuclear/safety.md)
 
 The source note analyses a **200 g** highly radioactive pellet, two weeks old, unshielded, at 500–600 °C. The table below is a summary, not a safety procedure.
 

@@ -1,0 +1,29 @@
+{
+  "ambient_c": 20,
+  "baseline": {
+    "eta": 0.05,
+    "delta_t_k": 180,
+    "frequency_hz": 2.0,
+    "rho_air_kg_m3": 1.2,
+    "cp_air_j_kg_k": 1005,
+    "lhv_straw_mj_kg": 12.0,
+    "feed_limit_kg_per_20min": 30.0,
+    "fill_ratio": 0.66,
+    "aluminium_density_kg_m3": 2700,
+    "can_mass_kg": 0.0135,
+    "can_price_eur": 0.03,
+    "remelt_kwh_per_kg": 0.3375,
+    "remelt_eur_per_kwh": 0.20
+  },
+  "targets_hp": [2, 4, 6, 20],
+  "levers": {
+    "pressure_ratio": [1, 2, 4, 8],
+    "pressure_derate": 0.6,
+    "frequency_hz": [1, 2, 4, 8],
+    "hot_c": [200, 400, 600, 800],
+    "eta": [0.05, 0.10, 0.15, 0.20],
+    "solar_irradiance_w_m2": [250, 500, 800],
+    "solar_collector_eta": 0.5,
+    "solar_daily_kwh_m2": [2, 4, 6]
+  }
+}

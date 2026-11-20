@@ -1,29 +1,24 @@
-# Optimisation du moteur Manson — Version française (sous-projet 2Cheval)
+# Optimisation du moteur Manson
 
-> **Status:** exploratory · **Owns:** port-timing and porosity ideas · **Up:** [README](README.md)
+> **Status:** exploratory · **Owns:** distribution et porosité · **Up:** [M Manson](README.md) · **Lang:** FR · [EN](../../../engines/manson/optimisation.md)
 
-Pistes d'optimisation des lumières de distribution et de la porosité du déplaceur. Ce sont des hypothèses de conception, pas des résultats mesurés.
+Pistes pour les lumières de distribution et la porosité du déplaceur. Ce sont des hypothèses de conception, pas des résultats mesurés. La discussion complète est dans la [page anglaise](../../../engines/manson/optimisation.md).
 
-## Principe d'optimisation
+## Distribution
 
-Comparaison de modèles :
+- Comparer des lumières à différents ratios du diamètre (entre 1/5 et 1/9), avec un cylindre plus large que haut.
+- **Échappement d'air chaud** : commande mécanique liée à la position de la bielle pendant le refroidissement.
+- **Admission d'air froid** : surface maximale, ouverture très rapide et courte ; une échancrure du piston au point bas peut servir.
 
-- lumières à différents ratios du diamètre (entre 1/5 et 1/9), avec un cylindre plus large que haut ;
-- conception de porosités du déplaceur d'air.
+## Déplaceur
 
-## Lumière d'évacuation d'air chaud
+- Étudier la porosité du déplaceur pour réduire les pertes de charge sans court-circuiter l'échange thermique.
 
-- une commande mécanique liée à la position de la bielle durant le refroidissement est prévue.
+## Pourquoi c'est un levier
 
-## Lumière d'admission d'air froid
-
-- une surface maximale ;
-- une ouverture très rapide et courte ;
-- solution : une échancrure du piston au point limite entrant le plus bas du piston.
+La fréquence et le rendement dépendent du remplissage et de l'échange. Une distribution qui ne suit pas annule le gain de vitesse ; une chambre qui ne se remplit pas perd de la puissance avant la thermodynamique. Voir [levier fréquence](../../leviers/frequence.md) et [levier rendement](../../leviers/rendement.md).
 
 ## Voir aussi
-- [Dictionnaire / Glossary](../../GLOSSARY.md)
 
-- [Thermodynamics](thermodynamics.md)
-- [Sizing](sizing.md)
-- [Manson hub](README.md)
+- [Thermodynamique](thermodynamics.md) · [Dimensionnement](sizing.md)
+- [Moteur Manson](README.md) · [Version anglaise](../../../engines/manson/optimisation.md)

@@ -1,5 +1,5 @@
 // open this file using
-// openscad piston.scad 
+// openscad piston.scad
 
 // Here is a draw of a potential
 // Manson thermic engine
@@ -9,7 +9,30 @@
 $fn = 100; //resolution
 CHINK_QUOT = 13; // learning Chink can be asian-rascist...
 
-inner_r = 70;
+// ---- soft-coded levers: edit these, not the geometry ----
+inner_r = 70;              // mm, chamber radius of the sketch
+chamber_l = 70;            // mm, chamber height used for the power report
+eta = 0.05;                // overall efficiency (5 % pessimistic baseline)
+delta_t_k = 180;           // K, hot source minus ambient
+frequency_hz = 2;          // Hz, cycle rate
+rho_air = 1.2;             // kg/m3 at 20 C, atmospheric
+cp_air = 1005;             // J/(kg K)
+pressure_ratio = 1;        // 1 = atmospheric; >1 = sealed variant
+fill_ratio = 0.66;         // casting fill used for the mass estimate
+aluminium_density = 2700;  // kg/m3
+
+function sketch_chamber_l(r_mm, h_mm) = PI * r_mm * r_mm * h_mm / 1e6;
+function sketch_power_w(eta, rho, f, v_a_l, cp, dt, rp) =
+    eta * rho * f * (v_a_l / 1000) * cp * dt * rp;
+
+v_c_l = sketch_chamber_l(inner_r, chamber_l);  // this sketch, one chamber
+v_a_l = v_c_l / 2;                             // displacer rule
+p_w = sketch_power_w(eta, rho_air, frequency_hz, v_a_l, cp_air, delta_t_k, pressure_ratio);
+m_al_kg = (v_c_l / 1000) * fill_ratio * aluminium_density;
+
+echo(str("Sketch chamber V_c = ", v_c_l, " L; working air V_a = ", v_a_l, " L"));
+echo(str("First-order power = ", p_w, " W = ", p_w / 735.5, " hp; pressure ratio = ", pressure_ratio));
+echo(str("Cast chamber mass at ", fill_ratio * 100, " % fill = ", m_al_kg, " kg"));
 
 // unité geometrique
 chink = inner_r * 2 / CHINK_QUOT ;
@@ -65,7 +88,8 @@ module manson_13_base_piston(chink) {
 
 gap = 0.1;
 gauge = chink;
-cyltot_l = head_l + stroke + gauge * 2.5;
+// chamber_l is a soft-coded lever; keep the piston/rod stack fitting below it
+cyltot_l = max(chamber_l, head_l + stroke + gauge * 2.5);
 
 CYLIND_COLOR = [0.9, 0.6, 0.1, 0.9];
 PISTON_COLOR = [0.1, 0.1, 0.9, 0.9];

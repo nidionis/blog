@@ -1,6 +1,6 @@
 # Dimensionnement Beta — Stirling Beta
 
-> **Status:** étude exploratoire · **Owns:** dimensionnement Stirling Beta · **Up:** [Stirling](README.md)
+> **Status:** étude exploratoire · **Owns:** dimensionnement Stirling Beta · **Up:** [Stirling](README.md) · **Lang:** FR · [EN](../../../engines/stirling/beta-sizing.md)
 
 Cette étude est indépendante des hypothèses Manson. Pour le moteur choisi, voir [dimensionnement Manson](../manson/sizing.md).
 

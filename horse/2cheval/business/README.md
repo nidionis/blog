@@ -1,21 +1,25 @@
 # 2Cheval — Business
 
-> **Status:** canonical hub · **Owns:** commercial model and customer promise · **Up:** [2Cheval](../README.md)
+> **Status:** canonical hub · **Owns:** modèle commercial et promesse client · **Up:** [2Cheval](../README.md) · **Lang:** FR · [EN](../../business/README.md)
 
 Le 2Cheval vend un moteur thermique hackable qui fonctionne à la paille. Ce dossier contient la couche commerciale, pas les chiffres d'ingénierie.
 
+- [Résilience](resilience.md) — l'argument central : plancher pessimiste, sources et charges multiples, prix de 19 999 €.
 - [Modèle économique](business-model.md) — partage de la valeur.
 - [Clients](customers.md) — le cas d'usage client de référence.
-- [Coûts — page centrale](costs.md) — atelier, premier prototype, série et coût de remplacement.
-- [Premier prototype — PLA, sable, coulée, tour](../production/prototype.md) — route et coût du premier moteur.
-- [Matière recyclée](recycled-material.md) — coût de la matière première.
+- [Coûts — synthèse](costs.md) — atelier, assurance premier prototype, série et remplacement.
+- [Valorisation de l'investissement](valorisation-investissement.md) — capex, itérations et apprentissage comme valeur.
+- [Premier prototype — assurance et route](../production/prototype.md) — réessai non optimisé, **15 000–30 000 €**.
+- [Estimation gros piston](../engines/manson/costs/estimation-gros-piston.md) — exemple aligné (gaspillage, amortissement).
+- [Usinage tour — coût de série et prix de vente](../production/usinage-tour.md) — modèle viable et marge.
+- [Scénario d'échec : faible volume tour](../archive/scenarios/lathe-low-volume.md) — pire option, vendre ou louer la machine.
+- [Matière recyclée](recycled-material.md) — coût aluminium par moteur, canettes et refonte séparée.
 - [Contact](contact.md).
-
-La gouvernance derrière le modèle économique est documentée ailleurs.
 
 ## Voir aussi
 
-- [Résilience — moteur résilient à € 19 999](resilience.md)
+- [Leviers techniques](../leviers/README.md)
 - [Carte du projet](../README.md)
 - [Moteur Manson](../engines/manson/README.md)
 - [Glossaire](../GLOSSARY.md)
+- [Version anglaise](../../business/README.md)

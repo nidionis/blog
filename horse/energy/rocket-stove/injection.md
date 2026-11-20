@@ -1,6 +1,6 @@
 # Straw injection
 
-> **Status:** exploratory · **Owns:** injection concept · **Up:** [Rocket stove](README.md)
+> **Status:** exploratory · **Owns:** injection concept · **Up:** [Rocket stove](README.md) · **Lang:** EN · [FR](../../2cheval/energy/rocket-stove/injection.md)
 
 Target: homogeneous straw injection into the rocket stove. The original note uses "vapour-horse" (`vh`) as a communication unit, not a physical flow.
 

@@ -1,18 +1,14 @@
-# Binder jetting — Version française (sous-projet 2Cheval)
+# Binder jetting
 
-> **Status:** canonical hub · **Owns:** sand-printing route · **Up:** [Production](../README.md)
+> **Status:** canonical hub · **Owns:** route d'impression sable · **Up:** [Production](../README.md) · **Lang:** FR · [EN](../../../production/binder-jetting/README.md)
 
-L'impression de sable par binder jetting est l'étape intermédiaire avant l'aluminium : elle permet de valider les formes et le procédé sans le coût de la métallurgie directe.
+Étape intermédiaire avant l'aluminium : valider formes et procédé sans le coût de la métallurgie directe. Détail technique dans la [page anglaise](../../../production/binder-jetting/README.md).
 
-- [Estimation de coût](cost.md) — BOM des composants et frontière R&D.
-- [Stratégie de production](../strategy.md)
-- [Polar slicer](../polar-slicer/README.md)
-
-Le BOM est de **46 000 – 78 000 €** ; le chiffre d'environ 100 000 € inclut la R&D et l'intégration. Voir [coûts business](../../business/costs.md).
+- [BOM / estimation de coût](cost.md) — composants **46 000–78 000 €** ; ~100 000 € tout compris avec R&D et intégration.
+- [Stratégie de production](../strategy.md) · [Polar slicer](../polar-slicer/README.md)
+- [Coûts business](../../business/costs.md) · [Valorisation de l'investissement](../../business/valorisation-investissement.md)
 
 ## Voir aussi
-- [Dictionnaire / Glossary](../../GLOSSARY.md)
 
-- [Hub production](../README.md)
-- [Polar slicer](../polar-slicer/README.md)
-- [Coûts](../../business/costs.md)
+- [Hub production](../README.md) · [Glossaire](../../GLOSSARY.md)
+

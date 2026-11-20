@@ -1,6 +1,6 @@
-# Échelle de puissance nucléaire — Version française (sous-projet 2Cheval)
+# Échelle de puissance nucléaire
 
-> **Status:** preliminary summary · **Owns:** nuclear power-scale argument · **Up:** [Variante nucléaire](README.md)
+> **Status:** preliminary summary · **Owns:** argument d'échelle · **Up:** [Variante nucléaire](README.md) · **Lang:** FR · [EN](../../../energy/nuclear/power-scale.md)
 
 L'idée n'est pas de construire un grand réacteur, mais de remplacer quelques kilowatts de chaleur de paille par une source compacte et durable.
 
@@ -10,11 +10,10 @@ L'idée n'est pas de construire un grand réacteur, mais de remplacer quelques k
 - L'évacuation de chaleur peut utiliser le cycle ouvert Manson et un radiateur/flux d'air.
 - Le blindage domine la masse et le volume. Le plomb arrête le gamma ; les neutrons demandent un matériau hydrogéné.
 
-L'ancienne note utilise 20 cm de plomb ; la valeur canonique est **30 cm** pour le gamma, avec un blindage neutronique séparé. Voir [hub nucléaire](README.md) et [note marketing brute](notes/marketing.md).
+La valeur canonique est **30 cm de plomb** pour le gamma, avec un blindage neutronique séparé. Voir [hub nucléaire](README.md) et [sécurité](safety.md).
 
 ## Voir aussi
-- [Dictionnaire / Glossary](../../GLOSSARY.md)
 
-- [Sécurité](safety.md)
 - [Thermodynamique du Manson](../../engines/manson/thermodynamics.md)
 - [Dimensionnement du Manson](../../engines/manson/sizing.md)
+- [Version anglaise](../../../energy/nuclear/power-scale.md)

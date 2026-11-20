@@ -1,6 +1,6 @@
 # Stirling Beta — alternative étudiée (sous-projet 2Cheval)
 
-> **Status:** exploratory hub · **Owns:** alternative engine study · **Up:** [2Cheval](../../../README.md)
+> **Status:** exploratory hub · **Owns:** alternative engine study · **Up:** [Moteurs](../README.md) · **Lang:** FR · [EN](../../../engines/stirling/README.md)
 
 Le Stirling Beta est une alternative **à cycle fermé**, étudiée avec de l'azote et un alternateur linéaire. Ce n'est **pas** le moteur choisi : le [M Reloaded](../manson/README.md) est plus simple à construire et fonctionne en cycle ouvert.
 

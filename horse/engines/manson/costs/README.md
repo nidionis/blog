@@ -1,18 +1,19 @@
 # Manson material costs
 
-> **Status:** canonical hub · **Owns:** material-cost calculations · **Up:** [M Reloaded](README.md)
+> **Status:** canonical hub · **Owns:** material-cost studies · **Up:** [M Reloaded](README.md) · **Lang:** EN · [FR](../../../2cheval/engines/manson/costs/README.md)
 
-These pages estimate material and machining for specific shapes. They are not the engine price and not the canonical dimensions; those are in [sizing](../sizing.md).
+These pages estimate material and machining for **specific shapes**. They are not the engine price and not the canonical dimensions; those are in [sizing](../sizing.md) and [business costs](../../../business/costs.md).
 
-- [Solid cylinder](solid-cylinder.md) — 1.5 m long, 130 cm diameter billet.
-- [Plate](plate.md) — 126 × 126 × π cm plate in PLA, aluminium, steel and stainless steel.
-- [First prototype](prototype.md) — PLA print, sand casting, 3 m³ crucible, lathe finishing; €52,000–196,000 outsourced.
-- [Lathe machining](lathe-machining.md) — per-engine production cost, €19,999 resale price and margin.
-
-For the commercial roll-up, see [business costs](../../../business/costs.md).
+- [Recycled material](../../../business/recycled-material.md) — product-sized engines and the 2-full-cylinder stress test; cans €0.03, remelting separate.
+- [Large-piston estimate](large-piston-estimate.md) — aligned worked example (Ø1.50 m × 1.30 m): waste factor, process, amortization.
+- [First prototype](prototype.md) — unoptimized re-try route, **€15,000–30,000** assurance.
+- [Lathe model](lathe-machining.md) — series assumptions, formula and margin.
+- [Solid cylinder](solid-cylinder.md) · [Plate](plate.md) — shape studies (non-canonical geometry).
+- [Investment valorisation](../../../business/investment-valorisation.md) — how iteration and tooling reduce unit cost.
+- [Failing scenario](../../../archive/scenarios/lathe-low-volume.md) — do not amortize a lathe on a few units.
 
 ## See also
 
 - [Sizing](../sizing.md)
 - [Business costs](../../../business/costs.md)
-- [Recycled material](../../../business/recycled-material.md)
+- [Resilience](../../../business/resilience.md)

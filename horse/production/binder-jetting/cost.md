@@ -1,10 +1,10 @@
-> **Status:** canonical BOM · **Owns:** binder-jetting component cost · **Up:** [Binder jetting](README.md)
+# Binder-jetting BOM
 
-Component BOM for an 8 m³ binder-jetting machine: €46,000–78,000. The ~€100,000 figure adds R&D and integration.
+> **Status:** canonical BOM · **Owns:** binder-jetting component cost · **Up:** [Binder jetting](README.md) · **Lang:** EN · [FR](../../2cheval/production/binder-jetting/cost.md)
 
-This is the component BOM (46 000 – 78 000 €). The ~100 000 € figure in [business costs](../../business/costs.md) adds R&D and integration.
+Component BOM for an 8 m³ binder-jetting machine: **€46,000–78,000**. The ~€100,000 figure adds R&D and integration; see [business costs](../../business/costs.md).
 
-To estimate the cost of building such a machine (8 m³ binder jetting), separate the investment in **material/raw components (BOM)** from the cost of **R&D / machining**. At this industrial scale, the budget is dominated by the heavy mechanical structure, the actuators and the high-speed printing system.
+To estimate the cost of building such a machine, separate the investment in **material/raw components (BOM)** from **R&D / machining**. At this scale, the budget is dominated by the heavy mechanical structure, the actuators and the high-speed printing system.
 
 Here is an indicative budget estimate for a high-end functional prototype (excluding design and assembly hours):
 

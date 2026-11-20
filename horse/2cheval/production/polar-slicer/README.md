@@ -1,16 +1,14 @@
-# Polar slicer — Version française (sous-projet 2Cheval)
+# Polar slicer
 
-> **Status:** canonical hub · **Owns:** slicing software · **Up:** [2Cheval](../../README.md)
+> **Status:** canonical hub · **Owns:** logiciel de découpe cylindrique · **Up:** [Production](../README.md) · **Lang:** FR · [EN](../../../production/polar-slicer/README.md)
 
-Le polar slicer est un générateur de G-code maison, optimisé pour les cylindres. C'est un prototype : il peut échouer sur des formes complexes ; dans ce cas, utiliser Cura.
+Générateur de G-code maison, optimisé pour les cylindres. Prototype : il peut échouer sur des formes complexes ; utiliser Cura dans ce cas. Détail technique dans la [page anglaise](../../../production/polar-slicer/README.md).
 
 - [État du prototype](prototype.md) — statut et limitations.
-- [Géométrie de la grille polaire](polar-grid.md) — comment les lignes polaires sont espacées.
-- [Limite angulaire](angular-limit.md) — rayon minimal de retrait près du centre.
+- [Grille polaire](polar-grid.md) — espacement des lignes.
+- [Limite angulaire](angular-limit.md) — rayon minimal près du centre.
 
 ## Voir aussi
-- [Dictionnaire / Glossary](../../GLOSSARY.md)
 
-- [Hub production](../README.md)
-- [Binder jetting](../binder-jetting/README.md)
-- [CAO Manson](../../engines/manson/scad/README.md)
+- [Binder jetting](../binder-jetting/README.md) · [Stratégie de production](../strategy.md)
+- [CAO Manson](../../engines/manson/scad/README.md) · [Glossaire](../../GLOSSARY.md)
