@@ -38,7 +38,7 @@ This page owns **symbols, units and baseline constants**. Each technical term li
 | Straw density, loose / densified | ~100 / ~250 kg/m³ | [straw](energy/rocket-stove/straw.md) |
 | Feed limit | 30 kg / 20 min = 90 kg/h | [fuel](engines/manson/fuel.md) |
 | Casting fill | 66 % | [recycled material](business/recycled-material.md) |
-| Can price | €0.03/can | [recycled material](business/recycled-material.md) |
+| Can price / mass (baseline) | €0.03/can, 14 g (env-configured; down to €0.01 and 8 g) | [recycled material](business/recycled-material.md) |
 | Pressure derating | 60 % of ideal gain | [pressure lever](levers/pressure.md) |
 
 ## Terms

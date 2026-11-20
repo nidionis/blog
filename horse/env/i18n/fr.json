@@ -75,6 +75,22 @@
       "engine_cell": "**{hp} {hp_unit}**",
       "stress_label": "2 cylindres pleins (test)",
       "stress_volume": "2 × 3,534 m³"
+    },
+    "can": {
+      "headers": [
+        "Masse canette",
+        "Prix canette",
+        "€/kg (canettes)",
+        "Canettes 2 ch",
+        "Coût canettes 2 ch",
+        "Matière 2 ch",
+        "Matière test"
+      ],
+      "align": "|---:|---:|---:|---:|---:|---:|---:|",
+      "mass_cell": "{g} g/canette",
+      "price_cell": "{c} c/canette",
+      "eurkg_cell": "{v} €/kg",
+      "note": "Référence : 241,5 kg d'alu (2 ch) et 12 596,2 kg d'alu (test), refonte incluse aux hypothèses projet."
     }
   },
   "svg": {

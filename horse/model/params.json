@@ -10,10 +10,16 @@
     "feed_limit_kg_per_20min": 30.0,
     "fill_ratio": 0.66,
     "aluminium_density_kg_m3": 2700,
-    "can_mass_kg": 0.0135,
-    "can_price_eur": 0.03,
+    "can": {
+      "price_eur": 0.03,
+      "price_eur_low": 0.01,
+      "mass_kg": 0.014,
+      "mass_kg_light": 0.008
+    },
     "remelt_kwh_per_kg": 0.3375,
-    "remelt_eur_per_kwh": 0.2
+    "remelt_eur_per_kwh": 0.2,
+    "can_mass_kg": 0.014,
+    "can_price_eur": 0.03
   },
   "targets_hp": [
     2,

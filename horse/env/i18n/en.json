@@ -91,6 +91,22 @@
       "engine_cell": "**{hp} hp**",
       "stress_label": "{label} (stress test)",
       "stress_volume": "2 × 3.534 m³"
+    },
+    "can": {
+      "headers": [
+        "Can mass",
+        "Can price",
+        "€/kg (cans)",
+        "2 hp cans",
+        "2 hp can cost",
+        "2 hp material",
+        "Stress-test material"
+      ],
+      "align": "|---:|---:|---:|---:|---:|---:|---:|",
+      "mass_cell": "{g} g/can",
+      "price_cell": "{c} c/can",
+      "eurkg_cell": "{v} €/kg",
+      "note": "Reference: 241.5 kg Al (2 hp) and 12,596.2 kg Al (stress test), remelting included at project assumptions."
     }
   },
   "svg": {

@@ -38,7 +38,7 @@ Cette page possède les **symboles, unités et constantes de base**. Chaque term
 | Densité de la paille, vrac / densifiée | ~100 / ~250 kg/m³ | [paille](energy/rocket-stove/straw.md) |
 | Limite d'alimentation | 30 kg / 20 min = 90 kg/h | [carburant](engines/manson/fuel.md) |
 | Remplissage de coulée | 66 % | [matière recyclée](business/recycled-material.md) |
-| Prix de la canette | 0,03 €/canette | [matière recyclée](business/recycled-material.md) |
+| Prix / masse canette (base) | 0,03 €/canette, 14 g (configuré dans env ; jusqu'à 0,01 € et 8 g) | [matière recyclée](business/recycled-material.md) |
 | Dérate de pression | 60 % du gain idéal | [levier pression](leviers/pression.md) |
 
 ## Termes

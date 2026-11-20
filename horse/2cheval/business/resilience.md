@@ -60,7 +60,7 @@ Le point n'est pas qu'une charge serait meilleure. Le point est que la même sou
 
 ## 6. Le plancher pessimiste est la garantie
 
-Tous les chiffres commerciaux utilisent le plancher : **5 % de rendement, 12 MJ/kg de paille, 66 % de remplissage, 30 kg / 20 min, 0,03 €/canette**. La cible de 15 % et le plafond de 20 % sont du bonus, pas la promesse. S'ils arrivent, le moteur devient plus petit, plus léger et moins cher au kW ; sinon, le produit 2 ch fonctionne quand même.
+Tous les chiffres commerciaux utilisent le plancher : **5 % de rendement, 12 MJ/kg de paille, 66 % de remplissage, 30 kg / 20 min, coût canette configuré dans env (base 0,03 €/canette, 14 g)**. La cible de 15 % et le plafond de 20 % sont du bonus, pas la promesse. S'ils arrivent, le moteur devient plus petit, plus léger et moins cher au kW ; sinon, le produit 2 ch fonctionne quand même.
 
 ## 7. Positionnement de prix
 

@@ -2,7 +2,7 @@
 
 > **Status:** worked example · **Owns:** competitor/large-component cost alignment · **Up:** [Manson costs](README.md) · **Lang:** EN · [FR](../../../2cheval/engines/manson/costs/estimation-gros-piston.md)
 
-This page aligns an external estimate for a **large piston component** (Ø1.50 m × 1.30 m stroke) with the project’s hardened assumptions. It is **not** the 2 hp product engine: it is a scale/geometry example that shows how material, waste factor, process and amortization drive cost. The 2 hp product baseline is [135.5 L total chamber, ~242 kg cast Al, ~€553 material](../../../business/recycled-material.md).
+This page aligns an external estimate for a **large piston component** (Ø1.50 m × 1.30 m stroke) with the project’s env-configured assumptions. It is **not** the 2 hp product engine: it is a scale/geometry example showing how material, waste factor, process and amortization drive cost. The 2 hp product baseline is [135.5 L total chamber, ~241.5 kg cast Al, ~€534 material at 14 g / €0.03](../../../business/recycled-material.md).
 
 ## 1. Geometry and material (recalculated)
 
@@ -12,14 +12,15 @@ This page aligns an external estimate for a **large piston component** (Ø1.50 m
 | Effective material (assumed) | `1.15 m³` | design assumption: displacer + chamber/rod/wheel |
 | Aluminium density | `2,700 kg/m³` | [glossary](../../../GLOSSARY.md) |
 | Effective mass | `1.15 × 2,700 = 3,105 kg` |  |
-| Can price | `€0.03/can` | hardened project assumption |
-| Can mass | `13.5 g` baseline (`15 g` variant shown) | `€2.22/kg` at 13.5 g, `€2.00/kg` at 15 g |
+| Can price (baseline / low) | `€0.03 / €0.01 per can` | env-configured |
+| Can mass (baseline / light) | `14 g / 8 g` | env-configured |
 | Remelting | `0.3375 kWh/kg × €0.20/kWh = €0.0675/kg` | 80 % furnace, self-consumed solar |
 
-| Material basis | Can cost | Remelting | **Perfect material** |
-|---|---:|---:|---:|
-| 13.5 g cans (project baseline) | €6,900 | €210 | **€7,110** |
-| 15 g cans (variant) | €6,210 | €210 | **€6,420** |
+| Material basis | Cans | Can cost | Remelting | **Perfect material** |
+|---|---:|---:|---:|---:|
+| 14 g cans, €0.03 (baseline) | 221,786 | €6,654 | €210 | **€6,863** |
+| 14 g cans, €0.01 | 221,786 | €2,218 | €210 | **€2,427** |
+| 8 g cans, €0.03 | 388,125 | €11,644 | €210 | **€11,853** |
 
 “Perfect material” assumes the effective mass with no overpour, no scrap and no failed iteration. Real builds pay a **waste/iteration factor**.
 
@@ -27,13 +28,13 @@ This page aligns an external estimate for a **large piston component** (Ø1.50 m
 
 The waste factor bundles casting yield, overpour, defects, re-melt loss and re-tries. It is the main [valorisation](../../../business/investment-valorisation.md) lever: iteration reduces it.
 
-| Scenario | Factor on perfect material | Material equivalent (13.5 g basis) | Casting/molding process | **Indicative unit cost** |
+| Scenario | Factor on perfect material | Material equivalent (14 g, €0.03 basis) | Casting/molding process | **Indicative unit cost** |
 |---|---:|---:|---:|---:|
-| Optimistic series | ×2 | ~€14,220 | ~€2,500–4,000 | **~€15,000–18,000** |
-| Realistic | ×3 | ~€21,330 | ~€2,500–4,000 | **~€24,000–25,000** |
-| Pessimistic isolated prototype | ×4 | ~€28,440 | ~€2,500–4,000 | **~€31,000–33,000** |
+| Optimistic series | ×2 | ~€13,730 | ~€2,500–4,000 | **~€16,000–18,000** |
+| Realistic | ×3 | ~€20,590 | ~€2,500–4,000 | **~€23,000–25,000** |
+| Pessimistic isolated prototype | ×4 | ~€27,450 | ~€2,500–4,000 | **~€30,000–32,000** |
 
-Casting/molding process here means furnace/amort share, energy, sand mold, labor and handling for this scale of part (order €2.5k–4k per iteration in a low-capex setup). A high-capex industrial route changes the split but not the need to amortize.
+Casting/molding process here means furnace/amort share, energy, sand mold, labor and handling for this scale of part (order €2.5k–4k per iteration in a low-capex setup).
 
 ## 3. Workshop investment (scalable path)
 
@@ -45,7 +46,7 @@ Casting/molding process here means furnace/amort share, energy, sand mold, labor
 | Lathe + rotary/printing (radial slicer) | €2,000–5,000 | finishing and iteration speed |
 | **Total (indicative DIY path)** | **€6,000–10,000** | amortizable over series |
 
-This is a **low-capex valorisation path**, different from the project’s €600k series lathe assumption. Buying heavy tooling for a few units is the [failing scenario](../../../archive/scenarios/lathe-low-volume.md); renting, sharing or selling the machine preserves value.
+This is a **low-capex valorisation path**, different from the project’s €600k series lathe assumption. Buying heavy tooling for a few units is the [failing scenario](../../../archive/scenarios/lathe-low-volume.md); see [workshop equipment](../../../business/workshop/equipment.md) for indicative ranges.
 
 ## 4. PLA + sand prototyping
 
@@ -57,17 +58,18 @@ This is a **low-capex valorisation path**, different from the project’s €600
 
 | Reference | Scale | Material / cost signal | Use |
 |---|---|---|---|
-| 2 hp product engine | `V_c` 135.5 L, 241.5 kg Al | ~€553 material; series **€19,999** | canonical market product |
-| 20 hp engine (5 % limit) | `V_c` 1,355 L, 2,415 kg Al | ~€5,530 material | extreme at feed limit |
-| This worked example | 1.15 m³ effective, 3,105 kg | ~€7.1k perfect material; ~€15–33k by scenario | large component / cost driver demo |
-| 2-full-cylinder stress test | 12,596 kg Al | ~€28,842 material ceiling | first-engine assurance **€15k–30k** |
+| 2 hp product engine | `V_c` 135.5 L, 241.5 kg Al | ~€534 material (baseline); series **€19,999** | canonical market product |
+| 20 hp engine (5 % limit) | `V_c` 1,355 L, 2,415 kg Al | ~€5,338 material (baseline) | extreme at feed limit |
+| This worked example | 1.15 m³ effective, 3,105 kg | ~€6.9k perfect material (baseline); ~€16–32k by scenario | large component / cost driver demo |
+| 2-full-cylinder stress test | 12,596 kg Al | ~€27,842 material ceiling (baseline) | material ceiling / reference |
 
-The example supports a **first resale range ~€30,000–40,000** for a large, early, low-volume component with margin (≈20–30 % on a realistic build), and **~€15,000–20,000** in series if waste factor and amortization are valorised. For the 2 hp engine, the project keeps the separate, documented baseline: **€15k–30k first-engine assurance** and **€19,999 series price**. See [costs](../../../business/costs.md).
+The example supports a **first resale range ~€30,000–40,000** for a large, early, low-volume component with margin, and lower unit cost in series if waste factor and amortization are valorised. For the 2 hp engine, the project keeps its documented baseline: **prototype €15,000** (expect **€30,000** if the connecting rod and support are ordered) and **€19,999 series price**. See [costs](../../../business/costs.md) and [recycled material](../../../business/recycled-material.md).
 
 ## See also
 
 - [Investment valorisation](../../../business/investment-valorisation.md)
-- [Recycled material](../../../business/recycled-material.md)
+- [Recycled material / can scenarios](../../../business/recycled-material.md)
+- [Workshop equipment](../../../business/workshop/equipment.md)
 - [First prototype](prototype.md)
 - [Lathe model](lathe-machining.md)
 - [French version](../../../2cheval/engines/manson/costs/estimation-gros-piston.md)

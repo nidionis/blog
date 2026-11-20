@@ -12,11 +12,11 @@ Cette page archive la **pire option** de production : utiliser un tour de 2 m co
 - Avec la matière produit 2 ch et des charges coulée/outillage conservatrices, le coût de production monte à ≈ **33 420 €**.
 - Au prix de vente retenu de **19 999 €**, l'amortissement n'est pas couvert.
 
-## Test de charge 2 cylindres pleins (plafond matière)
+## Référence plafond matière
 
-Le test matière utilise 2 cylindres pleins `d = 1,5 m`, `L = 2 m`, remplis à 66 % → 12 596 kg, 933 053 canettes, **28 842 €** de matière (canettes 27 992 € + refonte 850 €). Cette valeur est prise comme **valeur maximale d'un premier réessai non optimisé** et arrondie à **30 000 €** comme assurance d'investissement pour le premier prototypage : **15 000–30 000 €**.
+Le test 2 cylindres pleins (2 cylindres `d = 1,5 m`, `L = 2 m`, remplis à 66 % → 12 596 kg Al) est un **plafond matière/référence**, pas une trajectoire produit. Aux hypothèses canette de base configurées dans l'env (14 g, 0,03 €/canette), il représente ~**27 842 €** de matière ; voir [matière recyclée](../../business/recycled-material.md) et [scénarios de coût canette](../../business/recycled-material.md#scénarios-de-coût-canette). Le projet expose désormais le prototype à **15 000 €** (prévoir **30 000 €** sur commande pour bielle et support), distinct du prix de série.
 
-Si la même charge 2 cylindres pleins est forcée dans une production tour à faible volume, le total devient ≈ **45 242 €** à 1 000 moteurs/an et reste ≈ **45 082 €** à 5 000 moteurs/an — marge négative à 19 999 €. Confirmation : ne pas utiliser la billette 2 cylindres pleins comme trajectoire produit par moteur.
+Forcer une charge matière 2 cylindres pleins dans une production à faible volume reste non viable à 19 999 €.
 
 ## Actions en scénario d'échec
 
@@ -30,16 +30,16 @@ Si la production reste à quelques unités par tour :
 
 ## Hypothèses dépassées
 
-- Ancienne comparaison « tout le tour sur un seul moteur » : ≈ 243 842 € hors piston (≈ 245 042 € avec piston) avec les hypothèses canettes/refonte durcies. Pas un scénario de première fabrication.
-- Les anciennes fourchettes de premier prototype sous-traité 52 000–196 000 € et capex four 122 000–426 000 € sont dépassées par l'**assurance d'investissement de prototypage 15 000–30 000 €** ancrée au plafond matière non optimisé de 30 000 €.
-- La route du premier prototype reste conceptuellement **impression PLA → moule sable → coulée → finition tour**, mais son investissement est borné par cette fourchette d'assurance plutôt que par l'ancien chiffrage sous-traité.
+- Les anciennes comparaisons « tout le tour sur un seul moteur » et chiffrages sous-traités sont dépassés par le modèle de coûts actuel piloté par l'env et le prix prototype exposé.
+- La route du premier prototype reste **impression PLA → moule sable → coulée → finition tour**.
 
 ## Voir aussi
 
 - [Premier prototype](../../production/prototype.md)
 - [Matière recyclée](../../business/recycled-material.md)
 - [Coûts](../../business/costs.md)
+- [Équipement d'atelier](../../business/atelier/equipement.md)
 - [Modèle de coût de série](../../production/usinage-tour.md)
 - [Archive anglaise](../../../archive/scenarios/lathe-low-volume.md)
 - [Archive](../README.md)
-- [Dictionnaire / Glossary](../../GLOSSARY.md)
+- [Glossaire](../../GLOSSARY.md)

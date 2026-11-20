@@ -6,7 +6,7 @@ L'entreprise valide d'abord le premier prototype par **impression PLA → moule 
 
 ## Premier prototype
 
-Le premier moteur est un **réessai non optimisé** avec une **assurance de 15 000–30 000 €**. Le plafond de 30 000 € est ancré au test matière 2 cylindres pleins (≈ 28 842 €). Route : impression PLA (1,5 m³) → moule sable (10 m³) → coulée (creuset ~3 m³) → finition tour (~1,40 m). Détail : [premier prototype](prototype.md), [matière recyclée](../business/recycled-material.md).
+Le premier moteur est un **réessai non optimisé**. Le prototype est exposé à **15 000 €** (prévoir **30 000 €** sur commande pour bielle et support). Route : impression PLA (1,5 m³) → moule sable (10 m³) → coulée (creuset ~3 m³) → finition tour (~1,40 m). Détail : [premier prototype](prototype.md), [matière recyclée](../business/recycled-material.md), [équipement d'atelier](../business/atelier/equipement.md).
 
 ## Du concept à la production
 
@@ -18,10 +18,11 @@ La [découpe cylindrique](polar-slicer/polar-grid.md) ([prototype](https://githu
 
 ## Coûts
 
-En série, le tour est réparti sur des milliers de moteurs : coût ≈ **16 950 €/moteur**, prix retenu **19 999 €**. Produire quelques unités par tour est la [pire option](../archive/scenarios/lathe-low-volume.md). Détail : [usinage tour](usinage-tour.md), [coûts business](../business/costs.md).
+En série, le tour est réparti sur des milliers de moteurs : coût ≈ **16 934 €/moteur** à 1 000/an, prix retenu **19 999 €**. Produire quelques unités par tour est la [pire option](../archive/scenarios/lathe-low-volume.md). Détail : [usinage tour](usinage-tour.md), [coûts business](../business/costs.md).
 
 ## Voir aussi
 
 - [Premier prototype](prototype.md) · [Matière recyclée](../business/recycled-material.md)
+- [Équipement d'atelier](../business/atelier/equipement.md)
 - [Binder jetting](binder-jetting/README.md) · [Polar slicer](polar-slicer/README.md)
 - [Version anglaise](../../production/strategy.md)

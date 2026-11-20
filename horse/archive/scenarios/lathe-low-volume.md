@@ -12,11 +12,11 @@ This page archives the **worst-deal** production path: using a 2 m lathe as the 
 - With the 2 hp product material and conservative casting/tooling charges, the production cost rises to ≈ **€33,420**.
 - At the retained sale price of **€19,999**, this does not cover amortization.
 
-## 2-full-cylinder stress test (material ceiling)
+## Material ceiling reference
 
-The material stress test uses 2 full cylinders `d = 1.5 m`, `L = 2 m`, filled at 66 % → 12,596 kg, 933,053 cans, **€28,842** material (cans €27,992 + remelting €850). This is treated as the **maximal value for an unoptimized first re-try** and rounded to **€30,000** as investment assurance for first prototyping: **€15,000–30,000**.
+The 2-full-cylinder stress test (2 cylinders `d = 1.5 m`, `L = 2 m`, filled at 66 % → 12,596 kg Al) is a **material ceiling/reference**, not a per-engine product path. At baseline env-configured can assumptions (14 g, €0.03/can) it is ~**€27,842** material; see [recycled material](../../business/recycled-material.md) and [can scenarios](../../business/recycled-material.md#4-can-cost-scenarios). The project now exposes the prototype as **€15,000** (expect **€30,000** if the connecting rod and support are ordered), separate from series pricing.
 
-If the same 2-full-cylinder charge is forced through low-volume lathe production, the total becomes ≈ **€45,242** at 1,000 engines/year and still ≈ **€45,082** at 5,000 engines/year — a negative margin at €19,999. This confirms: do not use the 2-full-cylinder billet as a per-engine product path.
+Forcing a 2-full-cylinder material charge through low-volume lathe production remains non-viable at €19,999.
 
 ## Failing-scenario actions
 
@@ -30,15 +30,15 @@ If production stays at a few units per lathe:
 
 ## Superseded assumptions
 
-- Old “whole lathe on one engine” comparison: ≈ €243,842 excluding piston (≈ €245,042 with piston) with hardened can/remelting assumptions. Not a first-build scenario.
-- Old outsourced first-prototype range €52,000–196,000 and furnace capex €122,000–426,000 are superseded by the **€15,000–30,000** first-prototyping investment assurance anchored to the €30,000 unoptimized material ceiling.
-- The first prototype route remains conceptually **PLA print → sand mold → casting → lathe finishing**, but its investment is bounded by the assurance range rather than by the old outsourced breakdown.
+- Old “whole lathe on one engine” and outsourced first-prototype breakdowns are superseded by the current prototype pricing and env-driven cost model.
+- The first prototype route remains **PLA print → sand mold → casting → lathe finishing**, bounded by process/iteration choices rather than by obsolete outsourced ranges.
 
 ## See also
 
 - [First prototype](../../engines/manson/costs/prototype.md)
 - [Recycled material](../../business/recycled-material.md)
 - [Costs](../../business/costs.md)
+- [Workshop equipment](../../business/workshop/equipment.md)
 - [Series cost model](../../engines/manson/costs/lathe-machining.md)
 - [French archive](../../2cheval/archive/scenarios/lathe-low-volume.md)
 - [Archive](../README.md)

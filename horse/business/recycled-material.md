@@ -1,17 +1,17 @@
-# Recycled material cost per engine
+# Recycled material — can cost and aluminium
 
-> **Status:** canonical · **Owns:** recycled-aluminium raw-material estimate · **Up:** [Business](README.md)
+> **Status:** canonical · **Owns:** recycled-aluminium raw-material estimate · **Up:** [Business](README.md) · **Lang:** EN · [FR](../2cheval/business/recycled-material.md)
 
-Raw-material estimate for cast aluminium made from used cans. The can price is hardened to **€0.03 per can** (the expected figure was €0.02), and remelting is charged **separately**. This is material only: machining, binder, labour and the rest of the production chain are excluded.
+Raw-material estimate for cast aluminium made from used cans. The can costing is **env-configured** (soft-coded): baseline **€0.03/can** (down to **€0.01/can**) for a median can mass **14 g** (down to **8 g**), with remelting charged separately. This is material only: machining, binder, labour and the rest of the production chain are excluded.
 
-## 1. Assumptions
+## 1. Assumptions (baseline)
 
 | Parameter | Value | Note |
 |---|---:|---|
 | Compacted aluminium density | **2,700 kg/m³** | solid-equivalent |
-| Can mass | **13.5 g** | 74 cans/kg; 200,000 cans/m³ compacted |
+| Can mass (baseline / light) | **14 g / 8 g** | env-configured (`env/values/engine.json`) |
 | Chamber fill | **66 %** | pessimistic casting yield |
-| Can price | **€0.03/can** | hardened from the expected €0.02 |
+| Can price (baseline / low) | **€0.03 / €0.01 per can** | env-configured scenario range |
 | Melting energy, theoretical | **0.27 kWh/kg** | heating + latent heat |
 | Furnace efficiency | **80 %** | melting only |
 | Remelting energy | **0.3375 kWh/kg** | 0.27 / 0.80 |
@@ -20,46 +20,60 @@ Raw-material estimate for cast aluminium made from used cans. The can price is h
 
 The theoretical melting energy is `0.9 kJ/(kg·K) × 640 K + 397 kJ/kg ≈ 973 kJ/kg ≈ 0.27 kWh/kg` (aluminium heated from 20 °C to 660 °C, then melted).
 
-## 2. Formula
+## 2. Function and formula
+
+Cost calculation is implemented in [`tools/calc.py`](../tools/calc.py) (`can_cost(...)`, `table_can(...)`) and driven by `env/values/engine.json`.
 
 For an engine with total chamber volume `V_c` (2 chambers of `V_c/2`):
 
 $$m_{Al} = 0.66 \times V_c \times 2\,700\ \text{kg/m}^3$$
 
-$$N_{cans} = \frac{m_{Al}}{0.0135\ \text{kg}}$$
+$$N_{cans} = \left\lceil \frac{m_{Al}}{m_{can}} \right\rceil,\qquad C_{cans} = N_{cans} \times p_{can}$$
 
-$$\text{can cost} = N_{cans} \times €0.03$$
+$$C_{remelt} = m_{Al} \times 0.3375\ \text{kWh/kg} \times 0.20\ \text{€/kWh},\qquad C_{mat} = C_{cans} + C_{remelt}$$
 
-$$\text{remelting cost} = m_{Al} \times 0.3375\ \text{kWh/kg} \times €0.20/\text{kWh}$$
-
-## 3. Material per engine
+## 3. Material per engine (baseline)
 
 <!-- calc:material:en -->
 | Engine | Total `V_c` | Aluminium | Cans | Can cost | Remelting | **Material total** |
 |---|---:|---:|---:|---:|---:|---:|
-| **2 hp** | 135.53 L | 241.5 kg | 17,889 | €536.67 | €16.30 | **€552.97** |
-| **6 hp** | 406.58 L | 724.5 kg | 53,668 | €1,610.04 | €48.91 | **€1,658.95** |
-| **20 hp** | 1,355.26 L | 2415.1 kg | 178,894 | €5,366.82 | €163.02 | **€5,529.84** |
-| **2 full cylinders (stress test)** | 2 × 3.534 m³ | 12,596.2 kg | 933,053 | €27,991.59 | €850.24 | **€28,841.83** |
+| **2 hp** | 135.53 L | 241.5 kg | 17,251 | €517.53 | €16.30 | **€533.83** |
+| **6 hp** | 406.58 L | 724.5 kg | 51,752 | €1,552.56 | €48.91 | **€1,601.47** |
+| **20 hp** | 1,355.26 L | 2415.1 kg | 172,506 | €5,175.18 | €163.02 | **€5,338.20** |
+| **2 full cylinders (stress test)** | 2 × 3.534 m³ | 12,596.2 kg | 899,730 | €26,991.90 | €850.24 | **€27,842.14** |
 <!-- /calc:material:en -->
 
-The first three rows are **product-sized engines**: total chamber volume `V_c` per engine (2 chambers of `V_c/2`), filled at 66 %. The last row is the old pessimistic billet case, **2 full cylinders** of `d = 1.5 m`, `L = 2 m` — the upper bound for remelting, kept separate from the product cost. Filling at 66 % keeps the remelting estimate below the 2-full-cylinder maximum.
+The first three rows are **product-sized engines** (total chamber volume `V_c`, 66 % fill). The last row is the pessimistic **2-full-cylinder** stress test — an upper bound kept separate from product cost.
 
-## 4. Reading the result
+## 4. Can cost scenarios
 
-- The **2 hp** engine material is ≈ **€553**: €537 of cans plus €16 of remelting.
-- The **20 hp** fuel-limit engine material is ≈ **€5,530**.
-- The **2-full-cylinder stress test** is ≈ **€28,842**, rounded to **€30,000** as the maximal unoptimized first-retry value. This sets the ceiling for the **€15,000–30,000** [first-prototyping investment assurance](../engines/manson/costs/prototype.md). It is not a per-engine product material cost.
-- At €0.03/can, cans dominate: the can cost is ≈ 97 % of the material total, remelting ≈ 3 %.
+<!-- calc:can:en -->
+| Can mass | Can price | €/kg (cans) | 2 hp cans | 2 hp can cost | 2 hp material | Stress-test material |
+|---:|---:|---:|---:|---:|---:|---:|
+| 14 g/can | 3 c/can | 2.14 | 17,251 | €517.53 | **€533.83** | **€27,842.14** |
+| 14 g/can | 2 c/can | 1.43 | 17,251 | €345.02 | **€361.32** | **€18,844.84** |
+| 14 g/can | 1 c/can | 0.71 | 17,251 | €172.51 | **€188.81** | **€9,847.54** |
+| 8 g/can | 3 c/can | 3.75 | 30,189 | €905.67 | **€921.97** | **€48,086.05** |
+| 8 g/can | 2 c/can | 2.50 | 30,189 | €603.78 | **€620.08** | **€32,340.78** |
+| 8 g/can | 1 c/can | 1.25 | 30,189 | €301.89 | **€318.19** | **€16,595.51** |
+<!-- /calc:can:en -->
+
+## 5. Reading the result
+
+- At the baseline (14 g, 3 c), the **2 hp** engine material is ≈ **€534** and the stress test is ≈ **€27,842**.
+- Cans dominate the material total; lower can price or efficient collection/sourcing reduces cost directly, while lighter cans increase count for the same aluminium mass.
+- The stress test remains a ceiling/reference, not a per-engine product material cost.
 - Using this charge through low-volume lathe production is a [failing scenario](../archive/scenarios/lathe-low-volume.md): sell or rent the production machine instead of amortizing a few items per unit.
 
-## 5. What is excluded
+## 6. What is excluded
 
-Machining, tool wear, casting/printing, binder, labour, transport and the solar furnace capex. The full production cost is in [costs](costs.md); the series build-up is in [lathe machining](../engines/manson/costs/lathe-machining.md).
+Machining, tool wear, casting/printing, binder, labour, transport and the solar furnace capex. The full production cost is in [costs](costs.md); the series build-up is in [lathe machining](../engines/manson/costs/lathe-machining.md); workshop equipment ranges are in [workshop equipment](workshop/equipment.md).
 
 ## See also
 
 - [Costs](costs.md)
+- [Workshop equipment](workshop/equipment.md)
 - [Manson material costs](../engines/manson/costs/README.md)
 - [Manson sizing](../engines/manson/sizing.md)
 - [Lathe machining — series cost](../engines/manson/costs/lathe-machining.md)
+- [env configuration](../env/README.md)

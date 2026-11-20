@@ -60,7 +60,7 @@ The point is not that one load is best. The point is that the same heat source c
 
 ## 6. The pessimistic baseline is the guarantee
 
-All commercial numbers use the floor: **5 % efficiency, 12 MJ/kg straw, 66 % casting fill, 30 kg / 20 min, €0.03/can**. The 15 % target and the 20 % lab ceiling are upside, not the promise. If they arrive, the engine gets smaller, lighter and cheaper per kW; if they do not, the 2 hp product still works.
+All commercial numbers use the floor: **5 % efficiency, 12 MJ/kg straw, 66 % casting fill, 30 kg / 20 min, env-configured can costing (baseline €0.03/can, 14 g)**. The 15 % target and the 20 % lab ceiling are upside, not the promise. If they arrive, the engine gets smaller, lighter and cheaper per kW; if they do not, the 2 hp product still works.
 
 ## 7. Price positioning
 

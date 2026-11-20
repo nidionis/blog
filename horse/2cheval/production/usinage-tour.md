@@ -2,7 +2,7 @@
 
 > **Status:** marketing · **Owns:** coût de production de série · **Up:** [Production](README.md) · **Lang:** FR · [EN](../../engines/manson/costs/lathe-machining.md)
 
-Le tour à métaux de 2 m sert à la **finition** et à la série, pas à la première fabrication. Le premier prototype est une assurance de **15 000–30 000 €** : voir [premier prototype](prototype.md). En série, le tour est amorti sur des **milliers de moteurs**. La dérivation complète est dans la [page anglaise](../../engines/manson/costs/lathe-machining.md).
+Le tour à métaux de 2 m sert à la **finition** et à la série, pas à la première fabrication. Le premier prototype est à **15 000 €** (prévoir **30 000 €** sur commande pour bielle et support) : voir [premier prototype](prototype.md). En série, le tour est amorti sur des **milliers de moteurs**. La dérivation complète est dans la [page anglaise](../../engines/manson/costs/lathe-machining.md).
 
 ## Hypothèses pessimistes
 
@@ -10,7 +10,7 @@ Le tour à métaux de 2 m sert à la **finition** et à la série, pas à la pre
 - **Production** : `N` moteurs/an ; scénarios 1 000 / 3 000 / 5 000.
 - **Usure** des 2 chambres : **3 000 €/moteur**.
 - **Refonte/impression** des 2 cylindres : **12 000 €/moteur**.
-- **Aluminium recyclé** (2 ch, 135,53 L) : 241,5 kg → **17 890 canettes** à 0,03 € + 16,30 € de refonte = **553 €/moteur**. Voir [matière recyclée](../business/recycled-material.md).
+- **Aluminium recyclé** (2 ch, 135,53 L) : 241,5 kg → **17 251 canettes** à 0,03 € (base 14 g, env) + 16,30 € de refonte = **~534 €/moteur**. Voir [matière recyclée](../business/recycled-material.md).
 - **Piston + bielle + cylindre** : **1 200 €/moteur**.
 
 Les lignes usure et refonte restent majorées de 2 gros cylindres : le total est conservateur.
@@ -19,11 +19,11 @@ Les lignes usure et refonte restent majorées de 2 gros cylindres : le total est
 
 | | 1 000 moteurs/an | 3 000 moteurs/an | 5 000 moteurs/an |
 |---|---:|---:|---:|
-| **Coût de production** | **16 953 €** | **16 820 €** | **16 793 €** |
+| **Coût de production** | **16 934 €** | **16 801 €** | **16 774 €** |
 | Prix de vente retenu | 19 999 € | 19 999 € | 19 999 € |
-| **Marge brute** | **3 046 €** | **3 179 €** | **3 206 €** |
+| **Marge brute** | **3 065 €** | **3 198 €** | **3 225 €** |
 
-La marge couvre **2 000 €** de salaire (une vente/mois) et environ **1 050 €** de réserve commerciale. Le prix plancher « coût + 2 000 € » serait ≈ 18 953 € à 1 000 moteurs/an.
+En comparaison, le prototype seul est à **15 000 €** (prévoir **30 000 €** sur commande pour bielle et support) ; le prix de série inclut l'amortissement outillage et la marge. Marge ≈ **2 000 €** de salaire (une vente/mois) et réserve commerciale.
 
 ## Scénario d'échec
 
@@ -32,5 +32,6 @@ Produire quelques unités par tour est la **pire option** : à 12 moteurs/an, la
 ## Voir aussi
 
 - [Premier prototype](prototype.md) · [Matière recyclée](../business/recycled-material.md)
-- [Coûts business](../business/costs.md) · [Stratégie de production](strategy.md)
+- [Coûts business](../business/costs.md) · [Équipement d'atelier](../business/atelier/equipement.md)
+- [Stratégie de production](strategy.md)
 - [Version anglaise](../../engines/manson/costs/lathe-machining.md)

@@ -74,9 +74,15 @@ FEED_PERIODS_PER_H = SEC_PER_H / (float(UNITS["feed_limit_period_min"]) * float(
 
 def compat_params() -> dict:
     """Compatibility shape for model/params.json consumers."""
+    b = dict(B)
+    c = b.get("can", {})
+    if "mass_kg" not in c and "can_mass_kg" in b:
+        c = {**c, "mass_kg": b.get("can_mass_kg"), "price_eur": b.get("can_price_eur")}
+    b.setdefault("can_mass_kg", c.get("mass_kg"))
+    b.setdefault("can_price_eur", c.get("price_eur"))
     return {
         "ambient_c": ENGINE["ambient_c"],
-        "baseline": B,
+        "baseline": b,
         "targets_hp": TARGETS["targets_hp"],
         "fuels": FUELS,
         "material_rows_hp": TARGETS["material_rows_hp"],
@@ -139,6 +145,35 @@ def fuel_flow_kg_h(power_kw: float, eta: float, lhv_mj_kg: float | None = None) 
 
 def chamber_mass_kg(v_c_m3: float) -> float:
     return v_c_m3 * B["fill_ratio"] * B["aluminium_density_kg_m3"]
+
+
+def _can_cfg() -> dict:
+    c = B.get("can", {})
+    if "mass_kg" not in c:
+        c = {**c, "mass_kg": B.get("can_mass_kg", 0.014), "price_eur": B.get("can_price_eur", 0.03)}
+    return c
+
+
+def can_cost(mass_kg: float, can_mass_kg: float | None = None, can_price_eur: float | None = None) -> dict:
+    """Return can count and material/remelting costs for a given aluminium mass."""
+    c = _can_cfg()
+    can_mass = float(c["mass_kg"] if can_mass_kg is None else can_mass_kg)
+    can_price = float(c["price_eur"] if can_price_eur is None else can_price_eur)
+    cans_n = int(math.ceil(mass_kg / can_mass - 1e-12)) if can_mass > 0 else 0
+    can_total = cans_n * can_price
+    remelt = mass_kg * B["remelt_kwh_per_kg"] * B["remelt_eur_per_kwh"]
+    total = can_total + remelt
+    eur_per_kg = (can_total / mass_kg) if mass_kg > 0 else 0.0
+    return {
+        "mass_kg": mass_kg,
+        "can_mass_kg": can_mass,
+        "can_price_eur": can_price,
+        "cans_n": cans_n,
+        "can_cost": can_total,
+        "remelt": remelt,
+        "total": total,
+        "eur_per_kg_cans": eur_per_kg,
+    }
 
 
 def target(hp: float) -> dict:
@@ -316,11 +351,8 @@ def _material_display(hp: float | None = None, v_c_m3: float | None = None) -> d
     else:
         v_c_l = (v_c_m3 or 0.0) * L_PER_M3
         mass = chamber_mass_kg(v_c_m3 or 0.0)
-    cans_n = int(round(mass / B["can_mass_kg"]))
-    can_cost = cans_n * B["can_price_eur"]
-    remelt = mass * B["remelt_kwh_per_kg"] * B["remelt_eur_per_kwh"]
-    total = can_cost + remelt
-    return {"v_c_l": v_c_l, "mass_kg": mass, "cans_n": cans_n, "can_cost": can_cost, "remelt": remelt, "total": total}
+    cc = can_cost(mass)
+    return {"v_c_l": v_c_l, "mass_kg": mass, "cans_n": cc["cans_n"], "can_cost": cc["can_cost"], "remelt": cc["remelt"], "total": cc["total"]}
 
 
 def table_material(lang: str = "en") -> str:
@@ -372,6 +404,45 @@ def table_material_fr(lang: str = "fr") -> str:
     return "\n".join(lines)
 
 
+def _can_scenarios() -> list[tuple[float, float]]:
+    c = _can_cfg()
+    masses = []
+    for k in ("mass_kg", "mass_kg_light"):
+        v = c.get(k)
+        if v is not None and float(v) not in masses:
+            masses.append(float(v))
+    prices = []
+    for k in ("price_eur", "price_eur_low"):
+        v = c.get(k)
+        if v is not None and float(v) not in prices:
+            prices.append(float(v))
+    # include mid price if range spans
+    if 0.01 in prices and 0.03 in prices and 0.02 not in prices:
+        prices.append(0.02)
+    masses = sorted(masses, reverse=True)
+    prices = sorted(prices, reverse=True)
+    return [(m, p) for m in masses for p in prices]
+
+
+def table_can(lang: str = "en") -> str:
+    t = _i18n(lang)["tables"]["can"]
+    lines = ["| " + " | ".join(t["headers"]) + " |", t["align"]]
+    m2 = _material_display(hp=2.0)["mass_kg"]
+    st = TARGETS.get("stress_test", {})
+    ms = chamber_mass_kg(float(st.get("vc_m3", 0.0)))
+    for mass_g_kg, price in _can_scenarios():
+        c2 = can_cost(m2, can_mass_kg=mass_g_kg, can_price_eur=price)
+        cs = can_cost(ms, can_mass_kg=mass_g_kg, can_price_eur=price)
+        cents = int(round(price * 100)) if abs(price * 100 - round(price * 100)) < 1e-9 else round(price * 100, 1)
+        grams = int(round(mass_g_kg * 1000)) if abs(mass_g_kg * 1000 - round(mass_g_kg * 1000)) < 1e-9 else round(mass_g_kg * 1000, 1)
+        lines.append(
+            f"| {t['mass_cell'].format(g=grams)} | {t['price_cell'].format(c=cents)} | "
+            f"{nf(c2['eur_per_kg_cans'], 2, lang)} | {nint(c2['cans_n'], lang)} | "
+            f"{money(c2['can_cost'], lang)} | **{money(c2['total'], lang)}** | **{money(cs['total'], lang)}** |"
+        )
+    return "\n".join(lines)
+
+
 TABLES = {
     "sizing:en": lambda: table_sizing("en"),
     "sizing:fr": lambda: table_sizing("fr"),
@@ -381,6 +452,8 @@ TABLES = {
     "fuel-cap:fr": lambda: table_fuel_cap("fr"),
     "material:en": lambda: table_material("en"),
     "material:fr": lambda: table_material_fr("fr"),
+    "can:en": lambda: table_can("en"),
+    "can:fr": lambda: table_can("fr"),
 }
 
 
@@ -523,6 +596,36 @@ def fuel_svg(lang: str = "en") -> str:
     return "\n".join(out)
 
 
+def scad_env() -> str:
+    c = _can_cfg()
+    lines = [
+        "// Generated by tools/calc.py from env/ — do not edit manually.",
+        f"env_ambient_c = {ENGINE['ambient_c']};",
+        f"env_eta = {B['eta']};",
+        f"env_delta_t_k = {B['delta_t_k']};",
+        f"env_frequency_hz = {B['frequency_hz']};",
+        f"env_rho_air = {B['rho_air_kg_m3']};",
+        f"env_cp_air = {B['cp_air_j_kg_k']};",
+        f"env_fill_ratio = {B['fill_ratio']};",
+        f"env_aluminium_density = {B['aluminium_density_kg_m3']};",
+        f"env_can_mass_kg = {c.get('mass_kg')};",
+        f"env_can_mass_kg_light = {c.get('mass_kg_light', c.get('mass_kg'))};",
+        f"env_can_price_eur = {c.get('price_eur')};",
+        f"env_can_price_eur_low = {c.get('price_eur_low', c.get('price_eur'))};",
+        f"env_remelt_kwh_per_kg = {B['remelt_kwh_per_kg']};",
+        f"env_remelt_eur_per_kwh = {B['remelt_eur_per_kwh']};",
+        f"env_hp_w = {HP_W};",
+    ]
+    return "\n".join(lines) + "\n"
+
+
+def write_scad_env() -> Path:
+    out = ROOT / "engines" / "manson" / "scad" / "env.scad"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(scad_env(), encoding="utf-8")
+    return out
+
+
 def write_svgs() -> list[Path]:
     out_dir = ROOT / "levers"
     out_dir.mkdir(exist_ok=True)
@@ -657,6 +760,8 @@ def main(argv: list[str] | None = None) -> int:
         rpt = _i18n("en").get("report", {})
         for p in sync_compat():
             print(rpt.get("synced", "Synced {path}").format(path=p.relative_to(ROOT)))
+        p = write_scad_env()
+        print(rpt.get("synced", "Synced {path}").format(path=p.relative_to(ROOT)))
         return 0
 
     if args.check:
@@ -680,6 +785,7 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.update:
         sync_compat()
+        write_scad_env()
         changed = update_marked_blocks()
         rpt = _i18n("en").get("report", {})
         for p in changed:
@@ -689,6 +795,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     sync_compat()
+    scad_path = write_scad_env()
     paths = write_svgs()
     base = baseline_target()
     rpt = _i18n("en").get("report", {})
@@ -706,6 +813,7 @@ def main(argv: list[str] | None = None) -> int:
     print(rpt.get("power_line", "- 2 hp = {kw} kW mechanical; {thermal} kW thermal at {eta_pct} %.").format(**ctx))
     print(rpt.get("volume_line", "- V_a = {va} L; V_c = {vc} L; D = {d} cm (D = L).").format(**ctx))
     print(rpt.get("mass_line", "- Cast chamber mass at {fill_pct} % fill: {mass} kg (material only).").format(**ctx))
+    print(rpt.get("wrote", "Wrote {path}").format(path=scad_path.relative_to(ROOT)))
     for p in paths:
         print(rpt.get("wrote", "Wrote {path}").format(path=p.relative_to(ROOT)))
     if not args.svg:
