@@ -1,0 +1,16 @@
+{
+  "baseline_hp": 2.0,
+  "v_a_l": 67.76,
+  "v_a_tol_l": 0.2,
+  "v_c_l": 135.53,
+  "v_c_tol_l": 0.2,
+  "diameter_cm": 55.67,
+  "diameter_tol_cm": 0.2,
+  "fuel_limit_eta": 0.05,
+  "fuel_limit_kw": 15.0,
+  "fuel_limit_tol_kw": 0.1,
+  "fuel_flow_hp": 2.0,
+  "fuel_flow_eta": 0.05,
+  "fuel_flow_kg_h": 8.83,
+  "fuel_flow_tol_kg_h": 0.05
+}

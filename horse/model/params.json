@@ -13,17 +13,77 @@
     "can_mass_kg": 0.0135,
     "can_price_eur": 0.03,
     "remelt_kwh_per_kg": 0.3375,
-    "remelt_eur_per_kwh": 0.20
+    "remelt_eur_per_kwh": 0.2
   },
-  "targets_hp": [2, 4, 6, 20],
+  "targets_hp": [
+    2,
+    4,
+    6,
+    8,
+    12,
+    20
+  ],
+  "fuels": {
+    "straw": {
+      "lhv_mj_kg": 12.0,
+      "density_loose_kg_m3": 100,
+      "density_densified_kg_m3": 250
+    },
+    "charcoal": {
+      "lhv_mj_kg": 30.0,
+      "density_kg_m3": 800
+    },
+    "oil": {
+      "lhv_mj_kg": 43.0,
+      "density_kg_m3": 850
+    }
+  },
+  "material_rows_hp": [
+    2,
+    6,
+    20
+  ],
+  "stress_test": {
+    "label": "2 full cylinders",
+    "vc_m3": 7.068583470577035,
+    "note": "2 × π × 0.75² × 2 m³ (d=1.5 m, L=2 m)"
+  },
   "levers": {
-    "pressure_ratio": [1, 2, 4, 8],
+    "pressure_ratio": [
+      1,
+      2,
+      4,
+      8
+    ],
     "pressure_derate": 0.6,
-    "frequency_hz": [1, 2, 4, 8],
-    "hot_c": [200, 400, 600, 800],
-    "eta": [0.05, 0.10, 0.15, 0.20],
-    "solar_irradiance_w_m2": [250, 500, 800],
+    "frequency_hz": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "hot_c": [
+      200,
+      400,
+      600,
+      800
+    ],
+    "eta": [
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "solar_irradiance_w_m2": [
+      250,
+      500,
+      800
+    ],
     "solar_collector_eta": 0.5,
-    "solar_daily_kwh_m2": [2, 4, 6]
+    "solar_daily_kwh_m2": [
+      2,
+      4,
+      6
+    ]
   }
 }

@@ -1,0 +1,39 @@
+{
+  "colors": {
+    "pressure": "#1f77b4",
+    "temperature": "#d62728",
+    "frequency": "#2ca02c",
+    "efficiency": "#9467bd",
+    "baseline": "#555555",
+    "background": "#ffffff",
+    "text": "#111111",
+    "text_muted": "#555555",
+    "text_dark": "#333333",
+    "grid": "#e5e5e5",
+    "axis": "#333333",
+    "fuel_bar": "#2ca02c"
+  },
+  "fonts": {
+    "family": "sans-serif"
+  },
+  "sensitivity": {
+    "width": 820, "height": 560,
+    "left": 190, "right": 40, "top": 82, "bottom": 55,
+    "x_max": 60.0,
+    "title_size": 17, "subtitle_size": 11, "label_size": 10.8, "legend_size": 10.5,
+    "tick_size": 11, "axis_label_size": 10.5,
+    "row_bar_ratio": 0.62, "bar_opacity": 0.85,
+    "baseline_dash": "6 5", "baseline_width": 1.3,
+    "legend_item_width": 120, "legend_y_offset": 28, "legend_rect_w": 14, "legend_rect_h": 10
+  },
+  "fuel": {
+    "width": 820, "height": 420,
+    "left": 70, "right": 30, "top": 60, "bottom": 70,
+    "y_max": 65.0,
+    "title_size": 17, "subtitle_size": 11, "tick_size": 11, "label_size": 12,
+    "bar_label_size": 12, "bar_sub_size": 10.5,
+    "bar_width_ratio": 0.55, "bar_opacity": 0.85,
+    "baseline_dash": "6 5", "baseline_width": 1.4,
+    "axis_width": 1.2, "grid_width": 1
+  }
+}

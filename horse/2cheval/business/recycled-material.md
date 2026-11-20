@@ -18,12 +18,14 @@ Estimation de matière pour de l'aluminium coulé à partir de canettes. Le prix
 
 ## Matière par moteur
 
+<!-- calc:material:fr -->
 | Moteur | `V_c` total | Aluminium | Canettes | **Total matière** |
 |---|---:|---:|---:|---:|
-| **2 ch** | 135,53 L | 241,5 kg | 17 890 | **553 €** |
-| **6 ch** | 406,6 L | 724,6 kg | 53 671 | **1 659 €** |
-| **20 ch** | 1 355,26 L | 2 415,1 kg | 178 894 | **5 530 €** |
-| **2 cylindres pleins** (test) | 2 × 3,534 m³ | 12 596,2 kg | 933 053 | **28 842 €** |
+| **2 ch** | 135,53 L | 241,5 kg | 17 889 | **552,97 €** |
+| **6 ch** | 406,58 L | 724,5 kg | 53 668 | **1 658,95 €** |
+| **20 ch** | 1 355,26 L | 2415,1 kg | 178 894 | **5 529,84 €** |
+| **2 cylindres pleins (test)** | 2 × 3,534 m³ | 12 596,2 kg | 933 053 | **28 841,83 €** |
+<!-- /calc:material:fr -->
 
 La dernière ligne est la borne haute de l'**assurance premier prototypage**, pas un coût produit par moteur. Le remplissage à 66 % maintient la refonte sous ce maximum.
 

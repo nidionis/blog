@@ -14,6 +14,7 @@ This page gives fuel flow for a given mechanical power at 5 % efficiency, and th
 
 ## Fuel requirement at 5 %
 
+<!-- calc:fuel:en -->
 | Power | Mechanical | Thermal | Straw kg/h | Straw L/h (loose) | Straw L/h (densified) | Charcoal kg/h | Oil kg/h |
 |---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 ch | 0.74 kW | 14.7 kW | 4.41 | 44.1 | 17.7 | 1.77 | 1.23 |
@@ -24,6 +25,7 @@ This page gives fuel flow for a given mechanical power at 5 % efficiency, and th
 | 8 ch | 5.88 kW | 117.7 kW | 35.30 | 353.0 | 141.2 | 14.12 | 9.85 |
 | 12 ch | 8.83 kW | 176.5 kW | 52.96 | 529.6 | 211.8 | 21.18 | 14.78 |
 | 20 ch | 14.71 kW | 294.2 kW | 88.26 | 882.6 | 353.0 | 35.30 | 24.63 |
+<!-- /calc:fuel:en -->
 
 For a 10 min run at 2 ch: 8.83 kg/h × 1/6 h ≈ **1.47 kg of straw**.
 
@@ -43,12 +45,14 @@ The **20 ch** row consumes **29.4 kg per 20 min**, exactly at the feed limit at 
 
 ## The cap depends on efficiency
 
+<!-- calc:fuel-cap:en -->
 | Efficiency | Mechanical cap | 2 ch straw (kg/h) | 20 ch straw (kg/h) |
 |---:|---:|---:|---:|
-| 5 % | 15 kW ≈ 20.4 hp | 8.83 kg/h | 88.3 kg/h |
-| 10 % | 30 kW ≈ 40.8 hp | 4.41 kg/h | 44.1 kg/h |
-| 15 % | 45 kW ≈ 61.2 hp | 2.94 kg/h | 29.4 kg/h |
-| 20 % | 60 kW ≈ 81.6 hp | 2.21 kg/h | 22.1 kg/h |
+| 5 % | 15 kW ≈ 20.4 ch | 8.83 kg/h | 88.3 kg/h |
+| 10 % | 30 kW ≈ 40.8 ch | 4.41 kg/h | 44.1 kg/h |
+| 15 % | 45 kW ≈ 61.2 ch | 2.94 kg/h | 29.4 kg/h |
+| 20 % | 60 kW ≈ 81.6 ch | 2.21 kg/h | 22.1 kg/h |
+<!-- /calc:fuel-cap:en -->
 
 **15 kW is not an absolute engine limit.** It is the 5 % baseline cap. At 15 % the same feed allows 45 kW, but the chamber, materials and stove must support it. The retained power is `min(P_air, P_fuel)`; see [sizing](sizing.md#fuel-limit) and [efficiency](../../levers/efficiency.md).
 

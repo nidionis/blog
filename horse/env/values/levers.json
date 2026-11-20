@@ -1,0 +1,10 @@
+{
+  "pressure_ratio": [1, 2, 4, 8],
+  "pressure_derate": 0.6,
+  "frequency_hz": [1, 2, 4, 8],
+  "hot_c": [200, 400, 600, 800],
+  "eta": [0.05, 0.10, 0.15, 0.20],
+  "solar_irradiance_w_m2": [250, 500, 800],
+  "solar_collector_eta": 0.5,
+  "solar_daily_kwh_m2": [2, 4, 6]
+}

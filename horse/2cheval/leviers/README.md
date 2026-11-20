@@ -37,12 +37,14 @@ $$P = \eta \cdot \rho \cdot f \cdot V_a \cdot C_p \cdot \Delta T \qquad V_a = \f
 
 La puissance retenue est `min(P_air, P_fuel)`. La limite de **30 kg / 20 min** est une hypothèse à **5 %** :
 
+<!-- calc:fuel-cap:fr -->
 | Rendement | Plafond mécanique | Paille à 2 ch | Paille à 20 ch |
 |---:|---:|---:|---:|
 | 5 % | 15 kW ≈ 20,4 ch | 8,83 kg/h | 88,3 kg/h |
 | 10 % | 30 kW ≈ 40,8 ch | 4,41 kg/h | 44,1 kg/h |
 | 15 % | 45 kW ≈ 61,2 ch | 2,94 kg/h | 29,4 kg/h |
 | 20 % | 60 kW ≈ 81,6 ch | 2,21 kg/h | 22,1 kg/h |
+<!-- /calc:fuel-cap:fr -->
 
 ![Puissance mécanique plafonnée par le carburant selon le rendement](../../levers/fuel-limit.svg)
 
@@ -52,9 +54,17 @@ Les 20 ch extrêmes sont exactement à 30 kg / 20 min **seulement à 5 %**. À 1
 
 Si un levier échoue, un autre prend le relais : rendement faible → chambre plus grande ; masse excessive → pression ou fréquence ; paille chère → rendement ou solaire ; pas de soleil → paille ; pas de biomasse → [solaire](../energy/solaire/README.md) ou [nucléaire](../energy/nuclear/README.md). La base pessimiste n'est pas un défaut à excuser : c'est le plancher garanti. Voir [résilience](../business/resilience.md).
 
-## Dessins soft-coded
+## Dessins et tableaux soft-coded
 
-Les tableaux et les deux SVG sont générés depuis [`model/params.json`](../../model/params.json) par [`model/levers.py`](../../model/levers.py). Modifier une valeur de base, lancer `python3 model/levers.py`, et les dessins suivent. Voir [modèle](../modele/README.md).
+Les paramètres sont dans [`model/params.json`](../../model/params.json) ; les calculs sont réunis dans [`tools/calc.py`](../../tools/calc.py). Les tableaux marqués (`<!-- calc:... -->`) et les SVG ci-dessous sont régénérés depuis la même source :
+
+```bash
+python3 tools/calc.py --update   # réécrit les tableaux dérivés dans les docs
+python3 tools/calc.py            # régénère les SVG
+python3 model/levers.py --check  # contrôle de compatibilité
+```
+
+Voir [modèle](../modele/README.md) et [CAO paramétrique](../engines/manson/scad/README.md).
 
 ## Voir aussi
 

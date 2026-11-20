@@ -1,0 +1,5 @@
+{
+  "straw": {"lhv_mj_kg": 12.0, "density_loose_kg_m3": 100, "density_densified_kg_m3": 250},
+  "charcoal": {"lhv_mj_kg": 30.0, "density_kg_m3": 800},
+  "oil": {"lhv_mj_kg": 43.0, "density_kg_m3": 850}
+}

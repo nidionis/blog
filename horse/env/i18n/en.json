@@ -1,0 +1,139 @@
+{
+  "lang": "en",
+  "locale": {
+    "decimal_separator": ".",
+    "thousands_separator": ",",
+    "currency_symbol": "€",
+    "currency_format": "prefix",
+    "percent_space": false
+  },
+  "units": {
+    "kw": "kW",
+    "w": "W",
+    "l": "L",
+    "cm": "cm",
+    "m3": "m³",
+    "kg": "kg",
+    "kg_s": "kg/s",
+    "kg_h": "kg/h",
+    "l_h": "L/h",
+    "hp": "hp",
+    "ch": "ch",
+    "percent": "%",
+    "bar": "bar",
+    "hz": "Hz",
+    "c": "°C",
+    "k": "K",
+    "kwh": "kWh",
+    "mj_kg": "MJ/kg"
+  },
+  "tables": {
+    "sizing": {
+      "headers": [
+        "Mechanical power",
+        "Thermal power",
+        "Mass flow",
+        "Air volume `V_a`",
+        "Chamber `V_c`",
+        "Diameter `D`"
+      ],
+      "align": "|---:|---:|---:|---:|---:|---:|",
+      "power_cell": "**{kw} {kw_unit}** ({hp} {hp_unit})",
+      "value_unit": "{v} {u}"
+    },
+    "fuel": {
+      "headers": [
+        "Power",
+        "Mechanical",
+        "Thermal",
+        "Straw kg/h",
+        "Straw L/h (loose)",
+        "Straw L/h (densified)",
+        "Charcoal kg/h",
+        "Oil kg/h"
+      ],
+      "align": "|---:|---:|---:|---:|---:|---:|---:|---:|",
+      "power_cell": "{hp} {hp_unit}"
+    },
+    "fuel_fr": {
+      "headers": [
+        "Puissance",
+        "Mécanique",
+        "Thermique",
+        "Paille kg/h",
+        "Paille L/h (vrac)",
+        "Paille L/h (densifiée)"
+      ],
+      "align": "|---:|---:|---:|---:|---:|---:|",
+      "power_cell": "{hp} {hp_unit}"
+    },
+    "fuel_cap": {
+      "headers": [
+        "Efficiency",
+        "Mechanical cap",
+        "2 ch straw (kg/h)",
+        "20 ch straw (kg/h)"
+      ],
+      "align": "|---:|---:|---:|---:|",
+      "cap_cell": "{kw} {kw_unit} ≈ {hp} {hp_unit}"
+    },
+    "material": {
+      "headers": [
+        "Engine",
+        "Total `V_c`",
+        "Aluminium",
+        "Cans",
+        "Can cost",
+        "Remelting",
+        "**Material total**"
+      ],
+      "align": "|---|---:|---:|---:|---:|---:|---:|",
+      "engine_cell": "**{hp} hp**",
+      "stress_label": "{label} (stress test)",
+      "stress_volume": "2 × 3.534 m³"
+    }
+  },
+  "svg": {
+    "sensitivity": {
+      "aria": "Practical 2 hp chamber diameters for each lever",
+      "title": "2 hp chamber: what each lever buys",
+      "subtitle1": "One lever at a time; dashed line = {baseline_d} {cm} baseline. D = L convention.",
+      "subtitle2": "Cube-root law: 4× more power only halves the diameter, but mass falls with the cube.",
+      "x_label": "chamber diameter (cm)",
+      "rows": {
+        "baseline": "atmospheric, {eta_pct} {pct}, {delta_t} {k}, {hz} {hz_unit}",
+        "pressure": "{bar} bar ({derate} % of ideal gain)",
+        "temperature": "{hot} °C hot source (ΔT {delta} K)",
+        "frequency": "{hz} Hz",
+        "efficiency": "{pct} %"
+      },
+      "legend": [
+        "pressure",
+        "temperature",
+        "frequency",
+        "efficiency"
+      ]
+    },
+    "fuel": {
+      "aria": "Fuel-limited mechanical power versus efficiency",
+      "title": "Fuel cap: {feed_kg} kg / {feed_min} min × {lhv} MJ/kg = {thermal_kw} kW thermal",
+      "subtitle": "Mechanical cap = efficiency × {thermal_kw} kW. At the {eta_pct} {pct} baseline it is {cap_kw} kW ≈ {cap_hp} hp.",
+      "y_label": "mechanical cap (kW)",
+      "x_label": "overall efficiency",
+      "bar_label_kw": "{v} kW",
+      "bar_label_hp": "{v} hp"
+    }
+  },
+  "report": {
+    "baseline_title": "## Baseline",
+    "power_line": "- {hp} {hp_unit} = {kw} {kw_unit} mechanical; {thermal} {kw_unit} thermal at {eta_pct} {pct}.",
+    "volume_line": "- V_a = {va} {l}; V_c = {vc} {l}; D = {d} {cm} (D = L).",
+    "mass_line": "- Cast chamber mass at {fill_pct} {pct} fill: {mass} {kg} (material only).",
+    "wrote": "Wrote {path}",
+    "synced": "Synced {path}",
+    "updated": "Updated {path}",
+    "no_changes": "No marked blocks changed.",
+    "checks_passed": "Baseline checks passed.",
+    "help": "Use --tables all, --update, --sync, or --check for other modes."
+  }
+}

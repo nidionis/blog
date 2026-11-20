@@ -37,12 +37,14 @@ At 2 hp the baseline gives `V_a` = 67.8 L, `V_c` = 135.5 L, `D` = 55.7 cm (`D = 
 
 The retained power is `min(P_air, P_fuel)`. The 30 kg / 20 min feed is a **5 % baseline** statement:
 
-| Efficiency | Mechanical cap | 2 hp straw | 20 hp straw |
+<!-- calc:fuel-cap:en -->
+| Efficiency | Mechanical cap | 2 ch straw (kg/h) | 20 ch straw (kg/h) |
 |---:|---:|---:|---:|
-| 5 % | 15 kW ≈ 20.4 hp | 8.83 kg/h | 88.3 kg/h |
-| 10 % | 30 kW ≈ 40.8 hp | 4.41 kg/h | 44.1 kg/h |
-| 15 % | 45 kW ≈ 61.2 hp | 2.94 kg/h | 29.4 kg/h |
-| 20 % | 60 kW ≈ 81.6 hp | 2.21 kg/h | 22.1 kg/h |
+| 5 % | 15 kW ≈ 20.4 ch | 8.83 kg/h | 88.3 kg/h |
+| 10 % | 30 kW ≈ 40.8 ch | 4.41 kg/h | 44.1 kg/h |
+| 15 % | 45 kW ≈ 61.2 ch | 2.94 kg/h | 29.4 kg/h |
+| 20 % | 60 kW ≈ 81.6 ch | 2.21 kg/h | 22.1 kg/h |
+<!-- /calc:fuel-cap:en -->
 
 ![Fuel-limited mechanical power versus efficiency](fuel-limit.svg)
 
@@ -52,9 +54,17 @@ The 20 hp extreme sits exactly at 30 kg / 20 min **only at 5 %**. At 15 % it use
 
 If one lever fails, another can take over: low efficiency → larger volume; excessive weight → higher pressure or frequency; expensive fuel → higher efficiency or solar; no sun → straw; no biomass → [solar](../energy/solar/README.md) or the [nuclear variant](../energy/nuclear/README.md). The pessimistic baseline is not a limit to apologise for; it is the guaranteed floor. See [resilience](../business/resilience.md).
 
-## Soft-coded drawings
+## Soft-coded drawings and tables
 
-The tables above and the two SVGs are generated from [`model/params.json`](../model/params.json) by [`model/levers.py`](../model/levers.py). Change a baseline value, run `python3 model/levers.py`, and the drawings follow. The CAD sketch is also parametric: see [piston.scad](../engines/manson/scad/piston.scad).
+Parameters live in [`model/params.json`](../model/params.json); calculations are consolidated in [`tools/calc.py`](../tools/calc.py). Marked tables (`<!-- calc:... -->`) and the SVGs below are regenerated from the same source:
+
+```bash
+python3 tools/calc.py --update   # rewrite derived tables in docs
+python3 tools/calc.py            # regenerate SVGs
+python3 model/levers.py --check  # compatibility check
+```
+
+The CAD sketch is also parametric: see [piston.scad](../engines/manson/scad/piston.scad) and [model](../model/README.md).
 
 ## See also
 

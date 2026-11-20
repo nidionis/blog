@@ -1,0 +1,7 @@
+{
+  "targets_hp": [2, 4, 6, 8, 12, 20],
+  "fuel_hp": [1, 2, 3, 4, 6, 8, 12, 20],
+  "fuel_hp_fr": [1, 2, 6, 20],
+  "material_rows_hp": [2, 6, 20],
+  "stress_test": {"label": "2 full cylinders", "vc_m3": 7.068583470577035, "note": "2 × π × 0.75² × 2 m³ (d=1.5 m, L=2 m)"}
+}

@@ -1,0 +1,11 @@
+{
+  "kelvin_offset": 273.15,
+  "hp_w": 735.5,
+  "w_per_kw": 1000.0,
+  "seconds_per_hour": 3600.0,
+  "minutes_per_hour": 60.0,
+  "feed_limit_period_min": 20.0,
+  "liters_per_m3": 1000.0,
+  "cm_per_m": 100.0,
+  "chamber_to_working_air_ratio": 2.0
+}

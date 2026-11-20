@@ -12,12 +12,14 @@ Cette page donne le débit de carburant à **5 % de rendement**. Le tableau comp
 
 ## Besoin en paille
 
+<!-- calc:fuel:fr -->
 | Puissance | Mécanique | Thermique | Paille kg/h | Paille L/h (vrac) | Paille L/h (densifiée) |
 |---:|---:|---:|---:|---:|---:|
 | 1 ch | 0,74 kW | 14,7 kW | 4,41 | 44,1 | 17,7 |
 | 2 ch | 1,47 kW | 29,4 kW | 8,83 | 88,3 | 35,3 |
 | 6 ch | 4,41 kW | 88,3 kW | 26,48 | 264,8 | 105,9 |
 | 20 ch | 14,71 kW | 294,2 kW | 88,26 | 882,6 | 353,0 |
+<!-- /calc:fuel:fr -->
 
 Pour un essai de 10 min à 2 ch : 8,83 kg/h × 1/6 h ≈ **1,47 kg de paille**.
 

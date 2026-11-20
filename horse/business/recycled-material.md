@@ -34,12 +34,14 @@ $$\text{remelting cost} = m_{Al} \times 0.3375\ \text{kWh/kg} \times €0.20/\te
 
 ## 3. Material per engine
 
+<!-- calc:material:en -->
 | Engine | Total `V_c` | Aluminium | Cans | Can cost | Remelting | **Material total** |
 |---|---:|---:|---:|---:|---:|---:|
-| **2 hp** | 135.53 L | 241.5 kg | 17,890 | €536.70 | €16.30 | **€553.00** |
-| **6 hp** | 406.60 L | 724.6 kg | 53,671 | €1,610.14 | €48.91 | **€1,659.04** |
-| **20 hp** | 1,355.26 L | 2,415.1 kg | 178,894 | €5,366.83 | €163.02 | **€5,529.85** |
-| **2 full cylinders** (stress test) | 2 × 3.534 m³ | 12,596.2 kg | 933,053 | €27,991.59 | €850.24 | **€28,841.84** |
+| **2 hp** | 135.53 L | 241.5 kg | 17,889 | €536.67 | €16.30 | **€552.97** |
+| **6 hp** | 406.58 L | 724.5 kg | 53,668 | €1,610.04 | €48.91 | **€1,658.95** |
+| **20 hp** | 1,355.26 L | 2415.1 kg | 178,894 | €5,366.82 | €163.02 | **€5,529.84** |
+| **2 full cylinders (stress test)** | 2 × 3.534 m³ | 12,596.2 kg | 933,053 | €27,991.59 | €850.24 | **€28,841.83** |
+<!-- /calc:material:en -->
 
 The first three rows are **product-sized engines**: total chamber volume `V_c` per engine (2 chambers of `V_c/2`), filled at 66 %. The last row is the old pessimistic billet case, **2 full cylinders** of `d = 1.5 m`, `L = 2 m` — the upper bound for remelting, kept separate from the product cost. Filling at 66 % keeps the remelting estimate below the 2-full-cylinder maximum.
 

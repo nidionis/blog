@@ -1,47 +1,47 @@
 # Modèle soft-coded
 
-> **Status:** canonical · **Owns:** constantes de base et sensibilité aux leviers · **Up:** [2Cheval](../README.md) · **Lang:** FR · [EN](../../model/README.md)
+> **Status:** canonical · **Owns:** documentation du modèle et paramètres de compatibilité · **Up:** [2Cheval](../README.md) · **Lang:** FR · [EN](../../model/README.md)
 
-Ce dossier est l'entrée unique des chiffres utilisés dans les [articles sur les leviers](../leviers/README.md). Il est volontairement petit : pas de simulation, pas de dépendance externe, seulement les relations du premier ordre utilisées pour le dimensionnement et la sensibilité.
+La configuration est centralisée dans **[`env/`](../../env/README.md)** (valeurs, i18n/traductions, correspondances de concepts). [`params.json`](../../model/params.json) est un **fichier de compatibilité dérivé**, synchronisé depuis `env/` par `tools/calc.py`. Les calculs sont réunis dans [`tools/calc.py`](../../tools/calc.py).
 
-## Fichiers
+## Source de vérité
 
-- [`params.json`](../../model/params.json) — constantes de base et plages des leviers. **Modifier ce fichier, pas les tableaux.**
-- [`levers.py`](../../model/levers.py) — calcule les tableaux, vérifie la base et écrit les deux dessins SVG.
-- `../../levers/sensitivity.svg` — diamètre de chambre à 2 ch pour chaque levier.
-- `../../levers/fuel-limit.svg` — plafond de puissance mécanique selon le rendement.
+- **Valeurs :** `env/values/*.json` (unités/constantes, base moteur, combustibles, cibles, leviers, contrôles, config SVG)
+- **Noms/traductions :** `env/i18n/en.json`, `env/i18n/fr.json`
+- **Correspondances de concepts :** `env/concepts/concepts.json`
+- **Compatibilité dérivée :** `model/params.json` (synchronisé automatiquement)
 
 ## Lancer
 
 ```bash
-python3 model/levers.py          # affiche les tableaux et régénère les SVG
-python3 model/levers.py --check  # vérifie seulement les chiffres de base
+python3 tools/calc.py                 # synchronise, affiche la base, écrit les SVG
+python3 tools/calc.py --check         # vérifie la base (env/values/checks.json)
+python3 tools/calc.py --tables all    # affiche les tableaux Markdown générés
+python3 tools/calc.py --update        # synchronise + réécrit les blocs <!-- calc:... --> + {{env:...}}
+python3 tools/calc.py --sync          # synchronise uniquement les fichiers de compatibilité
+
+# compatibilité
+python3 model/levers.py
+python3 model/levers.py --check
 ```
 
-Les contrôles vérifient la base du projet : 2 ch → `V_a` = 67,76 L, `V_c` = 135,53 L, `D` = 55,67 cm, 15 kW à 5 % et 8,83 kg/h. Si une constante change, le contrôle et les articles doivent changer ensemble.
+## Sorties configurées/générées
 
-## Relations
+- Blocs de tableaux : `sizing:en`, `sizing:fr`, `fuel:en`, `fuel:fr`, `fuel-cap:en`, `fuel-cap:fr`, `material:en`, `material:fr`
+- Substitutions en ligne hors code : `{{env:values.engine.baseline.eta}}`, `{{i18n:fr:...}}` (résolues au `--update`)
+- Les SVG et `model/params.json` sont régénérés depuis `env/`.
 
-```
-P        = η · ρ · f · V_a · Cp · ΔT          (puissance air, premier ordre)
-V_a      = V_c / 2                           (règle du déplaceur)
-D        = (4 · V_c / π)^(1/3)               (convention D = L)
-P_fuel   = η · (30 kg / 20 min) · LHV        (plafond d'alimentation à 12 MJ/kg)
-m_Al     = 0,66 · V_c · 2700 kg/m³           (masse de chambre coulée, matière seule)
-```
+## Règle d'édition
 
-Le modèle suppose une masse volumique d'air ambiante constante. La pression entre comme multiplicateur de densité, `ρ_eff = ρ · r_p`, avec un `pressure_derate` pessimiste ; c'est un levier de **variante fermée**, pas une modification du Manson atmosphérique. La température est un multiplicateur de `ΔT` à `η` constant ; la table de Carnot est un plafond, pas une prédiction.
-
-## Ce que le modèle ne fait pas
-
-- Il ne simule pas le cycle réel, la distribution, les fuites ou l'échange thermique.
-- Il ne prédit pas le rendement ; `η` est un palier d'entrée.
-- Il ne dimensionne ni le stove, ni l'alternateur, ni la structure.
-- Il ne remplace pas un essai. Il garde les documents cohérents jusqu'à ce qu'une mesure remplace une hypothèse.
+- Modifier les hypothèses numériques dans `env/values/*.json`, pas dans les scripts ni en dur dans le texte.
+- Modifier les libellés/traductions dans `env/i18n/en.json` et `env/i18n/fr.json`.
+- Modifier les correspondances de concepts dans `env/concepts/concepts.json`.
+- Après modification : lancer `--update`/`--check`, puis relire le texte concerné.
 
 ## Voir aussi
 
-- [Leviers](../leviers/README.md) — les articles construits sur ce modèle
-- [Glossaire](../GLOSSARY.md) — symboles et unités
-- [Dimensionnement](../engines/manson/sizing.md) — tableau canonique des puissances
+- [Configuration env/](../../env/README.md)
+- [Leviers](../leviers/README.md)
+- [Dimensionnement](../engines/manson/sizing.md) · [Carburant](../engines/manson/fuel.md) · [Matière recyclée](../business/recycled-material.md)
+- [Glossaire](../GLOSSARY.md)
 - [Version anglaise](../../model/README.md)

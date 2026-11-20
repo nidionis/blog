@@ -1,0 +1,123 @@
+{
+  "lang": "fr",
+  "locale": {
+    "decimal_separator": ",",
+    "thousands_separator": " ",
+    "currency_symbol": "€",
+    "currency_format": "suffix",
+    "percent_space": true
+  },
+  "units": {
+    "kw": "kW",
+    "w": "W",
+    "l": "L",
+    "cm": "cm",
+    "m3": "m³",
+    "kg": "kg",
+    "kg_s": "kg/s",
+    "kg_h": "kg/h",
+    "l_h": "L/h",
+    "hp": "ch",
+    "ch": "ch",
+    "percent": "%",
+    "bar": "bar",
+    "hz": "Hz",
+    "c": "°C",
+    "k": "K",
+    "kwh": "kWh",
+    "mj_kg": "MJ/kg"
+  },
+  "tables": {
+    "sizing": {
+      "headers": [
+        "Puissance mécanique",
+        "Thermique",
+        "Débit",
+        "`V_a`",
+        "`V_c`",
+        "`D`"
+      ],
+      "align": "|---:|---:|---:|---:|---:|---:|",
+      "power_cell": "**{kw} {kw_unit}** ({hp} {hp_unit})",
+      "value_unit": "{v} {u}"
+    },
+    "fuel": {
+      "headers": [
+        "Puissance",
+        "Mécanique",
+        "Thermique",
+        "Paille kg/h",
+        "Paille L/h (vrac)",
+        "Paille L/h (densifiée)"
+      ],
+      "align": "|---:|---:|---:|---:|---:|---:|",
+      "power_cell": "{hp} {hp_unit}"
+    },
+    "fuel_cap": {
+      "headers": [
+        "Rendement",
+        "Plafond mécanique",
+        "Paille à 2 ch",
+        "Paille à 20 ch"
+      ],
+      "align": "|---:|---:|---:|---:|",
+      "cap_cell": "{kw} {kw_unit} ≈ {hp} {hp_unit}"
+    },
+    "material": {
+      "headers": [
+        "Moteur",
+        "`V_c` total",
+        "Aluminium",
+        "Canettes",
+        "**Total matière**"
+      ],
+      "align": "|---|---:|---:|---:|---:|",
+      "engine_cell": "**{hp} {hp_unit}**",
+      "stress_label": "2 cylindres pleins (test)",
+      "stress_volume": "2 × 3,534 m³"
+    }
+  },
+  "svg": {
+    "sensitivity": {
+      "aria": "Diamètre de chambre à 2 ch pour chaque levier",
+      "title": "Chambre 2 ch : ce que chaque levier apporte",
+      "subtitle1": "Un levier à la fois ; ligne pointillée = base {baseline_d} {cm}. Convention D = L.",
+      "subtitle2": "Loi de la racine cubique : 4× la puissance ne divise le diamètre que par deux.",
+      "x_label": "diamètre de chambre (cm)",
+      "rows": {
+        "baseline": "atmosphérique, {eta_pct} {pct}, {delta_t} {k}, {hz} {hz_unit}",
+        "pressure": "{bar} bar ({derate} % du gain idéal)",
+        "temperature": "source chaude {hot} °C (ΔT {delta} K)",
+        "frequency": "{hz} Hz",
+        "efficiency": "{pct} %"
+      },
+      "legend": [
+        "pression",
+        "température",
+        "fréquence",
+        "rendement"
+      ]
+    },
+    "fuel": {
+      "aria": "Puissance mécanique plafonnée par le carburant selon le rendement",
+      "title": "Plafond carburant : {feed_kg} kg / {feed_min} min × {lhv} MJ/kg = {thermal_kw} kW thermiques",
+      "subtitle": "Plafond mécanique = rendement × {thermal_kw} kW. À la base {eta_pct} {pct}, {cap_kw} kW ≈ {cap_hp} ch.",
+      "y_label": "plafond mécanique (kW)",
+      "x_label": "rendement global",
+      "bar_label_kw": "{v} kW",
+      "bar_label_hp": "{v} ch"
+    }
+  },
+  "report": {
+    "baseline_title": "## Base",
+    "power_line": "- {hp} {hp_unit} = {kw} {kw_unit} mécaniques ; {thermal} {kw_unit} thermiques à {eta_pct} {pct}.",
+    "volume_line": "- V_a = {va} {l} ; V_c = {vc} {l} ; D = {d} {cm} (D = L).",
+    "mass_line": "- Masse de chambre coulée à {fill_pct} {pct} de remplissage : {mass} {kg} (matière seule).",
+    "wrote": "Écrit {path}",
+    "synced": "Synchronisé {path}",
+    "updated": "Mis à jour {path}",
+    "no_changes": "Aucun bloc marqué modifié.",
+    "checks_passed": "Contrôles de base réussis.",
+    "help": "Utiliser --tables all, --update, --sync ou --check pour les autres modes."
+  }
+}
