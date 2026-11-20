@@ -10,23 +10,7 @@ Cette page archive la **pire option** de production : utiliser un tour de 2 m co
 - Le modèle de coût de série ne tient que si le tour produit des **milliers de moteurs** sur sa durée de vie.
 - À **12 moteurs/an** (une vente/mois), la part du tour est `200 000 € / 12 ≈ 16 667 €` par moteur.
 - Avec la matière produit 2 ch et des charges coulée/outillage conservatrices, le coût de production monte à ≈ **33 420 €**.
-- Au prix de vente retenu de **19 999 €**, l'amortissement n'est pas couvert.
-
-## Référence plafond matière
-
-Le test 2 cylindres pleins (2 cylindres `d = 1,5 m`, `L = 2 m`, remplis à 66 % → 12 596 kg Al) est un **plafond matière/référence**, pas une trajectoire produit. Aux hypothèses canette de base configurées dans l'env (14 g, 0,03 €/canette), il représente ~**27 842 €** de matière ; voir [matière recyclée](../../business/recycled-material.md) et [scénarios de coût canette](../../business/recycled-material.md#scénarios-de-coût-canette). Le projet expose désormais le prototype à **15 000 €** (prévoir **30 000 €** sur commande pour bielle et support), distinct du prix de série.
-
-Forcer une charge matière 2 cylindres pleins dans une production à faible volume reste non viable à 19 999 €.
-
-## Actions en scénario d'échec
-
-Si la production reste à quelques unités par tour :
-
-1. **Arrêter la trajectoire d'amortissement par unité** — elle n'est pas viable.
-2. **Vendre la machine de production** (tour 2 m) pour récupérer du capital, ou
-3. **Louer/partager le tour** avec d'autres productions pour répartir l'amortissement, ou
-4. **Produire pour stock** seulement si la demande et la trésorerie le justifient, ou
-5. **Augmenter le prix** pour couvrir l'amortissement réel.
+- Possibilité de ventes type "mobillier urbain" en produidant quelques moules et prouduisant/ stockant quelques centaines / milliers de moteurs avant la revente de l'outil de production au meilleur prix (ex: 10% de 600 000 euros representerait 60 000 euros)
 
 ## Hypothèses dépassées
 
